@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-05-24T03:07:18.012Z</updated>
+  <updated>2016-05-24T06:48:44.332Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2016/05/24/Git%E5%88%9D%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
     <id>http://yoursite.com/2016/05/24/Git初学笔记/</id>
     <published>2016-05-24T03:18:55.000Z</published>
-    <updated>2016-05-24T03:07:18.012Z</updated>
+    <updated>2016-05-24T06:48:44.332Z</updated>
     
     <content type="html">&lt;p&gt;&amp;#x53C2;&amp;#x8003;&amp;#xFF1A;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&amp;#x5ED6;&amp;#x96EA;&amp;#x5CF0;&amp;#x7684;Git&amp;#x6559;&amp;#x7A0B;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;&amp;#x5B89;&amp;#x88C5;Git&quot;&gt;&lt;a href=&quot;#&amp;#x5B89;&amp;#x88C5;Git&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x5B89;&amp;#x88C5;Git&quot;&gt;&lt;/a&gt;&amp;#x5B89;&amp;#x88C5;Git&lt;/h2&gt;&lt;ol&gt;
@@ -40,7 +40,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&amp;#x5DE5;&amp;#x4F5C;&amp;#x533A;&amp;#x3001;&amp;#x6682;&amp;#x5B58;&amp;#x533A;&amp;#x7684;&amp;#x5173;&amp;#x7CFB; &lt;/p&gt;
-&lt;p&gt;  &lt;img src=&quot;https://zhayh.github.io/images/git/stage.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;  &lt;img src=&quot;/2016/05/24/Git&amp;#x521D;&amp;#x5B66;&amp;#x7B14;&amp;#x8BB0;/stage.png&quot; alt=&quot;&amp;#x5DE5;&amp;#x4F5C;&amp;#x533A;&amp;#x3001;&amp;#x6682;&amp;#x5B58;&amp;#x533A;&amp;#x7684;&amp;#x5173;&amp;#x7CFB;&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&quot;&amp;#x914D;&amp;#x7F6E;Git&quot;&gt;&lt;a href=&quot;#&amp;#x914D;&amp;#x7F6E;Git&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x914D;&amp;#x7F6E;Git&quot;&gt;&lt;/a&gt;&amp;#x914D;&amp;#x7F6E;Git&lt;/h2&gt;&lt;ol&gt;
