@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2016-05-24T03:07:18.012Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git学习笔记</title>
+    <link href="http://yoursite.com/2016/05/24/Git%E5%88%9D%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2016/05/24/Git初学笔记/</id>
+    <published>2016-05-24T03:18:55.000Z</published>
+    <updated>2016-05-24T03:07:18.012Z</updated>
+    
+    <content type="html">&lt;p&gt;参考：&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;廖雪峰的Git教程&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;安装Git&quot;&gt;&lt;a href=&quot;#安装Git&quot; class=&quot;headerlink&quot; title=&quot;安装Git&quot;&gt;&lt;/a&gt;安装Git&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;在Linux上安装&lt;br&gt; Ubuntu：sudo apt-get install git  &lt;/li&gt;
+&lt;li&gt;在Windows上安装  &lt;ul&gt;
+&lt;li&gt;安装&lt;a href=&quot;http://msysgit.github.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;msysgit&lt;/a&gt;，按照默认选项安装即可  &lt;/li&gt;
+&lt;li&gt;安装完成之后运行Git Bash，打开命令行窗口  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;基本概念&quot;&gt;&lt;a href=&quot;#基本概念&quot; class=&quot;headerlink&quot; title=&quot;基本概念&quot;&gt;&lt;/a&gt;基本概念&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;工作区：电脑中的目录  &lt;/li&gt;
+&lt;li&gt;版本库：  &lt;ul&gt;
+&lt;li&gt;工作区的隐藏目录.git  &lt;/li&gt;
+&lt;li&gt;其中最重要的是暂存区stage，第一个分支master和指向master的指针HEAD  &lt;/li&gt;
+&lt;li&gt;不在暂存区中的文档是不能被commit到分支的    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;工作区、暂存区的关系 &lt;/p&gt;
+&lt;p&gt;  &lt;img src=&quot;https://zhayh.github.io/images/git/stage.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;配置Git&quot;&gt;&lt;a href=&quot;#配置Git&quot; class=&quot;headerlink&quot; title=&quot;配置Git&quot;&gt;&lt;/a&gt;配置Git&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;git config –global color.ui true  &lt;/li&gt;
+&lt;li&gt;&lt;p&gt;配置别名： &lt;/p&gt;
+&lt;p&gt;   git config –global alias.unstage ‘reset HEAD’&lt;br&gt;   git config –global alias.lg “log –color –graph –pretty=format:’%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&amp;lt;%an&amp;gt;%Creset’ –abbrev-commit”  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;创建版本库&quot;&gt;&lt;a href=&quot;#创建版本库&quot; class=&quot;headerlink&quot; title=&quot;创建版本库&quot;&gt;&lt;/a&gt;创建版本库&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;初始化Git仓库&lt;/p&gt;
+&lt;p&gt;   mkdir LearnGit&lt;br&gt;   cd /F/LearnGit&lt;br&gt;   git init  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;添加文件  &lt;/p&gt;
+&lt;p&gt;   git add readme.txt&lt;br&gt;   git commit -m “wrote a readme file”  &lt;/p&gt;
+&lt;p&gt;说明：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;创建的文件一定放在Git仓库的目录或子目录下  &lt;ul&gt;
+&lt;li&gt;add将文件添加到暂存区  &lt;/li&gt;
+&lt;li&gt;commit将暂存区的所有内容提交到当前分支  &lt;/li&gt;
+&lt;li&gt;-m后面输入本次提交的说明  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;查看、修改和提交&quot;&gt;&lt;a href=&quot;#查看、修改和提交&quot; class=&quot;headerlink&quot; title=&quot;查看、修改和提交&quot;&gt;&lt;/a&gt;查看、修改和提交&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;查看Git工作区的状态：git status  &lt;/li&gt;
+&lt;li&gt;查看文件的修改内容：git diff readme.txt  &lt;/li&gt;
+&lt;li&gt;&lt;p&gt;提交修改和提交文件的步骤一样，分两步：  &lt;/p&gt;
+&lt;p&gt;   git add readme.txt&lt;br&gt;   git commit -m “add git command”  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;版本回退&quot;&gt;&lt;a href=&quot;#版本回退&quot; class=&quot;headerlink&quot; title=&quot;版本回退&quot;&gt;&lt;/a&gt;版本回退&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;查看提交历史：git log / git log –pretty=oneline&lt;/li&gt;
+&lt;li&gt;回退上一个版本：git reset –hard HEAD^ &lt;/li&gt;
+&lt;li&gt;查看历史命令：git reflog&lt;/li&gt;
+&lt;li&gt;说明：HEAD指向当前版本&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;撤销修改&quot;&gt;&lt;a href=&quot;#撤销修改&quot; class=&quot;headerlink&quot; title=&quot;撤销修改&quot;&gt;&lt;/a&gt;撤销修改&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;git checkout – readme.txt，撤销该文件在工作区的修改，说明：&lt;ul&gt;
+&lt;li&gt;文件没放到暂存区，撤销修改就回到版本库的状态&lt;/li&gt;
+&lt;li&gt;文件已添加到暂存区后又作了修改，撤销修改就回到添加到暂存区后的状态&lt;/li&gt;
+&lt;li&gt;也就是回到最近一次git commithuo git add状态&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;git reset HEAD readme.txt，撤销暂存区的修改&lt;/li&gt;
+&lt;li&gt;举例说明：&lt;ul&gt;
+&lt;li&gt;场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改，用git checkout – file。&lt;/li&gt;
+&lt;li&gt;场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用git reset HEAD file，就回到了场景1，第二步按场景1操作。&lt;/li&gt;
+&lt;li&gt;场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，需进行版本回退操作，前提是没有推送到远程库。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;删除文件&quot;&gt;&lt;a href=&quot;#删除文件&quot; class=&quot;headerlink&quot; title=&quot;删除文件&quot;&gt;&lt;/a&gt;删除文件&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;从版本库删除&lt;/p&gt;
+&lt;p&gt;   rm readme.txt&lt;br&gt;   git rm readme.txt&lt;br&gt;   git commit -m “remove readme.txt”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;工作区删除后从版本库恢复，会丢失最近一次提交后修改的内容&lt;/p&gt;
+&lt;p&gt;   git checkout – readme.txt&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;远程仓库&quot;&gt;&lt;a href=&quot;#远程仓库&quot; class=&quot;headerlink&quot; title=&quot;远程仓库&quot;&gt;&lt;/a&gt;远程仓库&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;创建SSH Key：ssh-keygen -t rsa -C “GitHub邮箱地址”&lt;/li&gt;
+&lt;li&gt;登陆GitHub，打开Account Settings -&amp;gt; SSH Keys页面，点击Add SSH Key，将生成的id_rsa.pub的内容拷贝到key内容框&lt;/li&gt;
+&lt;li&gt;需要在每台推送到GitHub的电脑上生成key，并添加到GitHub&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;添加远程库&quot;&gt;&lt;a href=&quot;#添加远程库&quot; class=&quot;headerlink&quot; title=&quot;添加远程库&quot;&gt;&lt;/a&gt;添加远程库&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;登陆GitHub，点击Create a new repo，创建一个新的仓库&lt;/li&gt;
+&lt;li&gt;Repository name填入仓库名称，其他保持默认设置，创建Git仓库&lt;/li&gt;
+&lt;li&gt;将本地仓库推送到GitHub仓库：&lt;ul&gt;
+&lt;li&gt;关联远程库：&lt;code&gt;git remote add origin git@github.com:path/repo-name.git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;第一次推送：git push -u origin master，-u参数：将本地master分支内容推送到远程新的master分支，并关联本地的master分支和远程的master分支，在以后的推送或拉取时就可以简化命令&lt;/li&gt;
+&lt;li&gt;本地提交后的推送命令：git push origin master&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;从远程库克隆&quot;&gt;&lt;a href=&quot;#从远程库克隆&quot; class=&quot;headerlink&quot; title=&quot;从远程库克隆&quot;&gt;&lt;/a&gt;从远程库克隆&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;git clone &lt;code&gt;git@github.com:zhayh/python.git&lt;/code&gt;  &lt;/li&gt;
+&lt;li&gt;也可以用 &lt;code&gt;https://github.com/zhayh/python.git&lt;/code&gt; 克隆  &lt;/li&gt;
+&lt;li&gt;Git支持多种协议，默认的git：//使用ssh，速度最快  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;创建与合并分支&quot;&gt;&lt;a href=&quot;#创建与合并分支&quot; class=&quot;headerlink&quot; title=&quot;创建与合并分支&quot;&gt;&lt;/a&gt;创建与合并分支&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;创建并切换分支：git checkout -b dev &lt;/li&gt;
+&lt;li&gt;查看分支：git branch, 当前分支用*标识&lt;/li&gt;
+&lt;li&gt;创建分支：git branch name&lt;/li&gt;
+&lt;li&gt;切换分支：git checkout master&lt;/li&gt;
+&lt;li&gt;合并分支到当前分支：git merge dev&lt;/li&gt;
+&lt;li&gt;删除分支：git branch -d name&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;解决冲突&quot;&gt;&lt;a href=&quot;#解决冲突&quot; class=&quot;headerlink&quot; title=&quot;解决冲突&quot;&gt;&lt;/a&gt;解决冲突&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;执行git merge dev时提示内容冲突，手动修改冲突的内容，然后执行git add readme.txt和git commit -m “message”，master和dev就合并了&lt;/li&gt;
+&lt;li&gt;查看分支的合并情况：git log –graph –pretty=oneline –abbrev-commit&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;分支管理策略&quot;&gt;&lt;a href=&quot;#分支管理策略&quot; class=&quot;headerlink&quot; title=&quot;分支管理策略&quot;&gt;&lt;/a&gt;分支管理策略&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;合并分支时，一般Git会用”Fast forward”模式，删除分支后，会丢失分支信息  &lt;/li&gt;
+&lt;li&gt;&lt;p&gt;使用”no-ff”方式merge可以强制禁用”Fast forward”模式   &lt;/p&gt;
+&lt;p&gt;   git merge –no-ff -m “merge with no-ff” dev&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;分支策略&lt;br&gt; master分支应非常稳定，仅用于发布新版本，工作都在dev分支上进行&lt;br&gt; 每个成员都有自己的分支，经常往dev合并即可  &lt;/li&gt;
+&lt;li&gt;Bug分支  &lt;ul&gt;
+&lt;li&gt;隐藏工作现场：git stash&lt;/li&gt;
+&lt;li&gt;创建一个临时分支修复Bug，修复完成后切换到master分支，完成合并，最后删除临时分支&lt;/li&gt;
+&lt;li&gt;查看工作现场：git stash list&lt;/li&gt;
+&lt;li&gt;恢复现场同时删除stash内容：git stash pop&lt;/li&gt;
+&lt;li&gt;恢复现场：git stash apply&lt;/li&gt;
+&lt;li&gt;删除stash内容：git stash drop&lt;/li&gt;
+&lt;li&gt;恢复制定的stash：git stash apply stash@{0}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;feature分支&lt;br&gt; 1) 添加一个新功能，可以新建一个feature分支进行，完成后合并，最后删除feature分支&lt;br&gt; 2) 强行删除feature分支开发的新功能：git branch -D feature&lt;/li&gt;
+&lt;li&gt;多人协作&lt;br&gt; 查看远程库：git remote / git remote -v&lt;/li&gt;
+&lt;li&gt;推送分支  &lt;ul&gt;
+&lt;li&gt;推送到主分支：git push origin master  &lt;/li&gt;
+&lt;li&gt;推送到其他分支：git push origin dev  &lt;/li&gt;
+&lt;li&gt;推送的选择：  &lt;ul&gt;
+&lt;li&gt;master分支是主分支，要时刻与远程同步  &lt;/li&gt;
+&lt;li&gt;dev分支是开发分支，也需要与远程同步  &lt;/li&gt;
+&lt;li&gt;bug分支只用于在本地修复bug，就没必要推送到远程  &lt;/li&gt;
+&lt;li&gt;feature分支是否推到远程，取决于是否合作在上面开发  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;抓取分支&lt;br&gt; 1) 从远程库clone，一般只能看到本地的master分支&lt;br&gt; 2) 创建远程origin的dev分支到本地：git checkout -b dev origin/dev&lt;br&gt; 3) 推送冲突的解决：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;* 使用git pull将最新的提交从origin/dev抓取下来，在本地合并，解决冲突，再推送
+* git pull失败的原因：需指定本地dev分支与远程origin/dev分支的链接
+* git branch --set-upstream dev origin/dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;多人协作的工作模式&quot;&gt;&lt;a href=&quot;#多人协作的工作模式&quot; class=&quot;headerlink&quot; title=&quot;多人协作的工作模式&quot;&gt;&lt;/a&gt;多人协作的工作模式&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;试图用git push origin branch-name推送自己的修改&lt;/li&gt;
+&lt;li&gt;如果推送失败，则因为远程分支比本地新，需要先用git pull试图合并&lt;/li&gt;
+&lt;li&gt;如果合并冲突，则解决冲突，并在本地提交&lt;/li&gt;
+&lt;li&gt;没有冲突或解决了冲突后，再用git push origin branch-name推送就能成功&lt;/li&gt;
+&lt;li&gt;注意：git pull提示”no tracking information”，则说明本地和远程分支的链接关系没有创建，用git branch –set-upstream branch-name origin/branch-name&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;创建标签&quot;&gt;&lt;a href=&quot;#创建标签&quot; class=&quot;headerlink&quot; title=&quot;创建标签&quot;&gt;&lt;/a&gt;创建标签&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;切换到需要打标签的分支：git checkout master&lt;/li&gt;
+&lt;li&gt;创建新标签：git tag v1.0，只存储在本地&lt;/li&gt;
+&lt;li&gt;在特定commit id上创建标签：git tag v0.9 commit id&lt;/li&gt;
+&lt;li&gt;创建带有说明的标签：git tag -a v0.1 -m “message” commit id （-a指定标签名，-m指定说明文字）&lt;/li&gt;
+&lt;li&gt;用-s指定私钥签名一个标签：git tag -s v0.2 -m “message” commit id，签名采用PGP签名，必须首先安装gpg(GnuPG)&lt;/li&gt;
+&lt;li&gt;查看所有标签：git tag&lt;/li&gt;
+&lt;li&gt;查看标签信息：git show v0.9&lt;/li&gt;
+&lt;li&gt;说明：  &lt;ul&gt;
+&lt;li&gt;默认标签是打在最新提交的commit上，标签按字母排序  &lt;/li&gt;
+&lt;li&gt;查看commit id：git log –pretty=oneline –abbrev-commit  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;操作标签&quot;&gt;&lt;a href=&quot;#操作标签&quot; class=&quot;headerlink&quot; title=&quot;操作标签&quot;&gt;&lt;/a&gt;操作标签&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;删除标签：git tag -d v1.0  &lt;/li&gt;
+&lt;li&gt;推送标签到远程：git push origin v1.0  &lt;/li&gt;
+&lt;li&gt;一次性推送所有的标签：git push origin –tags  &lt;/li&gt;
+&lt;li&gt;删除远程标签&lt;br&gt; 1）先从本地删除：git tag -d v0.9&lt;br&gt; 2）再从远程删除：git push origin :refs/tags/v0.9  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;GitHub&quot;&gt;&lt;a href=&quot;#GitHub&quot; class=&quot;headerlink&quot; title=&quot;GitHub&quot;&gt;&lt;/a&gt;GitHub&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;在GitHub上，可以任意Fork开源仓库；  &lt;/li&gt;
+&lt;li&gt;自己拥有Fork后的仓库的读写权限；  &lt;/li&gt;
+&lt;li&gt;可以推送pull request给官方仓库贡献代码。  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;忽略特殊文件&quot;&gt;&lt;a href=&quot;#忽略特殊文件&quot; class=&quot;headerlink&quot; title=&quot;忽略特殊文件&quot;&gt;&lt;/a&gt;忽略特殊文件&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;在Git工作去的根目录创建.gitignore文件，添加要忽略的文件名  &lt;/li&gt;
+&lt;li&gt;参考：&lt;a href=&quot;https://github.com/github/gitignore&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git官方ignore模版&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;.gitignore文件本身要放到版本库中，并对其进行版本管理  &lt;/li&gt;
+&lt;li&gt;忽略文件的原则：&lt;br&gt; 1）忽略操作系统自动生成的文件，如缩略图等&lt;br&gt; 2）忽略编译生成的中间文件、可执行文件等&lt;br&gt; 3）忽略带有敏感信息的配置文件，如：存放口令的配置文件  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://git-scm.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git官方网站&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://try.github.io/levels/1/challenges/1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git在线练习&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.git-tower.com/blog/assets/2013-05-22-git-cheat-sheet/cheat-sheet-large01.png&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git Cheat Sheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;参考：&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;廖雪峰的Git教程&lt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Android的常见问题汇总</title>
+    <link href="http://yoursite.com/2016/05/24/Android%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
+    <id>http://yoursite.com/2016/05/24/Android的常见问题汇总/</id>
+    <published>2016-05-24T03:08:55.000Z</published>
+    <updated>2016-05-24T05:33:34.592Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;1-ActionBar&quot;&gt;&lt;a href=&quot;#1-ActionBar&quot; class=&quot;headerlink&quot; title=&quot;1. ActionBar&quot;&gt;&lt;/a&gt;1. ActionBar&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;参考 &lt;a href=&quot;http://blog.csdn.net/guolin_blog/article/details/18234477&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;郭霖的博客&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;显示Up按钮&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第一步：在onCreate方法中增加 &lt;code&gt;getActionBar().setDisplayHomeAsUpEnabled(true)&lt;/code&gt;，针对appcompat v7需采用&lt;code&gt;getSupportActionBar()&lt;/code&gt;，否则会报空指针异常&lt;/li&gt;
+&lt;li&gt;第二步：在AndroidMainfest.xml中配置父Activity&lt;ul&gt;
+&lt;li&gt;参考：&lt;a href=&quot;http://developer.android.com/training/implementing-navigation/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Google的Training的实现有效导航&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;针对android 4.1版本以上，在activity的AndroidManifest.xml中增加android:parentActivityName&lt;/li&gt;
+&lt;li&gt;针对Android 4.0或以下版本，在配置中增加&lt;code&gt;&amp;lt;meta-data&amp;gt;&lt;/code&gt;元素&lt;pre&gt;&lt;code&gt;&amp;lt;activity
+    android:name=&amp;quot;.DetailActivity&amp;quot;
+    android:label=&amp;quot;@string/title_activity_detail&amp;quot;
+    android:parentActivityName=&amp;quot;.MainActivity&amp;quot;&amp;gt;
+    &amp;lt;!--android 4.0 及以下 --&amp;gt;
+    &amp;lt;meta-data android:name=&amp;quot;android.support.PARENT_ACTIVITY&amp;quot;
+        android:value=&amp;quot;.MainActivity&amp;quot; /&amp;gt;
+&amp;lt;/activity&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;第三步：对android.R.id.home事件的处理&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;@Override
+public boolean onOptionsItemSelected(MenuItem item) {
+    switch (item.getItemId()) {
+    case android.R.id.home:
+        Intent upIntent = NavUtils.getParentActivityIntent(this);
+        if (NavUtils.shouldUpRecreateTask(this, upIntent)) {
+            TaskStackBuilder.create(this)
+                .addNextIntentWithParentStack(upIntent)
+                .startActivities();
+        } else {
+            upIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            NavUtils.navigateUpTo(this, upIntent);
+        }
+        return true;
+    }
+}
+
+//或者使用NavUtils的导航返回，NavUtils是v4包中的工具包
+case android.R.id.home:
+    NavUtils.navigateUpFromSameTask(this);
+break;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;2-存储卡路径&quot;&gt;&lt;a href=&quot;#2-存储卡路径&quot; class=&quot;headerlink&quot; title=&quot;2. 存储卡路径&quot;&gt;&lt;/a&gt;2. 存储卡路径&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;手机SD卡位置&lt;ul&gt;
+&lt;li&gt;手机必须root，手机的Android版本为4.2.2&lt;/li&gt;
+&lt;li&gt;数据的基本路径：&lt;code&gt;storage/sdcard0/Android/data/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;创建应用的路径：建立app的包名-&amp;gt;files-&amp;gt;图片文件，如：&lt;code&gt;edu.niit.training.newsclientv12/files&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Genymotion模拟器的SD卡位置&lt;ul&gt;
+&lt;li&gt;数据的基本路径：&lt;code&gt;mnt/shell/emulated/0/Android/data&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;创建应用的路径：建立app的包名-&amp;gt;files-&amp;gt;图片文件，如：&lt;code&gt;edu.niit.training.newsclientv12/files&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Android原生模拟器的SD卡位置&lt;ul&gt;
+&lt;li&gt;与手机SD卡的位置相同&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;3-Activity&quot;&gt;&lt;a href=&quot;#3-Activity&quot; class=&quot;headerlink&quot; title=&quot;3. Activity&quot;&gt;&lt;/a&gt;3. Activity&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;launchMode&lt;ul&gt;
+&lt;li&gt;用于Activity跳转：&lt;ul&gt;
+&lt;li&gt;决定是否生成新的Activity实例&lt;/li&gt;
+&lt;li&gt;决定是否重用已存在的Activity实例&lt;/li&gt;
+&lt;li&gt;决定是否和其它Activity实例公用一个task里&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;task的概念：一个栈结构的对象，可以管理多个Activity，启动一个应用，就创建一个与之对应的task&lt;/li&gt;
+&lt;li&gt;有四种launchMode&lt;ul&gt;
+&lt;li&gt;standard&lt;/li&gt;
+&lt;li&gt;singleTop&lt;/li&gt;
+&lt;li&gt;singleTask&lt;/li&gt;
+&lt;li&gt;singleInstance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;配置：在AndroidManifest.xml中配置&lt;activity&gt;的&lt;code&gt;android:launchMode&lt;/code&gt;属性&lt;/activity&gt;&lt;/li&gt;
+&lt;li&gt;standard：默认的启动模式，不管有没有已存在的实例，都生成新的实例&lt;br&gt;  &lt;img src=&quot;http://i.imgur.com/k0xc6Bx.png&quot; alt=&quot;standard启动模式&quot;&gt;&lt;/li&gt;
+&lt;li&gt;singleTop&lt;ul&gt;
+&lt;li&gt;跳转时系统会先在栈结构中寻找是否有一个FirstActivity实例正位于栈顶，如果有则不再生成新的，而是直接使用。&lt;br&gt;&lt;img src=&quot;http://i.imgur.com/0XUZ827.png&quot; alt=&quot;singleTop&quot;&gt;&lt;/li&gt;
+&lt;li&gt;当从SecondActivity跳转到FirstActivity时，系统发现存在有FirstActivity实例,但不是位于栈顶，于是重新生成一个实例。&lt;br&gt;&lt;img src=&quot;http://i.imgur.com/yH5aL3H.png&quot; alt=&quot;singleTop-2&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;singleTask:&lt;ul&gt;
+&lt;li&gt;如果发现有对应的Activity实例，则使此Activity实例之上的其他Activity实例统统出栈，使此Activity实例成为栈顶对象，显示到幕前。&lt;/li&gt;
+&lt;li&gt;&lt;img src=&quot;http://i.imgur.com/Runvgsh.png&quot; alt=&quot;singleTask&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;singleInstance&lt;ul&gt;
+&lt;li&gt;它启用一个新的栈结构，将Acitvity放置于这个新的栈结构中，并保证不再有其他Activity实例进入。&lt;br&gt;&lt;img src=&quot;http://i.imgur.com/HlX6fjw.png&quot; alt=&quot;singleInstance&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/liuhe688/article/details/6754323&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;参考博客&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1-ActionBar&quot;&gt;&lt;a href=&quot;#1-ActionBar&quot; class=&quot;headerlink&quot; title=&quot;1. ActionBar&quot;&gt;&lt;/a&gt;1. ActionBar&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;参考 &lt;a href=&quot;http://blog.cs
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Android Studio常用插件</title>
+    <link href="http://yoursite.com/2016/05/24/Android-Studio%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/"/>
+    <id>http://yoursite.com/2016/05/24/Android-Studio常用插件/</id>
+    <published>2016-05-24T03:01:25.000Z</published>
+    <updated>2016-05-24T05:34:22.563Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;Android-Studio使用&quot;&gt;&lt;a href=&quot;#Android-Studio使用&quot; class=&quot;headerlink&quot; title=&quot;Android Studio使用&quot;&gt;&lt;/a&gt;Android Studio使用&lt;/h1&gt;&lt;h2 id=&quot;1-导入第三方jar包及开源库&quot;&gt;&lt;a href=&quot;#1-导入第三方jar包及开源库&quot; class=&quot;headerlink&quot; title=&quot;1. 导入第三方jar包及开源库&quot;&gt;&lt;/a&gt;1. 导入第三方jar包及开源库&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;###导入本地jar&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;将jar文件拷贝至libs，右键点击jar文件，选择&lt;code&gt;add as a library&lt;/code&gt; 即可导入，在模块的build.gradle的compile会增加&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;compile files(&amp;apos;libs/butterknife-6.1.0.jar&amp;apos;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果builder.gradle中已有&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;compile fileTree(include: [&amp;apos;*.jar&amp;apos;], dir: &amp;apos;libs&amp;apos;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;就不需要再 add 了，Sync 一下 gradle 就可以了。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&quot;添加远程开源库&quot;&gt;&lt;a href=&quot;#添加远程开源库&quot; class=&quot;headerlink&quot; title=&quot;添加远程开源库&quot;&gt;&lt;/a&gt;添加远程开源库&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;p&gt;可以下载开源库，进入模块的build.gradle 文件，添加如下图的内容即可：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/NGSlp7r.png&quot; alt=&quot;import libs&quot;&gt;&lt;/p&gt;
+&lt;p&gt;添加的内容一般会在开源库的readme.md中有说明。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&quot;添加本地开源库&quot;&gt;&lt;a href=&quot;#添加本地开源库&quot; class=&quot;headerlink&quot; title=&quot;添加本地开源库&quot;&gt;&lt;/a&gt;添加本地开源库&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;p&gt;将开源库下载下来，放置在与 app 目录同级的目录下，然后编辑 setting.gradle 文件，加入”:开源库文件夹名”。如：在 app 同级的目录下放置了 volley 的开源库文件夹，然后编辑  setting.gradle，内容改为：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;include &amp;apos;:app&amp;apos;, &amp;quot;:volley&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后再回到你的 app 目录下的 build.gradle 文件，在 dependencies { }节点下加入：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;compile project(&amp;apos;:volley&amp;apos;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;之后就可以在代码中引用那个保存在你本地的开源库（其实叫Module）&lt;/p&gt;
+&lt;h2 id=&quot;2-常用插件&quot;&gt;&lt;a href=&quot;#2-常用插件&quot; class=&quot;headerlink&quot; title=&quot;2. 常用插件&quot;&gt;&lt;/a&gt;2. 常用插件&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://plugins.jetbrains.com/?androidstudio&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;常用插件大全&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Butterknife Zelezny&lt;/li&gt;
+&lt;li&gt;Parcelable Code Generator&lt;/li&gt;
+&lt;li&gt;Prettify  &lt;/li&gt;
+&lt;li&gt;ADB Idea  &lt;/li&gt;
+&lt;li&gt;GsonFormat&lt;/li&gt;
+&lt;li&gt;Android Drawable Importer&lt;/li&gt;
+&lt;li&gt;Android Code Generator&lt;/li&gt;
+&lt;li&gt;Android Material Design Icon Generator&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;Butterknife-Zelezny&quot;&gt;&lt;a href=&quot;#Butterknife-Zelezny&quot; class=&quot;headerlink&quot; title=&quot;Butterknife Zelezny&quot;&gt;&lt;/a&gt;Butterknife Zelezny&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;功能：专注于Android系统的View注入框架&lt;/li&gt;
+&lt;li&gt;下载：&lt;a href=&quot;https://plugins.jetbrains.com/plugin/7369?pr=androidstudio&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Android ButterKnife Zelezny&lt;/a&gt;   &lt;/li&gt;
+&lt;li&gt;安装：Setting -&amp;gt; Preferences -&amp;gt; Plugins -&amp;gt; Browse repositories，查找Butterknife Zelezny，或下载后从磁盘安装    &lt;/li&gt;
+&lt;li&gt;使用：  &lt;ol&gt;
+&lt;li&gt;确保最新的Bufferknife jar文件导入classpath  &lt;/li&gt;
+&lt;li&gt;右键选择代码中的layout引用，然后选择&lt;code&gt;Generate&lt;/code&gt;或直接按下&lt;code&gt;alt+Insert&lt;/code&gt;，再选择&lt;code&gt;Generate ButterKnife Injections&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;在打开的对话框中选择需要注解的组件，也可以给Adapter设置一个ViewHolder&lt;/li&gt;
+&lt;li&gt;点击&lt;code&gt;Confirm&lt;/code&gt;就会生成组件的注解代码&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;特性&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;支持Activity中的View注入&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;class ExampleActivity extends Activity {
+    @InjectView(R.id.title) TextView title;
+    @InjectView(R.id.subtitle) TextView subtitle;
+    @InjectView(R.id.footer) TextView footer;
+
+    @Override public void onCreate(Bundle savedInstanceState) {
+          super.onCreate(savedInstanceState);
+          setContentView(R.layout.simple_activity);
+          ButterKnife.inject(this);
+          // TODO Use &amp;quot;injected&amp;quot; views...
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;支持View中的View注入&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public class FancyFragment extends Fragment {
+    @InjectView(R.id.button1) Button button1;
+    @InjectView(R.id.button2) Button button2;
+
+    @Override
+    View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+      View view = inflater.inflate(R.layout.fancy_fragment, container, false);
+      ButterKnife.inject(this, view);
+      // TODO Use &amp;quot;injected&amp;quot; views...
+
+      return view;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;支持ViewHolder中的注入&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public class MyAdapter extends BaseAdapter {
+  @Override public View getView(int position, View view, ViewGroup parent) {
+    ViewHolder holder;
+    if (view != null) {
+      holder = (ViewHolder) view.getTag();
+    } else {
+      view = inflater.inflate(R.layout.whatever, parent, false);
+      holder = new ViewHolder(view);
+      view.setTag(holder);
+    }
+
+    holder.name.setText(&amp;quot;John Doe&amp;quot;);
+    // etc...
+
+    return convertView;
+  }
+
+  static class ViewHolder {
+    @InjectView(R.id.title) TextView name;
+    @InjectView(R.id.job_title) TextView jobTitle;
+
+    public ViewHolder(View view) {
+      ButterKnife.inject(this, view);
+    }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;支持View事件回调函数注入&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;View: @OnLongClick and @OnFocusChanged  
+TextView: @OnEditorAction  
+AdapterView: @OnItemClick and @OnItemLongClick  
+CompoundButton: @OnCheckedChanged  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;  示例代码：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;// 带有 Button 参数
+@OnClick(R.id.submit)
+public void sayHi(Button button) {
+  button.setText(&amp;quot;Hello!&amp;quot;);
+}
+
+// 不带参数
+@OnClick(R.id.submit)
+public void submit() {
+  // TODO submit data to server...
+}
+
+// 同时注入多个 View 事件
+@OnClick({ R.id.door1, R.id.door2, R.id.door3 })
+public void pickDoor(DoorView door) {
+  if (door.hasPrizeBehind()) {
+    Toast.makeText(this, &amp;quot;You win!&amp;quot;, LENGTH_SHORT).show();
+  } else {
+    Toast.makeText(this, &amp;quot;Try again&amp;quot;, LENGTH_SHORT).show();
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;使用截图：&lt;br&gt;&lt;img alt=&quot;Screenshot #14384&quot; onclick=&quot;showImage(&#39;http:\/\/plugins.jetbrains.com\/files\/7369\/screenshot_14384.png&#39;)&quot; src=&quot;http://plugins.jetbrains.com/files/7369/screenshot_14384.png&quot; border=&quot;0&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;Parcelable-Code-Generator&quot;&gt;&lt;a href=&quot;#Parcelable-Code-Generator&quot; class=&quot;headerlink&quot; title=&quot;Parcelable Code Generator&quot;&gt;&lt;/a&gt;Parcelable Code Generator&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;功能：Parcelable接口是Android特有的序列化方法，效率比Serializable接口高，还可以用在IPC中，但是实现稍微复杂一些。该插件可以帮助实现Parcelable接口所需的字段和方法的代码&lt;/li&gt;
+&lt;li&gt;下载：&lt;a href=&quot;https://plugins.jetbrains.com/plugin/7332?pr=androidstudio&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Parcelable Code Generator&lt;/a&gt;   &lt;/li&gt;
+&lt;li&gt;安装：Setting -&amp;gt; Preferences -&amp;gt; Plugins -&amp;gt; Browse repositories，查找Parcelable Code Generator，或下载后从磁盘安装  &lt;/li&gt;
+&lt;li&gt;使用：  &lt;ol&gt;
+&lt;li&gt;新建一个实体类，定义好属性&lt;/li&gt;
+&lt;li&gt;右键选择&lt;code&gt;Generator&lt;/code&gt;或直接按下&lt;code&gt;Alt+Insert&lt;/code&gt;，选择&lt;code&gt;Parcelable&lt;/code&gt;，选择需要的属性，点击&lt;code&gt;OK&lt;/code&gt;，即可生成相应的代码。&lt;/li&gt;
+&lt;li&gt;截图&lt;br&gt;&lt;img src=&quot;http://i.imgur.com/wubt1wW.png&quot; alt=&quot;Parcelable Code Generator&quot;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;Prettify&quot;&gt;&lt;a href=&quot;#Prettify&quot; class=&quot;headerlink&quot; title=&quot;Prettify&quot;&gt;&lt;/a&gt;Prettify&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;功能：从布局文件中生成对View的声明（不使用注解）&lt;/li&gt;
+&lt;li&gt;下载：&lt;a href=&quot;https://plugins.jetbrains.com/plugin/7405?pr=androidstudio&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Android Studio Prettify&lt;/a&gt;   &lt;/li&gt;
+&lt;li&gt;安装：Setting -&amp;gt; Preferences -&amp;gt; Plugins -&amp;gt; Browse repositories，查找Prettify，或下载后从磁盘安装  &lt;/li&gt;
+&lt;li&gt;特性：&lt;ol&gt;
+&lt;li&gt;inflate activity的setContentView的view变量的生成&lt;/li&gt;
+&lt;li&gt;在上下文菜单中加入&lt;code&gt;Extract String resource&lt;/code&gt;快捷键&lt;/li&gt;
+&lt;li&gt;view的cast检查的注解&lt;/li&gt;
+&lt;li&gt;views的field和method的变量生成&lt;/li&gt;
+&lt;li&gt;内部类的相关layout的文件&lt;/li&gt;
+&lt;li&gt;xml文件中的layout的id的查找&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;使用截图  &lt;/p&gt;
+&lt;p&gt;  &lt;img alt=&quot;Screenshot #14418&quot; onclick=&quot;showImage(&#39;http:\/\/plugins.jetbrains.com\/files\/7405\/screenshot_14418.png&#39;)&quot; src=&quot;http://plugins.jetbrains.com/files/7405/screenshot_14418.png&quot; border=&quot;0&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;ADB-Idea&quot;&gt;&lt;a href=&quot;#ADB-Idea&quot; class=&quot;headerlink&quot; title=&quot;ADB Idea&quot;&gt;&lt;/a&gt;ADB Idea&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;功能：此插件可以轻松完成以下操作，而不用手动输入ADB命令&lt;ul&gt;
+&lt;li&gt;卸载应用&lt;/li&gt;
+&lt;li&gt;杀死应用进程&lt;/li&gt;
+&lt;li&gt;启动应用&lt;/li&gt;
+&lt;li&gt;重启应用&lt;/li&gt;
+&lt;li&gt;清除应用数据&lt;/li&gt;
+&lt;li&gt;清除应用数据并重启应用  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;下载：&lt;a href=&quot;http://plugins.jetbrains.com/plugin/7380?pr=idea&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ADB Idea&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;安装：Setting -&amp;gt; Preferences -&amp;gt; Plugins -&amp;gt; Browse repositories，查找ADB Idea，或下载后从磁盘安装  &lt;/li&gt;
+&lt;li&gt;使用：在Tools -&amp;gt; Android -&amp;gt; ADB Idea中选择相应的菜单项进行操作。&lt;br&gt;&lt;img src=&quot;http://i.imgur.com/iMd4DTU.png&quot; alt=&quot;ADB Idea&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;GsonFormat&quot;&gt;&lt;a href=&quot;#GsonFormat&quot; class=&quot;headerlink&quot; title=&quot;GsonFormat&quot;&gt;&lt;/a&gt;GsonFormat&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;功能：根据JSONObject格式的字符串,自动生成实体类参数&lt;/li&gt;
+&lt;li&gt;安装：Setting -&amp;gt; Preferences -&amp;gt; Plugins -&amp;gt; Browse repositories，查找Gson，或下载后从磁盘安装  &lt;/li&gt;
+&lt;li&gt;使用：在实体类中使用Generate的快捷键，参考&lt;a href=&quot;https://github.com/zzz40500/GsonFormat&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;JSon实体类快速生成插件 GsonFormat使用&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;使用截图&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;简单的实体类&lt;/p&gt;
+&lt;p&gt;  &lt;img src=&quot;https://camo.githubusercontent.com/fbf4b89e2ec64e80d351f725d11762ebd2b7a515/687474703a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f3136363836362d303766333038346262363735386566612e676966&quot; alt=&quot;简单的.gif&quot; data-canonical-src=&quot;http://upload-images.jianshu.io/upload_images/166866-07f3084bb6758efa.gif&quot; style=&quot;max-width:100%;&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;复杂的实体类&lt;/p&gt;
+&lt;p&gt;  &lt;img src=&quot;https://camo.githubusercontent.com/906f202f3172526a554e91825b85b53a9e02bdd4/687474703a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f3136363836362d333863316639396336643039373336372e676966&quot; alt=&quot;复杂.gif&quot; data-canonical-src=&quot;http://upload-images.jianshu.io/upload_images/166866-38c1f99c6d097367.gif&quot; style=&quot;max-width:100%;&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;Android-Drawable-Importer&quot;&gt;&lt;a href=&quot;#Android-Drawable-Importer&quot; class=&quot;headerlink&quot; title=&quot;Android Drawable Importer&quot;&gt;&lt;/a&gt;Android Drawable Importer&lt;/h3&gt;&lt;h3 id=&quot;Android-Material-Design-Icon-Generator&quot;&gt;&lt;a href=&quot;#Android-Material-Design-Icon-Generator&quot; class=&quot;headerlink&quot; title=&quot;Android Material Design Icon Generator&quot;&gt;&lt;/a&gt;Android Material Design Icon Generator&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;下载：&lt;a href=&quot;https://github.com/konifar/android-material-design-icon-generator-plugin&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ADB Idea&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;3-Gradle使用&quot;&gt;&lt;a href=&quot;#3-Gradle使用&quot; class=&quot;headerlink&quot; title=&quot;3. Gradle使用&quot;&gt;&lt;/a&gt;3. Gradle使用&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://shanksleo.gitbooks.io/cookbook/content/gradle/gradle.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://shanksleo.gitbooks.io/cookbook/content/gradle/gradle.html&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Android-Studio使用&quot;&gt;&lt;a href=&quot;#Android-Studio使用&quot; class=&quot;headerlink&quot; title=&quot;Android Studio使用&quot;&gt;&lt;/a&gt;Android Studio使用&lt;/h1&gt;&lt;h2 id=&quot;1-导入第三方ja
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2016/05/24/hello-world/"/>
+    <id>http://yoursite.com/2016/05/24/hello-world/</id>
+    <published>2016-05-24T01:29:52.649Z</published>
+    <updated>2016-05-24T02:15:55.345Z</updated>
+    
+    <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Generate-static-files&quot;&gt;&lt;a href=&quot;#Generate-static-files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Deploy-to-remote-sites&quot;&gt;&lt;a href=&quot;#Deploy-to-remote-sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>

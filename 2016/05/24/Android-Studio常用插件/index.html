@@ -30,7 +30,7 @@ compi">
 <meta property="og:image" content="http://i.imgur.com/iMd4DTU.png">
 <meta property="og:image" content="https://camo.githubusercontent.com/fbf4b89e2ec64e80d351f725d11762ebd2b7a515/687474703a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f3136363836362d303766333038346262363735386566612e676966">
 <meta property="og:image" content="https://camo.githubusercontent.com/906f202f3172526a554e91825b85b53a9e02bdd4/687474703a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f3136363836362d333863316639396336643039373336372e676966">
-<meta property="og:updated_time" content="2016-05-24T03:02:05.495Z">
+<meta property="og:updated_time" content="2016-05-24T05:34:22.563Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android Studio常用插件">
 <meta name="twitter:description" content="Android Studio使用1. 导入第三方jar包及开源库
@@ -78,9 +78,9 @@ compi">
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -120,21 +120,18 @@ compi">
 <pre><code>compile fileTree(include: [&apos;*.jar&apos;], dir: &apos;libs&apos;)
 </code></pre><p>就不需要再 add 了，Sync 一下 gradle 就可以了。</p>
 <blockquote>
-<p>###添加远程开源库</p>
-</blockquote>
+<h3 id="添加远程开源库"><a href="#添加远程开源库" class="headerlink" title="添加远程开源库"></a>添加远程开源库</h3></blockquote>
 <p>可以下载开源库，进入模块的build.gradle 文件，添加如下图的内容即可：</p>
 <p><img src="http://i.imgur.com/NGSlp7r.png" alt="import libs"></p>
 <p>添加的内容一般会在开源库的readme.md中有说明。</p>
 <blockquote>
-<p>###添加本地开源库</p>
-</blockquote>
+<h3 id="添加本地开源库"><a href="#添加本地开源库" class="headerlink" title="添加本地开源库"></a>添加本地开源库</h3></blockquote>
 <p>将开源库下载下来，放置在与 app 目录同级的目录下，然后编辑 setting.gradle 文件，加入”:开源库文件夹名”。如：在 app 同级的目录下放置了 volley 的开源库文件夹，然后编辑  setting.gradle，内容改为：</p>
 <pre><code>include &apos;:app&apos;, &quot;:volley&quot;
 </code></pre><p>然后再回到你的 app 目录下的 build.gradle 文件，在 dependencies { }节点下加入：</p>
 <pre><code>compile project(&apos;:volley&apos;)
 </code></pre><p>之后就可以在代码中引用那个保存在你本地的开源库（其实叫Module）</p>
-<p>##2. 常用插件</p>
-<p><a href="https://plugins.jetbrains.com/?androidstudio" target="_blank" rel="external">常用插件大全</a></p>
+<h2 id="2-常用插件"><a href="#2-常用插件" class="headerlink" title="2. 常用插件"></a>2. 常用插件</h2><p><a href="https://plugins.jetbrains.com/?androidstudio" target="_blank" rel="external">常用插件大全</a></p>
 <blockquote>
 <ul>
 <li>Butterknife Zelezny</li>
@@ -147,8 +144,7 @@ compi">
 <li>Android Material Design Icon Generator</li>
 </ul>
 </blockquote>
-<p>###Butterknife Zelezny  </p>
-<ul>
+<h3 id="Butterknife-Zelezny"><a href="#Butterknife-Zelezny" class="headerlink" title="Butterknife Zelezny"></a>Butterknife Zelezny</h3><ul>
 <li>功能：专注于Android系统的View注入框架</li>
 <li>下载：<a href="https://plugins.jetbrains.com/plugin/7369?pr=androidstudio" target="_blank" rel="external">Android ButterKnife Zelezny</a>   </li>
 <li>安装：Setting -&gt; Preferences -&gt; Plugins -&gt; Browse repositories，查找Butterknife Zelezny，或下载后从磁盘安装    </li>
@@ -252,8 +248,7 @@ public void pickDoor(DoorView door) {
 </ul>
 </li>
 </ul>
-<p>###Parcelable Code Generator</p>
-<ul>
+<h3 id="Parcelable-Code-Generator"><a href="#Parcelable-Code-Generator" class="headerlink" title="Parcelable Code Generator"></a>Parcelable Code Generator</h3><ul>
 <li>功能：Parcelable接口是Android特有的序列化方法，效率比Serializable接口高，还可以用在IPC中，但是实现稍微复杂一些。该插件可以帮助实现Parcelable接口所需的字段和方法的代码</li>
 <li>下载：<a href="https://plugins.jetbrains.com/plugin/7332?pr=androidstudio" target="_blank" rel="external">Parcelable Code Generator</a>   </li>
 <li>安装：Setting -&gt; Preferences -&gt; Plugins -&gt; Browse repositories，查找Parcelable Code Generator，或下载后从磁盘安装  </li>
@@ -264,8 +259,7 @@ public void pickDoor(DoorView door) {
 </ol>
 </li>
 </ul>
-<p>###Prettify</p>
-<ul>
+<h3 id="Prettify"><a href="#Prettify" class="headerlink" title="Prettify"></a>Prettify</h3><ul>
 <li>功能：从布局文件中生成对View的声明（不使用注解）</li>
 <li>下载：<a href="https://plugins.jetbrains.com/plugin/7405?pr=androidstudio" target="_blank" rel="external">Android Studio Prettify</a>   </li>
 <li>安装：Setting -&gt; Preferences -&gt; Plugins -&gt; Browse repositories，查找Prettify，或下载后从磁盘安装  </li>
@@ -282,8 +276,7 @@ public void pickDoor(DoorView door) {
 <p>  <img alt="Screenshot #14418" onclick="showImage('http:\/\/plugins.jetbrains.com\/files\/7405\/screenshot_14418.png')" src="http://plugins.jetbrains.com/files/7405/screenshot_14418.png" border="0"></p>
 </li>
 </ul>
-<p>###ADB Idea</p>
-<ul>
+<h3 id="ADB-Idea"><a href="#ADB-Idea" class="headerlink" title="ADB Idea"></a>ADB Idea</h3><ul>
 <li>功能：此插件可以轻松完成以下操作，而不用手动输入ADB命令<ul>
 <li>卸载应用</li>
 <li>杀死应用进程</li>
@@ -297,8 +290,7 @@ public void pickDoor(DoorView door) {
 <li>安装：Setting -&gt; Preferences -&gt; Plugins -&gt; Browse repositories，查找ADB Idea，或下载后从磁盘安装  </li>
 <li>使用：在Tools -&gt; Android -&gt; ADB Idea中选择相应的菜单项进行操作。<br><img src="http://i.imgur.com/iMd4DTU.png" alt="ADB Idea"></li>
 </ul>
-<p>###GsonFormat</p>
-<ul>
+<h3 id="GsonFormat"><a href="#GsonFormat" class="headerlink" title="GsonFormat"></a>GsonFormat</h3><ul>
 <li>功能：根据JSONObject格式的字符串,自动生成实体类参数</li>
 <li>安装：Setting -&gt; Preferences -&gt; Plugins -&gt; Browse repositories，查找Gson，或下载后从磁盘安装  </li>
 <li>使用：在实体类中使用Generate的快捷键，参考<a href="https://github.com/zzz40500/GsonFormat" target="_blank" rel="external">JSon实体类快速生成插件 GsonFormat使用</a></li>
@@ -313,18 +305,15 @@ public void pickDoor(DoorView door) {
 </ul>
 </li>
 </ul>
-<p>###Android Drawable Importer</p>
-<p>###Android Material Design Icon Generator</p>
-<ul>
+<h3 id="Android-Drawable-Importer"><a href="#Android-Drawable-Importer" class="headerlink" title="Android Drawable Importer"></a>Android Drawable Importer</h3><h3 id="Android-Material-Design-Icon-Generator"><a href="#Android-Material-Design-Icon-Generator" class="headerlink" title="Android Material Design Icon Generator"></a>Android Material Design Icon Generator</h3><ul>
 <li>下载：<a href="https://github.com/konifar/android-material-design-icon-generator-plugin" target="_blank" rel="external">ADB Idea</a></li>
 </ul>
-<p>##3. Gradle使用  </p>
-<p><a href="http://shanksleo.gitbooks.io/cookbook/content/gradle/gradle.html" target="_blank" rel="external">http://shanksleo.gitbooks.io/cookbook/content/gradle/gradle.html</a></p>
+<h2 id="3-Gradle使用"><a href="#3-Gradle使用" class="headerlink" title="3. Gradle使用"></a>3. Gradle使用</h2><p><a href="http://shanksleo.gitbooks.io/cookbook/content/gradle/gradle.html" target="_blank" rel="external">http://shanksleo.gitbooks.io/cookbook/content/gradle/gradle.html</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/05/24/Android-Studio常用插件/" data-id="ciokv2p8s0000hgjcfbdxdfkq" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/05/24/Android-Studio常用插件/" data-id="ciol0c9ly000080jcqnbmrve1" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -334,7 +323,7 @@ public void pickDoor(DoorView door) {
 <nav id="article-nav">
   
     <a href="/2016/05/24/Android的常见问题汇总/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
+      <strong class="article-nav-caption">Récent</strong>
       <div class="article-nav-title">
         
           Android的常见问题汇总
@@ -344,7 +333,7 @@ public void pickDoor(DoorView door) {
   
   
     <a href="/2016/05/24/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
+      <strong class="article-nav-caption">Ancien</strong>
       <div class="article-nav-title">Hello World</div>
     </a>
   
@@ -377,7 +366,7 @@ public void pickDoor(DoorView door) {
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
@@ -410,7 +399,7 @@ public void pickDoor(DoorView door) {
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2016 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
