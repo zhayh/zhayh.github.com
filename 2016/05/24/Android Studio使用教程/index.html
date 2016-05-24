@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Android Studio使用1. 导入第三方jar包及开源库
+###导入本地jar
+
+将jar文件拷贝至libs，右键点击jar文件，选择add as a library 即可导入，在模块的build.gradle的compile会增加
+compile files(&amp;apos;libs/butterknife-6.1.0.jar&amp;apos;)
+如果builder.gradle中已有
+compi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2016/05/24/Android Studio使用教程/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Android Studio使用1. 导入第三方jar包及开源库
+###导入本地jar
+
+将jar文件拷贝至libs，右键点击jar文件，选择add as a library 即可导入，在模块的build.gradle的compile会增加
+compile files(&amp;apos;libs/butterknife-6.1.0.jar&amp;apos;)
+如果builder.gradle中已有
+compi">
+<meta property="og:image" content="http://i.imgur.com/NGSlp7r.png">
+<meta property="og:image" content="http://plugins.jetbrains.com/files/7369/screenshot_14384.png">
+<meta property="og:image" content="http://i.imgur.com/wubt1wW.png">
+<meta property="og:image" content="http://plugins.jetbrains.com/files/7405/screenshot_14418.png">
+<meta property="og:image" content="http://i.imgur.com/iMd4DTU.png">
+<meta property="og:image" content="https://camo.githubusercontent.com/fbf4b89e2ec64e80d351f725d11762ebd2b7a515/687474703a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f3136363836362d303766333038346262363735386566612e676966">
+<meta property="og:image" content="https://camo.githubusercontent.com/906f202f3172526a554e91825b85b53a9e02bdd4/687474703a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f3136363836362d333863316639396336643039373336372e676966">
+<meta property="og:updated_time" content="2016-04-23T06:23:19.941Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="Android Studio使用1. 导入第三方jar包及开源库
+###导入本地jar
+
+将jar文件拷贝至libs，右键点击jar文件，选择add as a library 即可导入，在模块的build.gradle的compile会增加
+compile files(&amp;apos;libs/butterknife-6.1.0.jar&amp;apos;)
+如果builder.gradle中已有
+compi">
+<meta name="twitter:image" content="http://i.imgur.com/NGSlp7r.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Android Studio使用教程" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/05/24/Android Studio使用教程/" class="article-date">
+  <time datetime="2016-05-24T02:52:01.505Z" itemprop="datePublished">2016-05-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Android-Studio使用"><a href="#Android-Studio使用" class="headerlink" title="Android Studio使用"></a>Android Studio使用</h1><h2 id="1-导入第三方jar包及开源库"><a href="#1-导入第三方jar包及开源库" class="headerlink" title="1. 导入第三方jar包及开源库"></a>1. 导入第三方jar包及开源库</h2><blockquote>
+<p>###导入本地jar</p>
+</blockquote>
+<p>将jar文件拷贝至libs，右键点击jar文件，选择<code>add as a library</code> 即可导入，在模块的build.gradle的compile会增加</p>
+<pre><code>compile files(&apos;libs/butterknife-6.1.0.jar&apos;)
+</code></pre><p>如果builder.gradle中已有</p>
+<pre><code>compile fileTree(include: [&apos;*.jar&apos;], dir: &apos;libs&apos;)
+</code></pre><p>就不需要再 add 了，Sync 一下 gradle 就可以了。</p>
+<blockquote>
+<p>###添加远程开源库</p>
+</blockquote>
+<p>可以下载开源库，进入模块的build.gradle 文件，添加如下图的内容即可：</p>
+<p><img src="http://i.imgur.com/NGSlp7r.png" alt="import libs"></p>
+<p>添加的内容一般会在开源库的readme.md中有说明。</p>
+<blockquote>
+<p>###添加本地开源库</p>
+</blockquote>
+<p>将开源库下载下来，放置在与 app 目录同级的目录下，然后编辑 setting.gradle 文件，加入”:开源库文件夹名”。如：在 app 同级的目录下放置了 volley 的开源库文件夹，然后编辑  setting.gradle，内容改为：</p>
+<pre><code>include &apos;:app&apos;, &quot;:volley&quot;
+</code></pre><p>然后再回到你的 app 目录下的 build.gradle 文件，在 dependencies { }节点下加入：</p>
+<pre><code>compile project(&apos;:volley&apos;)
+</code></pre><p>之后就可以在代码中引用那个保存在你本地的开源库（其实叫Module）</p>
+<p>##2. 常用插件</p>
+<p><a href="https://plugins.jetbrains.com/?androidstudio" target="_blank" rel="external">常用插件大全</a></p>
+<blockquote>
+<ul>
+<li>Butterknife Zelezny</li>
+<li>Parcelable Code Generator</li>
+<li>Prettify  </li>
+<li>ADB Idea  </li>
+<li>GsonFormat</li>
+<li>Android Drawable Importer</li>
+<li>Android Code Generator</li>
+<li>Android Material Design Icon Generator</li>
+</ul>
+</blockquote>
+<p>###Butterknife Zelezny  </p>
+<ul>
+<li>功能：专注于Android系统的View注入框架</li>
+<li>下载：<a href="https://plugins.jetbrains.com/plugin/7369?pr=androidstudio" target="_blank" rel="external">Android ButterKnife Zelezny</a>   </li>
+<li>安装：Setting -&gt; Preferences -&gt; Plugins -&gt; Browse repositories，查找Butterknife Zelezny，或下载后从磁盘安装    </li>
+<li>使用：  <ol>
+<li>确保最新的Bufferknife jar文件导入classpath  </li>
+<li>右键选择代码中的layout引用，然后选择<code>Generate</code>或直接按下<code>alt+Insert</code>，再选择<code>Generate ButterKnife Injections</code></li>
+<li>在打开的对话框中选择需要注解的组件，也可以给Adapter设置一个ViewHolder</li>
+<li>点击<code>Confirm</code>就会生成组件的注解代码</li>
+</ol>
+</li>
+<li><p>特性</p>
+<ul>
+<li><p>支持Activity中的View注入</p>
+<pre><code>class ExampleActivity extends Activity {
+    @InjectView(R.id.title) TextView title;
+    @InjectView(R.id.subtitle) TextView subtitle;
+    @InjectView(R.id.footer) TextView footer;
+
+    @Override public void onCreate(Bundle savedInstanceState) {
+          super.onCreate(savedInstanceState);
+          setContentView(R.layout.simple_activity);
+          ButterKnife.inject(this);
+          // TODO Use &quot;injected&quot; views...
+    }
+}
+</code></pre></li>
+<li><p>支持View中的View注入</p>
+<pre><code>public class FancyFragment extends Fragment {
+    @InjectView(R.id.button1) Button button1;
+    @InjectView(R.id.button2) Button button2;
+
+    @Override
+    View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+      View view = inflater.inflate(R.layout.fancy_fragment, container, false);
+      ButterKnife.inject(this, view);
+      // TODO Use &quot;injected&quot; views...
+
+      return view;
+    }
+}
+</code></pre></li>
+<li><p>支持ViewHolder中的注入</p>
+<pre><code>public class MyAdapter extends BaseAdapter {
+  @Override public View getView(int position, View view, ViewGroup parent) {
+    ViewHolder holder;
+    if (view != null) {
+      holder = (ViewHolder) view.getTag();
+    } else {
+      view = inflater.inflate(R.layout.whatever, parent, false);
+      holder = new ViewHolder(view);
+      view.setTag(holder);
+    }
+
+    holder.name.setText(&quot;John Doe&quot;);
+    // etc...
+
+    return convertView;
+  }
+
+  static class ViewHolder {
+    @InjectView(R.id.title) TextView name;
+    @InjectView(R.id.job_title) TextView jobTitle;
+
+    public ViewHolder(View view) {
+      ButterKnife.inject(this, view);
+    }
+  }
+}
+</code></pre></li>
+<li><p>支持View事件回调函数注入</p>
+<pre><code>View: @OnLongClick and @OnFocusChanged  
+TextView: @OnEditorAction  
+AdapterView: @OnItemClick and @OnItemLongClick  
+CompoundButton: @OnCheckedChanged  
+</code></pre><p>  示例代码：</p>
+<pre><code>// 带有 Button 参数
+@OnClick(R.id.submit)
+public void sayHi(Button button) {
+  button.setText(&quot;Hello!&quot;);
+}
+
+// 不带参数
+@OnClick(R.id.submit)
+public void submit() {
+  // TODO submit data to server...
+}
+
+// 同时注入多个 View 事件
+@OnClick({ R.id.door1, R.id.door2, R.id.door3 })
+public void pickDoor(DoorView door) {
+  if (door.hasPrizeBehind()) {
+    Toast.makeText(this, &quot;You win!&quot;, LENGTH_SHORT).show();
+  } else {
+    Toast.makeText(this, &quot;Try again&quot;, LENGTH_SHORT).show();
+  }
+}
+</code></pre><ul>
+<li>使用截图：<br><img alt="Screenshot #14384" onclick="showImage('http:\/\/plugins.jetbrains.com\/files\/7369\/screenshot_14384.png')" src="http://plugins.jetbrains.com/files/7369/screenshot_14384.png" border="0"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>###Parcelable Code Generator</p>
+<ul>
+<li>功能：Parcelable接口是Android特有的序列化方法，效率比Serializable接口高，还可以用在IPC中，但是实现稍微复杂一些。该插件可以帮助实现Parcelable接口所需的字段和方法的代码</li>
+<li>下载：<a href="https://plugins.jetbrains.com/plugin/7332?pr=androidstudio" target="_blank" rel="external">Parcelable Code Generator</a>   </li>
+<li>安装：Setting -&gt; Preferences -&gt; Plugins -&gt; Browse repositories，查找Parcelable Code Generator，或下载后从磁盘安装  </li>
+<li>使用：  <ol>
+<li>新建一个实体类，定义好属性</li>
+<li>右键选择<code>Generator</code>或直接按下<code>Alt+Insert</code>，选择<code>Parcelable</code>，选择需要的属性，点击<code>OK</code>，即可生成相应的代码。</li>
+<li>截图<br><img src="http://i.imgur.com/wubt1wW.png" alt="Parcelable Code Generator"></li>
+</ol>
+</li>
+</ul>
+<p>###Prettify</p>
+<ul>
+<li>功能：从布局文件中生成对View的声明（不使用注解）</li>
+<li>下载：<a href="https://plugins.jetbrains.com/plugin/7405?pr=androidstudio" target="_blank" rel="external">Android Studio Prettify</a>   </li>
+<li>安装：Setting -&gt; Preferences -&gt; Plugins -&gt; Browse repositories，查找Prettify，或下载后从磁盘安装  </li>
+<li>特性：<ol>
+<li>inflate activity的setContentView的view变量的生成</li>
+<li>在上下文菜单中加入<code>Extract String resource</code>快捷键</li>
+<li>view的cast检查的注解</li>
+<li>views的field和method的变量生成</li>
+<li>内部类的相关layout的文件</li>
+<li>xml文件中的layout的id的查找</li>
+</ol>
+</li>
+<li><p>使用截图  </p>
+<p>  <img alt="Screenshot #14418" onclick="showImage('http:\/\/plugins.jetbrains.com\/files\/7405\/screenshot_14418.png')" src="http://plugins.jetbrains.com/files/7405/screenshot_14418.png" border="0"></p>
+</li>
+</ul>
+<p>###ADB Idea</p>
+<ul>
+<li>功能：此插件可以轻松完成以下操作，而不用手动输入ADB命令<ul>
+<li>卸载应用</li>
+<li>杀死应用进程</li>
+<li>启动应用</li>
+<li>重启应用</li>
+<li>清除应用数据</li>
+<li>清除应用数据并重启应用  </li>
+</ul>
+</li>
+<li>下载：<a href="http://plugins.jetbrains.com/plugin/7380?pr=idea" target="_blank" rel="external">ADB Idea</a></li>
+<li>安装：Setting -&gt; Preferences -&gt; Plugins -&gt; Browse repositories，查找ADB Idea，或下载后从磁盘安装  </li>
+<li>使用：在Tools -&gt; Android -&gt; ADB Idea中选择相应的菜单项进行操作。<br><img src="http://i.imgur.com/iMd4DTU.png" alt="ADB Idea"></li>
+</ul>
+<p>###GsonFormat</p>
+<ul>
+<li>功能：根据JSONObject格式的字符串,自动生成实体类参数</li>
+<li>安装：Setting -&gt; Preferences -&gt; Plugins -&gt; Browse repositories，查找Gson，或下载后从磁盘安装  </li>
+<li>使用：在实体类中使用Generate的快捷键，参考<a href="https://github.com/zzz40500/GsonFormat" target="_blank" rel="external">JSon实体类快速生成插件 GsonFormat使用</a></li>
+<li><p>使用截图</p>
+<ul>
+<li><p>简单的实体类</p>
+<p>  <img src="https://camo.githubusercontent.com/fbf4b89e2ec64e80d351f725d11762ebd2b7a515/687474703a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f3136363836362d303766333038346262363735386566612e676966" alt="简单的.gif" data-canonical-src="http://upload-images.jianshu.io/upload_images/166866-07f3084bb6758efa.gif" style="max-width:100%;"></p>
+</li>
+<li><p>复杂的实体类</p>
+<p>  <img src="https://camo.githubusercontent.com/906f202f3172526a554e91825b85b53a9e02bdd4/687474703a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f3136363836362d333863316639396336643039373336372e676966" alt="复杂.gif" data-canonical-src="http://upload-images.jianshu.io/upload_images/166866-38c1f99c6d097367.gif" style="max-width:100%;"></p>
+</li>
+</ul>
+</li>
+</ul>
+<p>###Android Drawable Importer</p>
+<p>###Android Material Design Icon Generator</p>
+<ul>
+<li>下载：<a href="https://github.com/konifar/android-material-design-icon-generator-plugin" target="_blank" rel="external">ADB Idea</a></li>
+</ul>
+<p>##3. Gradle使用  </p>
+<p><a href="http://shanksleo.gitbooks.io/cookbook/content/gradle/gradle.html" target="_blank" rel="external">http://shanksleo.gitbooks.io/cookbook/content/gradle/gradle.html</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/05/24/Android Studio使用教程/" data-id="ciokujdfx0003jwjcjrmclevz" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/05/24/Android的常见问题汇总/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/05/24/Git初学笔记/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/05/24/Android的常见问题汇总/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/24/Android Studio使用教程/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/24/Git初学笔记/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/24/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

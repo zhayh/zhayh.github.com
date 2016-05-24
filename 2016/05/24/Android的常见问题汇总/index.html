@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="#常见问题
+###1. ActionBar
+
+参考 郭霖的博客
+显示Up按钮
+
+第一步：在onCreate方法中增加 getActionBar().setDisplayHomeAsUpEnabled(true)，针对appcompat v7需采用getSupportActionBar()，否则会报空指针异常
+第二步：在AndroidMainfest.xml中配置父Activity
+参考：Googl">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2016/05/24/Android的常见问题汇总/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="#常见问题
+###1. ActionBar
+
+参考 郭霖的博客
+显示Up按钮
+
+第一步：在onCreate方法中增加 getActionBar().setDisplayHomeAsUpEnabled(true)，针对appcompat v7需采用getSupportActionBar()，否则会报空指针异常
+第二步：在AndroidMainfest.xml中配置父Activity
+参考：Googl">
+<meta property="og:image" content="http://i.imgur.com/k0xc6Bx.png">
+<meta property="og:image" content="http://i.imgur.com/0XUZ827.png">
+<meta property="og:image" content="http://i.imgur.com/yH5aL3H.png">
+<meta property="og:image" content="http://i.imgur.com/Runvgsh.png">
+<meta property="og:image" content="http://i.imgur.com/HlX6fjw.png">
+<meta property="og:updated_time" content="2015-07-24T05:47:20.540Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="#常见问题
+###1. ActionBar
+
+参考 郭霖的博客
+显示Up按钮
+
+第一步：在onCreate方法中增加 getActionBar().setDisplayHomeAsUpEnabled(true)，针对appcompat v7需采用getSupportActionBar()，否则会报空指针异常
+第二步：在AndroidMainfest.xml中配置父Activity
+参考：Googl">
+<meta name="twitter:image" content="http://i.imgur.com/k0xc6Bx.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Android的常见问题汇总" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/05/24/Android的常见问题汇总/" class="article-date">
+  <time datetime="2016-05-24T02:52:01.522Z" itemprop="datePublished">2016-05-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#常见问题</p>
+<p>###1. ActionBar</p>
+<ul>
+<li>参考 <a href="http://blog.csdn.net/guolin_blog/article/details/18234477" target="_blank" rel="external">郭霖的博客</a></li>
+<li><p><strong>显示Up按钮</strong></p>
+<ul>
+<li>第一步：在onCreate方法中增加 <code>getActionBar().setDisplayHomeAsUpEnabled(true)</code>，针对appcompat v7需采用<code>getSupportActionBar()</code>，否则会报空指针异常</li>
+<li>第二步：在AndroidMainfest.xml中配置父Activity<ul>
+<li>参考：<a href="http://developer.android.com/training/implementing-navigation/index.html" target="_blank" rel="external">Google的Training的实现有效导航</a></li>
+<li>针对android 4.1版本以上，在activity的AndroidManifest.xml中增加android:parentActivityName</li>
+<li>针对Android 4.0或以下版本，在配置中增加<code>&lt;meta-data&gt;</code>元素<pre><code>&lt;activity
+    android:name=&quot;.DetailActivity&quot;
+    android:label=&quot;@string/title_activity_detail&quot;
+    android:parentActivityName=&quot;.MainActivity&quot;&gt;
+    &lt;!--android 4.0 及以下 --&gt;
+    &lt;meta-data android:name=&quot;android.support.PARENT_ACTIVITY&quot;
+        android:value=&quot;.MainActivity&quot; /&gt;
+&lt;/activity&gt;
+</code></pre></li>
+</ul>
+</li>
+<li><p>第三步：对android.R.id.home事件的处理</p>
+<pre><code>@Override
+public boolean onOptionsItemSelected(MenuItem item) {
+    switch (item.getItemId()) {
+    case android.R.id.home:
+        Intent upIntent = NavUtils.getParentActivityIntent(this);
+        if (NavUtils.shouldUpRecreateTask(this, upIntent)) {
+            TaskStackBuilder.create(this)
+                .addNextIntentWithParentStack(upIntent)
+                .startActivities();
+        } else {
+            upIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            NavUtils.navigateUpTo(this, upIntent);
+        }
+        return true;
+    }
+}
+
+//或者使用NavUtils的导航返回，NavUtils是v4包中的工具包
+case android.R.id.home:
+    NavUtils.navigateUpFromSameTask(this);
+break;
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<p>###2. 存储卡路径</p>
+<ul>
+<li>手机SD卡位置<ul>
+<li>手机必须root，手机的Android版本为4.2.2</li>
+<li>数据的基本路径：<code>storage/sdcard0/Android/data/</code></li>
+<li>创建应用的路径：建立app的包名-&gt;files-&gt;图片文件，如：<code>edu.niit.training.newsclientv12/files</code></li>
+</ul>
+</li>
+<li>Genymotion模拟器的SD卡位置<ul>
+<li>数据的基本路径：<code>mnt/shell/emulated/0/Android/data</code></li>
+<li>创建应用的路径：建立app的包名-&gt;files-&gt;图片文件，如：<code>edu.niit.training.newsclientv12/files</code></li>
+</ul>
+</li>
+<li>Android原生模拟器的SD卡位置<ul>
+<li>与手机SD卡的位置相同</li>
+</ul>
+</li>
+</ul>
+<p>###3. Activity</p>
+<ul>
+<li>launchMode<ul>
+<li>用于Activity跳转：<ul>
+<li>决定是否生成新的Activity实例</li>
+<li>决定是否重用已存在的Activity实例</li>
+<li>决定是否和其它Activity实例公用一个task里</li>
+</ul>
+</li>
+<li>task的概念：一个栈结构的对象，可以管理多个Activity，启动一个应用，就创建一个与之对应的task</li>
+<li>有四种launchMode<ul>
+<li>standard</li>
+<li>singleTop</li>
+<li>singleTask</li>
+<li>singleInstance</li>
+</ul>
+</li>
+<li>配置：在AndroidManifest.xml中配置<activity>的<code>android:launchMode</code>属性</activity></li>
+<li>standard：默认的启动模式，不管有没有已存在的实例，都生成新的实例<br>  <img src="http://i.imgur.com/k0xc6Bx.png" alt="standard启动模式"></li>
+<li>singleTop<ul>
+<li>跳转时系统会先在栈结构中寻找是否有一个FirstActivity实例正位于栈顶，如果有则不再生成新的，而是直接使用。<br><img src="http://i.imgur.com/0XUZ827.png" alt="singleTop"></li>
+<li>当从SecondActivity跳转到FirstActivity时，系统发现存在有FirstActivity实例,但不是位于栈顶，于是重新生成一个实例。<br><img src="http://i.imgur.com/yH5aL3H.png" alt="singleTop-2"></li>
+</ul>
+</li>
+<li>singleTask:<ul>
+<li>如果发现有对应的Activity实例，则使此Activity实例之上的其他Activity实例统统出栈，使此Activity实例成为栈顶对象，显示到幕前。</li>
+<li><img src="http://i.imgur.com/Runvgsh.png" alt="singleTask"></li>
+</ul>
+</li>
+<li>singleInstance<ul>
+<li>它启用一个新的栈结构，将Acitvity放置于这个新的栈结构中，并保证不再有其他Activity实例进入。<br><img src="http://i.imgur.com/HlX6fjw.png" alt="singleInstance"></li>
+</ul>
+</li>
+<li><a href="http://blog.csdn.net/liuhe688/article/details/6754323" target="_blank" rel="external">参考博客</a></li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/05/24/Android的常见问题汇总/" data-id="ciokujdfp0001jwjcd7e1qiia" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/05/24/Android Studio使用教程/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/05/24/Android的常见问题汇总/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/24/Android Studio使用教程/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/24/Git初学笔记/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/24/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
