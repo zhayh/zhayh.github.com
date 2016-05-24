@@ -22,202 +22,202 @@
     <published>2016-05-24T03:18:55.000Z</published>
     <updated>2016-05-24T03:07:18.012Z</updated>
     
-    <content type="html">&lt;p&gt;参考：&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;廖雪峰的Git教程&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;安装Git&quot;&gt;&lt;a href=&quot;#安装Git&quot; class=&quot;headerlink&quot; title=&quot;安装Git&quot;&gt;&lt;/a&gt;安装Git&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;在Linux上安装&lt;br&gt; Ubuntu：sudo apt-get install git  &lt;/li&gt;
-&lt;li&gt;在Windows上安装  &lt;ul&gt;
-&lt;li&gt;安装&lt;a href=&quot;http://msysgit.github.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;msysgit&lt;/a&gt;，按照默认选项安装即可  &lt;/li&gt;
-&lt;li&gt;安装完成之后运行Git Bash，打开命令行窗口  &lt;/li&gt;
+    <content type="html">&lt;p&gt;&amp;#x53C2;&amp;#x8003;&amp;#xFF1A;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&amp;#x5ED6;&amp;#x96EA;&amp;#x5CF0;&amp;#x7684;Git&amp;#x6559;&amp;#x7A0B;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;&amp;#x5B89;&amp;#x88C5;Git&quot;&gt;&lt;a href=&quot;#&amp;#x5B89;&amp;#x88C5;Git&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x5B89;&amp;#x88C5;Git&quot;&gt;&lt;/a&gt;&amp;#x5B89;&amp;#x88C5;Git&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&amp;#x5728;Linux&amp;#x4E0A;&amp;#x5B89;&amp;#x88C5;&lt;br&gt; Ubuntu&amp;#xFF1A;sudo apt-get install git  &lt;/li&gt;
+&lt;li&gt;&amp;#x5728;Windows&amp;#x4E0A;&amp;#x5B89;&amp;#x88C5;  &lt;ul&gt;
+&lt;li&gt;&amp;#x5B89;&amp;#x88C5;&lt;a href=&quot;http://msysgit.github.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;msysgit&lt;/a&gt;&amp;#xFF0C;&amp;#x6309;&amp;#x7167;&amp;#x9ED8;&amp;#x8BA4;&amp;#x9009;&amp;#x9879;&amp;#x5B89;&amp;#x88C5;&amp;#x5373;&amp;#x53EF;  &lt;/li&gt;
+&lt;li&gt;&amp;#x5B89;&amp;#x88C5;&amp;#x5B8C;&amp;#x6210;&amp;#x4E4B;&amp;#x540E;&amp;#x8FD0;&amp;#x884C;Git Bash&amp;#xFF0C;&amp;#x6253;&amp;#x5F00;&amp;#x547D;&amp;#x4EE4;&amp;#x884C;&amp;#x7A97;&amp;#x53E3;  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&quot;基本概念&quot;&gt;&lt;a href=&quot;#基本概念&quot; class=&quot;headerlink&quot; title=&quot;基本概念&quot;&gt;&lt;/a&gt;基本概念&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;工作区：电脑中的目录  &lt;/li&gt;
-&lt;li&gt;版本库：  &lt;ul&gt;
-&lt;li&gt;工作区的隐藏目录.git  &lt;/li&gt;
-&lt;li&gt;其中最重要的是暂存区stage，第一个分支master和指向master的指针HEAD  &lt;/li&gt;
-&lt;li&gt;不在暂存区中的文档是不能被commit到分支的    &lt;/li&gt;
+&lt;h2 id=&quot;&amp;#x57FA;&amp;#x672C;&amp;#x6982;&amp;#x5FF5;&quot;&gt;&lt;a href=&quot;#&amp;#x57FA;&amp;#x672C;&amp;#x6982;&amp;#x5FF5;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x57FA;&amp;#x672C;&amp;#x6982;&amp;#x5FF5;&quot;&gt;&lt;/a&gt;&amp;#x57FA;&amp;#x672C;&amp;#x6982;&amp;#x5FF5;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&amp;#x5DE5;&amp;#x4F5C;&amp;#x533A;&amp;#xFF1A;&amp;#x7535;&amp;#x8111;&amp;#x4E2D;&amp;#x7684;&amp;#x76EE;&amp;#x5F55;  &lt;/li&gt;
+&lt;li&gt;&amp;#x7248;&amp;#x672C;&amp;#x5E93;&amp;#xFF1A;  &lt;ul&gt;
+&lt;li&gt;&amp;#x5DE5;&amp;#x4F5C;&amp;#x533A;&amp;#x7684;&amp;#x9690;&amp;#x85CF;&amp;#x76EE;&amp;#x5F55;.git  &lt;/li&gt;
+&lt;li&gt;&amp;#x5176;&amp;#x4E2D;&amp;#x6700;&amp;#x91CD;&amp;#x8981;&amp;#x7684;&amp;#x662F;&amp;#x6682;&amp;#x5B58;&amp;#x533A;stage&amp;#xFF0C;&amp;#x7B2C;&amp;#x4E00;&amp;#x4E2A;&amp;#x5206;&amp;#x652F;master&amp;#x548C;&amp;#x6307;&amp;#x5411;master&amp;#x7684;&amp;#x6307;&amp;#x9488;HEAD  &lt;/li&gt;
+&lt;li&gt;&amp;#x4E0D;&amp;#x5728;&amp;#x6682;&amp;#x5B58;&amp;#x533A;&amp;#x4E2D;&amp;#x7684;&amp;#x6587;&amp;#x6863;&amp;#x662F;&amp;#x4E0D;&amp;#x80FD;&amp;#x88AB;commit&amp;#x5230;&amp;#x5206;&amp;#x652F;&amp;#x7684;    &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;工作区、暂存区的关系 &lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x5DE5;&amp;#x4F5C;&amp;#x533A;&amp;#x3001;&amp;#x6682;&amp;#x5B58;&amp;#x533A;&amp;#x7684;&amp;#x5173;&amp;#x7CFB; &lt;/p&gt;
 &lt;p&gt;  &lt;img src=&quot;https://zhayh.github.io/images/git/stage.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&quot;配置Git&quot;&gt;&lt;a href=&quot;#配置Git&quot; class=&quot;headerlink&quot; title=&quot;配置Git&quot;&gt;&lt;/a&gt;配置Git&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;git config –global color.ui true  &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;配置别名： &lt;/p&gt;
-&lt;p&gt;   git config –global alias.unstage ‘reset HEAD’&lt;br&gt;   git config –global alias.lg “log –color –graph –pretty=format:’%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&amp;lt;%an&amp;gt;%Creset’ –abbrev-commit”  &lt;/p&gt;
+&lt;h2 id=&quot;&amp;#x914D;&amp;#x7F6E;Git&quot;&gt;&lt;a href=&quot;#&amp;#x914D;&amp;#x7F6E;Git&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x914D;&amp;#x7F6E;Git&quot;&gt;&lt;/a&gt;&amp;#x914D;&amp;#x7F6E;Git&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;git config &amp;#x2013;global color.ui true  &lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x914D;&amp;#x7F6E;&amp;#x522B;&amp;#x540D;&amp;#xFF1A; &lt;/p&gt;
+&lt;p&gt;   git config &amp;#x2013;global alias.unstage &amp;#x2018;reset HEAD&amp;#x2019;&lt;br&gt;   git config &amp;#x2013;global alias.lg &amp;#x201C;log &amp;#x2013;color &amp;#x2013;graph &amp;#x2013;pretty=format:&amp;#x2019;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&amp;lt;%an&amp;gt;%Creset&amp;#x2019; &amp;#x2013;abbrev-commit&amp;#x201D;  &lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&quot;创建版本库&quot;&gt;&lt;a href=&quot;#创建版本库&quot; class=&quot;headerlink&quot; title=&quot;创建版本库&quot;&gt;&lt;/a&gt;创建版本库&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;初始化Git仓库&lt;/p&gt;
+&lt;h2 id=&quot;&amp;#x521B;&amp;#x5EFA;&amp;#x7248;&amp;#x672C;&amp;#x5E93;&quot;&gt;&lt;a href=&quot;#&amp;#x521B;&amp;#x5EFA;&amp;#x7248;&amp;#x672C;&amp;#x5E93;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x521B;&amp;#x5EFA;&amp;#x7248;&amp;#x672C;&amp;#x5E93;&quot;&gt;&lt;/a&gt;&amp;#x521B;&amp;#x5EFA;&amp;#x7248;&amp;#x672C;&amp;#x5E93;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x521D;&amp;#x59CB;&amp;#x5316;Git&amp;#x4ED3;&amp;#x5E93;&lt;/p&gt;
 &lt;p&gt;   mkdir LearnGit&lt;br&gt;   cd /F/LearnGit&lt;br&gt;   git init  &lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;添加文件  &lt;/p&gt;
-&lt;p&gt;   git add readme.txt&lt;br&gt;   git commit -m “wrote a readme file”  &lt;/p&gt;
-&lt;p&gt;说明：&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x6DFB;&amp;#x52A0;&amp;#x6587;&amp;#x4EF6;  &lt;/p&gt;
+&lt;p&gt;   git add readme.txt&lt;br&gt;   git commit -m &amp;#x201C;wrote a readme file&amp;#x201D;  &lt;/p&gt;
+&lt;p&gt;&amp;#x8BF4;&amp;#x660E;&amp;#xFF1A;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;创建的文件一定放在Git仓库的目录或子目录下  &lt;ul&gt;
-&lt;li&gt;add将文件添加到暂存区  &lt;/li&gt;
-&lt;li&gt;commit将暂存区的所有内容提交到当前分支  &lt;/li&gt;
-&lt;li&gt;-m后面输入本次提交的说明  &lt;/li&gt;
+&lt;li&gt;&amp;#x521B;&amp;#x5EFA;&amp;#x7684;&amp;#x6587;&amp;#x4EF6;&amp;#x4E00;&amp;#x5B9A;&amp;#x653E;&amp;#x5728;Git&amp;#x4ED3;&amp;#x5E93;&amp;#x7684;&amp;#x76EE;&amp;#x5F55;&amp;#x6216;&amp;#x5B50;&amp;#x76EE;&amp;#x5F55;&amp;#x4E0B;  &lt;ul&gt;
+&lt;li&gt;add&amp;#x5C06;&amp;#x6587;&amp;#x4EF6;&amp;#x6DFB;&amp;#x52A0;&amp;#x5230;&amp;#x6682;&amp;#x5B58;&amp;#x533A;  &lt;/li&gt;
+&lt;li&gt;commit&amp;#x5C06;&amp;#x6682;&amp;#x5B58;&amp;#x533A;&amp;#x7684;&amp;#x6240;&amp;#x6709;&amp;#x5185;&amp;#x5BB9;&amp;#x63D0;&amp;#x4EA4;&amp;#x5230;&amp;#x5F53;&amp;#x524D;&amp;#x5206;&amp;#x652F;  &lt;/li&gt;
+&lt;li&gt;-m&amp;#x540E;&amp;#x9762;&amp;#x8F93;&amp;#x5165;&amp;#x672C;&amp;#x6B21;&amp;#x63D0;&amp;#x4EA4;&amp;#x7684;&amp;#x8BF4;&amp;#x660E;  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&quot;查看、修改和提交&quot;&gt;&lt;a href=&quot;#查看、修改和提交&quot; class=&quot;headerlink&quot; title=&quot;查看、修改和提交&quot;&gt;&lt;/a&gt;查看、修改和提交&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;查看Git工作区的状态：git status  &lt;/li&gt;
-&lt;li&gt;查看文件的修改内容：git diff readme.txt  &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;提交修改和提交文件的步骤一样，分两步：  &lt;/p&gt;
-&lt;p&gt;   git add readme.txt&lt;br&gt;   git commit -m “add git command”  &lt;/p&gt;
+&lt;h2 id=&quot;&amp;#x67E5;&amp;#x770B;&amp;#x3001;&amp;#x4FEE;&amp;#x6539;&amp;#x548C;&amp;#x63D0;&amp;#x4EA4;&quot;&gt;&lt;a href=&quot;#&amp;#x67E5;&amp;#x770B;&amp;#x3001;&amp;#x4FEE;&amp;#x6539;&amp;#x548C;&amp;#x63D0;&amp;#x4EA4;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x67E5;&amp;#x770B;&amp;#x3001;&amp;#x4FEE;&amp;#x6539;&amp;#x548C;&amp;#x63D0;&amp;#x4EA4;&quot;&gt;&lt;/a&gt;&amp;#x67E5;&amp;#x770B;&amp;#x3001;&amp;#x4FEE;&amp;#x6539;&amp;#x548C;&amp;#x63D0;&amp;#x4EA4;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&amp;#x67E5;&amp;#x770B;Git&amp;#x5DE5;&amp;#x4F5C;&amp;#x533A;&amp;#x7684;&amp;#x72B6;&amp;#x6001;&amp;#xFF1A;git status  &lt;/li&gt;
+&lt;li&gt;&amp;#x67E5;&amp;#x770B;&amp;#x6587;&amp;#x4EF6;&amp;#x7684;&amp;#x4FEE;&amp;#x6539;&amp;#x5185;&amp;#x5BB9;&amp;#xFF1A;git diff readme.txt  &lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x63D0;&amp;#x4EA4;&amp;#x4FEE;&amp;#x6539;&amp;#x548C;&amp;#x63D0;&amp;#x4EA4;&amp;#x6587;&amp;#x4EF6;&amp;#x7684;&amp;#x6B65;&amp;#x9AA4;&amp;#x4E00;&amp;#x6837;&amp;#xFF0C;&amp;#x5206;&amp;#x4E24;&amp;#x6B65;&amp;#xFF1A;  &lt;/p&gt;
+&lt;p&gt;   git add readme.txt&lt;br&gt;   git commit -m &amp;#x201C;add git command&amp;#x201D;  &lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&quot;版本回退&quot;&gt;&lt;a href=&quot;#版本回退&quot; class=&quot;headerlink&quot; title=&quot;版本回退&quot;&gt;&lt;/a&gt;版本回退&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;查看提交历史：git log / git log –pretty=oneline&lt;/li&gt;
-&lt;li&gt;回退上一个版本：git reset –hard HEAD^ &lt;/li&gt;
-&lt;li&gt;查看历史命令：git reflog&lt;/li&gt;
-&lt;li&gt;说明：HEAD指向当前版本&lt;/li&gt;
+&lt;h2 id=&quot;&amp;#x7248;&amp;#x672C;&amp;#x56DE;&amp;#x9000;&quot;&gt;&lt;a href=&quot;#&amp;#x7248;&amp;#x672C;&amp;#x56DE;&amp;#x9000;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x7248;&amp;#x672C;&amp;#x56DE;&amp;#x9000;&quot;&gt;&lt;/a&gt;&amp;#x7248;&amp;#x672C;&amp;#x56DE;&amp;#x9000;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&amp;#x67E5;&amp;#x770B;&amp;#x63D0;&amp;#x4EA4;&amp;#x5386;&amp;#x53F2;&amp;#xFF1A;git log / git log &amp;#x2013;pretty=oneline&lt;/li&gt;
+&lt;li&gt;&amp;#x56DE;&amp;#x9000;&amp;#x4E0A;&amp;#x4E00;&amp;#x4E2A;&amp;#x7248;&amp;#x672C;&amp;#xFF1A;git reset &amp;#x2013;hard HEAD^ &lt;/li&gt;
+&lt;li&gt;&amp;#x67E5;&amp;#x770B;&amp;#x5386;&amp;#x53F2;&amp;#x547D;&amp;#x4EE4;&amp;#xFF1A;git reflog&lt;/li&gt;
+&lt;li&gt;&amp;#x8BF4;&amp;#x660E;&amp;#xFF1A;HEAD&amp;#x6307;&amp;#x5411;&amp;#x5F53;&amp;#x524D;&amp;#x7248;&amp;#x672C;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&quot;撤销修改&quot;&gt;&lt;a href=&quot;#撤销修改&quot; class=&quot;headerlink&quot; title=&quot;撤销修改&quot;&gt;&lt;/a&gt;撤销修改&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;git checkout – readme.txt，撤销该文件在工作区的修改，说明：&lt;ul&gt;
-&lt;li&gt;文件没放到暂存区，撤销修改就回到版本库的状态&lt;/li&gt;
-&lt;li&gt;文件已添加到暂存区后又作了修改，撤销修改就回到添加到暂存区后的状态&lt;/li&gt;
-&lt;li&gt;也就是回到最近一次git commithuo git add状态&lt;/li&gt;
+&lt;h2 id=&quot;&amp;#x64A4;&amp;#x9500;&amp;#x4FEE;&amp;#x6539;&quot;&gt;&lt;a href=&quot;#&amp;#x64A4;&amp;#x9500;&amp;#x4FEE;&amp;#x6539;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x64A4;&amp;#x9500;&amp;#x4FEE;&amp;#x6539;&quot;&gt;&lt;/a&gt;&amp;#x64A4;&amp;#x9500;&amp;#x4FEE;&amp;#x6539;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;git checkout &amp;#x2013; readme.txt&amp;#xFF0C;&amp;#x64A4;&amp;#x9500;&amp;#x8BE5;&amp;#x6587;&amp;#x4EF6;&amp;#x5728;&amp;#x5DE5;&amp;#x4F5C;&amp;#x533A;&amp;#x7684;&amp;#x4FEE;&amp;#x6539;&amp;#xFF0C;&amp;#x8BF4;&amp;#x660E;&amp;#xFF1A;&lt;ul&gt;
+&lt;li&gt;&amp;#x6587;&amp;#x4EF6;&amp;#x6CA1;&amp;#x653E;&amp;#x5230;&amp;#x6682;&amp;#x5B58;&amp;#x533A;&amp;#xFF0C;&amp;#x64A4;&amp;#x9500;&amp;#x4FEE;&amp;#x6539;&amp;#x5C31;&amp;#x56DE;&amp;#x5230;&amp;#x7248;&amp;#x672C;&amp;#x5E93;&amp;#x7684;&amp;#x72B6;&amp;#x6001;&lt;/li&gt;
+&lt;li&gt;&amp;#x6587;&amp;#x4EF6;&amp;#x5DF2;&amp;#x6DFB;&amp;#x52A0;&amp;#x5230;&amp;#x6682;&amp;#x5B58;&amp;#x533A;&amp;#x540E;&amp;#x53C8;&amp;#x4F5C;&amp;#x4E86;&amp;#x4FEE;&amp;#x6539;&amp;#xFF0C;&amp;#x64A4;&amp;#x9500;&amp;#x4FEE;&amp;#x6539;&amp;#x5C31;&amp;#x56DE;&amp;#x5230;&amp;#x6DFB;&amp;#x52A0;&amp;#x5230;&amp;#x6682;&amp;#x5B58;&amp;#x533A;&amp;#x540E;&amp;#x7684;&amp;#x72B6;&amp;#x6001;&lt;/li&gt;
+&lt;li&gt;&amp;#x4E5F;&amp;#x5C31;&amp;#x662F;&amp;#x56DE;&amp;#x5230;&amp;#x6700;&amp;#x8FD1;&amp;#x4E00;&amp;#x6B21;git commithuo git add&amp;#x72B6;&amp;#x6001;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;git reset HEAD readme.txt，撤销暂存区的修改&lt;/li&gt;
-&lt;li&gt;举例说明：&lt;ul&gt;
-&lt;li&gt;场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改，用git checkout – file。&lt;/li&gt;
-&lt;li&gt;场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用git reset HEAD file，就回到了场景1，第二步按场景1操作。&lt;/li&gt;
-&lt;li&gt;场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，需进行版本回退操作，前提是没有推送到远程库。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;删除文件&quot;&gt;&lt;a href=&quot;#删除文件&quot; class=&quot;headerlink&quot; title=&quot;删除文件&quot;&gt;&lt;/a&gt;删除文件&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;从版本库删除&lt;/p&gt;
-&lt;p&gt;   rm readme.txt&lt;br&gt;   git rm readme.txt&lt;br&gt;   git commit -m “remove readme.txt”&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;工作区删除后从版本库恢复，会丢失最近一次提交后修改的内容&lt;/p&gt;
-&lt;p&gt;   git checkout – readme.txt&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;远程仓库&quot;&gt;&lt;a href=&quot;#远程仓库&quot; class=&quot;headerlink&quot; title=&quot;远程仓库&quot;&gt;&lt;/a&gt;远程仓库&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;创建SSH Key：ssh-keygen -t rsa -C “GitHub邮箱地址”&lt;/li&gt;
-&lt;li&gt;登陆GitHub，打开Account Settings -&amp;gt; SSH Keys页面，点击Add SSH Key，将生成的id_rsa.pub的内容拷贝到key内容框&lt;/li&gt;
-&lt;li&gt;需要在每台推送到GitHub的电脑上生成key，并添加到GitHub&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;添加远程库&quot;&gt;&lt;a href=&quot;#添加远程库&quot; class=&quot;headerlink&quot; title=&quot;添加远程库&quot;&gt;&lt;/a&gt;添加远程库&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;登陆GitHub，点击Create a new repo，创建一个新的仓库&lt;/li&gt;
-&lt;li&gt;Repository name填入仓库名称，其他保持默认设置，创建Git仓库&lt;/li&gt;
-&lt;li&gt;将本地仓库推送到GitHub仓库：&lt;ul&gt;
-&lt;li&gt;关联远程库：&lt;code&gt;git remote add origin git@github.com:path/repo-name.git&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;第一次推送：git push -u origin master，-u参数：将本地master分支内容推送到远程新的master分支，并关联本地的master分支和远程的master分支，在以后的推送或拉取时就可以简化命令&lt;/li&gt;
-&lt;li&gt;本地提交后的推送命令：git push origin master&lt;/li&gt;
+&lt;li&gt;git reset HEAD readme.txt&amp;#xFF0C;&amp;#x64A4;&amp;#x9500;&amp;#x6682;&amp;#x5B58;&amp;#x533A;&amp;#x7684;&amp;#x4FEE;&amp;#x6539;&lt;/li&gt;
+&lt;li&gt;&amp;#x4E3E;&amp;#x4F8B;&amp;#x8BF4;&amp;#x660E;&amp;#xFF1A;&lt;ul&gt;
+&lt;li&gt;&amp;#x573A;&amp;#x666F;1&amp;#xFF1A;&amp;#x5F53;&amp;#x4F60;&amp;#x6539;&amp;#x4E71;&amp;#x4E86;&amp;#x5DE5;&amp;#x4F5C;&amp;#x533A;&amp;#x67D0;&amp;#x4E2A;&amp;#x6587;&amp;#x4EF6;&amp;#x7684;&amp;#x5185;&amp;#x5BB9;&amp;#xFF0C;&amp;#x60F3;&amp;#x76F4;&amp;#x63A5;&amp;#x4E22;&amp;#x5F03;&amp;#x5DE5;&amp;#x4F5C;&amp;#x533A;&amp;#x7684;&amp;#x4FEE;&amp;#x6539;&amp;#xFF0C;&amp;#x7528;git checkout &amp;#x2013; file&amp;#x3002;&lt;/li&gt;
+&lt;li&gt;&amp;#x573A;&amp;#x666F;2&amp;#xFF1A;&amp;#x5F53;&amp;#x4F60;&amp;#x4E0D;&amp;#x4F46;&amp;#x6539;&amp;#x4E71;&amp;#x4E86;&amp;#x5DE5;&amp;#x4F5C;&amp;#x533A;&amp;#x67D0;&amp;#x4E2A;&amp;#x6587;&amp;#x4EF6;&amp;#x7684;&amp;#x5185;&amp;#x5BB9;&amp;#xFF0C;&amp;#x8FD8;&amp;#x6DFB;&amp;#x52A0;&amp;#x5230;&amp;#x4E86;&amp;#x6682;&amp;#x5B58;&amp;#x533A;&amp;#x65F6;&amp;#xFF0C;&amp;#x60F3;&amp;#x4E22;&amp;#x5F03;&amp;#x4FEE;&amp;#x6539;&amp;#xFF0C;&amp;#x5206;&amp;#x4E24;&amp;#x6B65;&amp;#xFF0C;&amp;#x7B2C;&amp;#x4E00;&amp;#x6B65;&amp;#x7528;git reset HEAD file&amp;#xFF0C;&amp;#x5C31;&amp;#x56DE;&amp;#x5230;&amp;#x4E86;&amp;#x573A;&amp;#x666F;1&amp;#xFF0C;&amp;#x7B2C;&amp;#x4E8C;&amp;#x6B65;&amp;#x6309;&amp;#x573A;&amp;#x666F;1&amp;#x64CD;&amp;#x4F5C;&amp;#x3002;&lt;/li&gt;
+&lt;li&gt;&amp;#x573A;&amp;#x666F;3&amp;#xFF1A;&amp;#x5DF2;&amp;#x7ECF;&amp;#x63D0;&amp;#x4EA4;&amp;#x4E86;&amp;#x4E0D;&amp;#x5408;&amp;#x9002;&amp;#x7684;&amp;#x4FEE;&amp;#x6539;&amp;#x5230;&amp;#x7248;&amp;#x672C;&amp;#x5E93;&amp;#x65F6;&amp;#xFF0C;&amp;#x60F3;&amp;#x8981;&amp;#x64A4;&amp;#x9500;&amp;#x672C;&amp;#x6B21;&amp;#x63D0;&amp;#x4EA4;&amp;#xFF0C;&amp;#x9700;&amp;#x8FDB;&amp;#x884C;&amp;#x7248;&amp;#x672C;&amp;#x56DE;&amp;#x9000;&amp;#x64CD;&amp;#x4F5C;&amp;#xFF0C;&amp;#x524D;&amp;#x63D0;&amp;#x662F;&amp;#x6CA1;&amp;#x6709;&amp;#x63A8;&amp;#x9001;&amp;#x5230;&amp;#x8FDC;&amp;#x7A0B;&amp;#x5E93;&amp;#x3002;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&quot;从远程库克隆&quot;&gt;&lt;a href=&quot;#从远程库克隆&quot; class=&quot;headerlink&quot; title=&quot;从远程库克隆&quot;&gt;&lt;/a&gt;从远程库克隆&lt;/h2&gt;&lt;ol&gt;
+&lt;h2 id=&quot;&amp;#x5220;&amp;#x9664;&amp;#x6587;&amp;#x4EF6;&quot;&gt;&lt;a href=&quot;#&amp;#x5220;&amp;#x9664;&amp;#x6587;&amp;#x4EF6;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x5220;&amp;#x9664;&amp;#x6587;&amp;#x4EF6;&quot;&gt;&lt;/a&gt;&amp;#x5220;&amp;#x9664;&amp;#x6587;&amp;#x4EF6;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x4ECE;&amp;#x7248;&amp;#x672C;&amp;#x5E93;&amp;#x5220;&amp;#x9664;&lt;/p&gt;
+&lt;p&gt;   rm readme.txt&lt;br&gt;   git rm readme.txt&lt;br&gt;   git commit -m &amp;#x201C;remove readme.txt&amp;#x201D;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x5DE5;&amp;#x4F5C;&amp;#x533A;&amp;#x5220;&amp;#x9664;&amp;#x540E;&amp;#x4ECE;&amp;#x7248;&amp;#x672C;&amp;#x5E93;&amp;#x6062;&amp;#x590D;&amp;#xFF0C;&amp;#x4F1A;&amp;#x4E22;&amp;#x5931;&amp;#x6700;&amp;#x8FD1;&amp;#x4E00;&amp;#x6B21;&amp;#x63D0;&amp;#x4EA4;&amp;#x540E;&amp;#x4FEE;&amp;#x6539;&amp;#x7684;&amp;#x5185;&amp;#x5BB9;&lt;/p&gt;
+&lt;p&gt;   git checkout &amp;#x2013; readme.txt&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;&amp;#x8FDC;&amp;#x7A0B;&amp;#x4ED3;&amp;#x5E93;&quot;&gt;&lt;a href=&quot;#&amp;#x8FDC;&amp;#x7A0B;&amp;#x4ED3;&amp;#x5E93;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x8FDC;&amp;#x7A0B;&amp;#x4ED3;&amp;#x5E93;&quot;&gt;&lt;/a&gt;&amp;#x8FDC;&amp;#x7A0B;&amp;#x4ED3;&amp;#x5E93;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&amp;#x521B;&amp;#x5EFA;SSH Key&amp;#xFF1A;ssh-keygen -t rsa -C &amp;#x201C;GitHub&amp;#x90AE;&amp;#x7BB1;&amp;#x5730;&amp;#x5740;&amp;#x201D;&lt;/li&gt;
+&lt;li&gt;&amp;#x767B;&amp;#x9646;GitHub&amp;#xFF0C;&amp;#x6253;&amp;#x5F00;Account Settings -&amp;gt; SSH Keys&amp;#x9875;&amp;#x9762;&amp;#xFF0C;&amp;#x70B9;&amp;#x51FB;Add SSH Key&amp;#xFF0C;&amp;#x5C06;&amp;#x751F;&amp;#x6210;&amp;#x7684;id_rsa.pub&amp;#x7684;&amp;#x5185;&amp;#x5BB9;&amp;#x62F7;&amp;#x8D1D;&amp;#x5230;key&amp;#x5185;&amp;#x5BB9;&amp;#x6846;&lt;/li&gt;
+&lt;li&gt;&amp;#x9700;&amp;#x8981;&amp;#x5728;&amp;#x6BCF;&amp;#x53F0;&amp;#x63A8;&amp;#x9001;&amp;#x5230;GitHub&amp;#x7684;&amp;#x7535;&amp;#x8111;&amp;#x4E0A;&amp;#x751F;&amp;#x6210;key&amp;#xFF0C;&amp;#x5E76;&amp;#x6DFB;&amp;#x52A0;&amp;#x5230;GitHub&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;&amp;#x6DFB;&amp;#x52A0;&amp;#x8FDC;&amp;#x7A0B;&amp;#x5E93;&quot;&gt;&lt;a href=&quot;#&amp;#x6DFB;&amp;#x52A0;&amp;#x8FDC;&amp;#x7A0B;&amp;#x5E93;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x6DFB;&amp;#x52A0;&amp;#x8FDC;&amp;#x7A0B;&amp;#x5E93;&quot;&gt;&lt;/a&gt;&amp;#x6DFB;&amp;#x52A0;&amp;#x8FDC;&amp;#x7A0B;&amp;#x5E93;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&amp;#x767B;&amp;#x9646;GitHub&amp;#xFF0C;&amp;#x70B9;&amp;#x51FB;Create a new repo&amp;#xFF0C;&amp;#x521B;&amp;#x5EFA;&amp;#x4E00;&amp;#x4E2A;&amp;#x65B0;&amp;#x7684;&amp;#x4ED3;&amp;#x5E93;&lt;/li&gt;
+&lt;li&gt;Repository name&amp;#x586B;&amp;#x5165;&amp;#x4ED3;&amp;#x5E93;&amp;#x540D;&amp;#x79F0;&amp;#xFF0C;&amp;#x5176;&amp;#x4ED6;&amp;#x4FDD;&amp;#x6301;&amp;#x9ED8;&amp;#x8BA4;&amp;#x8BBE;&amp;#x7F6E;&amp;#xFF0C;&amp;#x521B;&amp;#x5EFA;Git&amp;#x4ED3;&amp;#x5E93;&lt;/li&gt;
+&lt;li&gt;&amp;#x5C06;&amp;#x672C;&amp;#x5730;&amp;#x4ED3;&amp;#x5E93;&amp;#x63A8;&amp;#x9001;&amp;#x5230;GitHub&amp;#x4ED3;&amp;#x5E93;&amp;#xFF1A;&lt;ul&gt;
+&lt;li&gt;&amp;#x5173;&amp;#x8054;&amp;#x8FDC;&amp;#x7A0B;&amp;#x5E93;&amp;#xFF1A;&lt;code&gt;git remote add origin git@github.com:path/repo-name.git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&amp;#x7B2C;&amp;#x4E00;&amp;#x6B21;&amp;#x63A8;&amp;#x9001;&amp;#xFF1A;git push -u origin master&amp;#xFF0C;-u&amp;#x53C2;&amp;#x6570;&amp;#xFF1A;&amp;#x5C06;&amp;#x672C;&amp;#x5730;master&amp;#x5206;&amp;#x652F;&amp;#x5185;&amp;#x5BB9;&amp;#x63A8;&amp;#x9001;&amp;#x5230;&amp;#x8FDC;&amp;#x7A0B;&amp;#x65B0;&amp;#x7684;master&amp;#x5206;&amp;#x652F;&amp;#xFF0C;&amp;#x5E76;&amp;#x5173;&amp;#x8054;&amp;#x672C;&amp;#x5730;&amp;#x7684;master&amp;#x5206;&amp;#x652F;&amp;#x548C;&amp;#x8FDC;&amp;#x7A0B;&amp;#x7684;master&amp;#x5206;&amp;#x652F;&amp;#xFF0C;&amp;#x5728;&amp;#x4EE5;&amp;#x540E;&amp;#x7684;&amp;#x63A8;&amp;#x9001;&amp;#x6216;&amp;#x62C9;&amp;#x53D6;&amp;#x65F6;&amp;#x5C31;&amp;#x53EF;&amp;#x4EE5;&amp;#x7B80;&amp;#x5316;&amp;#x547D;&amp;#x4EE4;&lt;/li&gt;
+&lt;li&gt;&amp;#x672C;&amp;#x5730;&amp;#x63D0;&amp;#x4EA4;&amp;#x540E;&amp;#x7684;&amp;#x63A8;&amp;#x9001;&amp;#x547D;&amp;#x4EE4;&amp;#xFF1A;git push origin master&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;&amp;#x4ECE;&amp;#x8FDC;&amp;#x7A0B;&amp;#x5E93;&amp;#x514B;&amp;#x9686;&quot;&gt;&lt;a href=&quot;#&amp;#x4ECE;&amp;#x8FDC;&amp;#x7A0B;&amp;#x5E93;&amp;#x514B;&amp;#x9686;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x4ECE;&amp;#x8FDC;&amp;#x7A0B;&amp;#x5E93;&amp;#x514B;&amp;#x9686;&quot;&gt;&lt;/a&gt;&amp;#x4ECE;&amp;#x8FDC;&amp;#x7A0B;&amp;#x5E93;&amp;#x514B;&amp;#x9686;&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;git clone &lt;code&gt;git@github.com:zhayh/python.git&lt;/code&gt;  &lt;/li&gt;
-&lt;li&gt;也可以用 &lt;code&gt;https://github.com/zhayh/python.git&lt;/code&gt; 克隆  &lt;/li&gt;
-&lt;li&gt;Git支持多种协议，默认的git：//使用ssh，速度最快  &lt;/li&gt;
+&lt;li&gt;&amp;#x4E5F;&amp;#x53EF;&amp;#x4EE5;&amp;#x7528; &lt;code&gt;https://github.com/zhayh/python.git&lt;/code&gt; &amp;#x514B;&amp;#x9686;  &lt;/li&gt;
+&lt;li&gt;Git&amp;#x652F;&amp;#x6301;&amp;#x591A;&amp;#x79CD;&amp;#x534F;&amp;#x8BAE;&amp;#xFF0C;&amp;#x9ED8;&amp;#x8BA4;&amp;#x7684;git&amp;#xFF1A;//&amp;#x4F7F;&amp;#x7528;ssh&amp;#xFF0C;&amp;#x901F;&amp;#x5EA6;&amp;#x6700;&amp;#x5FEB;  &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&quot;创建与合并分支&quot;&gt;&lt;a href=&quot;#创建与合并分支&quot; class=&quot;headerlink&quot; title=&quot;创建与合并分支&quot;&gt;&lt;/a&gt;创建与合并分支&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;创建并切换分支：git checkout -b dev &lt;/li&gt;
-&lt;li&gt;查看分支：git branch, 当前分支用*标识&lt;/li&gt;
-&lt;li&gt;创建分支：git branch name&lt;/li&gt;
-&lt;li&gt;切换分支：git checkout master&lt;/li&gt;
-&lt;li&gt;合并分支到当前分支：git merge dev&lt;/li&gt;
-&lt;li&gt;删除分支：git branch -d name&lt;/li&gt;
+&lt;h2 id=&quot;&amp;#x521B;&amp;#x5EFA;&amp;#x4E0E;&amp;#x5408;&amp;#x5E76;&amp;#x5206;&amp;#x652F;&quot;&gt;&lt;a href=&quot;#&amp;#x521B;&amp;#x5EFA;&amp;#x4E0E;&amp;#x5408;&amp;#x5E76;&amp;#x5206;&amp;#x652F;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x521B;&amp;#x5EFA;&amp;#x4E0E;&amp;#x5408;&amp;#x5E76;&amp;#x5206;&amp;#x652F;&quot;&gt;&lt;/a&gt;&amp;#x521B;&amp;#x5EFA;&amp;#x4E0E;&amp;#x5408;&amp;#x5E76;&amp;#x5206;&amp;#x652F;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&amp;#x521B;&amp;#x5EFA;&amp;#x5E76;&amp;#x5207;&amp;#x6362;&amp;#x5206;&amp;#x652F;&amp;#xFF1A;git checkout -b dev &lt;/li&gt;
+&lt;li&gt;&amp;#x67E5;&amp;#x770B;&amp;#x5206;&amp;#x652F;&amp;#xFF1A;git branch, &amp;#x5F53;&amp;#x524D;&amp;#x5206;&amp;#x652F;&amp;#x7528;*&amp;#x6807;&amp;#x8BC6;&lt;/li&gt;
+&lt;li&gt;&amp;#x521B;&amp;#x5EFA;&amp;#x5206;&amp;#x652F;&amp;#xFF1A;git branch name&lt;/li&gt;
+&lt;li&gt;&amp;#x5207;&amp;#x6362;&amp;#x5206;&amp;#x652F;&amp;#xFF1A;git checkout master&lt;/li&gt;
+&lt;li&gt;&amp;#x5408;&amp;#x5E76;&amp;#x5206;&amp;#x652F;&amp;#x5230;&amp;#x5F53;&amp;#x524D;&amp;#x5206;&amp;#x652F;&amp;#xFF1A;git merge dev&lt;/li&gt;
+&lt;li&gt;&amp;#x5220;&amp;#x9664;&amp;#x5206;&amp;#x652F;&amp;#xFF1A;git branch -d name&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&quot;解决冲突&quot;&gt;&lt;a href=&quot;#解决冲突&quot; class=&quot;headerlink&quot; title=&quot;解决冲突&quot;&gt;&lt;/a&gt;解决冲突&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;执行git merge dev时提示内容冲突，手动修改冲突的内容，然后执行git add readme.txt和git commit -m “message”，master和dev就合并了&lt;/li&gt;
-&lt;li&gt;查看分支的合并情况：git log –graph –pretty=oneline –abbrev-commit&lt;/li&gt;
+&lt;h2 id=&quot;&amp;#x89E3;&amp;#x51B3;&amp;#x51B2;&amp;#x7A81;&quot;&gt;&lt;a href=&quot;#&amp;#x89E3;&amp;#x51B3;&amp;#x51B2;&amp;#x7A81;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x89E3;&amp;#x51B3;&amp;#x51B2;&amp;#x7A81;&quot;&gt;&lt;/a&gt;&amp;#x89E3;&amp;#x51B3;&amp;#x51B2;&amp;#x7A81;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&amp;#x6267;&amp;#x884C;git merge dev&amp;#x65F6;&amp;#x63D0;&amp;#x793A;&amp;#x5185;&amp;#x5BB9;&amp;#x51B2;&amp;#x7A81;&amp;#xFF0C;&amp;#x624B;&amp;#x52A8;&amp;#x4FEE;&amp;#x6539;&amp;#x51B2;&amp;#x7A81;&amp;#x7684;&amp;#x5185;&amp;#x5BB9;&amp;#xFF0C;&amp;#x7136;&amp;#x540E;&amp;#x6267;&amp;#x884C;git add readme.txt&amp;#x548C;git commit -m &amp;#x201C;message&amp;#x201D;&amp;#xFF0C;master&amp;#x548C;dev&amp;#x5C31;&amp;#x5408;&amp;#x5E76;&amp;#x4E86;&lt;/li&gt;
+&lt;li&gt;&amp;#x67E5;&amp;#x770B;&amp;#x5206;&amp;#x652F;&amp;#x7684;&amp;#x5408;&amp;#x5E76;&amp;#x60C5;&amp;#x51B5;&amp;#xFF1A;git log &amp;#x2013;graph &amp;#x2013;pretty=oneline &amp;#x2013;abbrev-commit&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&quot;分支管理策略&quot;&gt;&lt;a href=&quot;#分支管理策略&quot; class=&quot;headerlink&quot; title=&quot;分支管理策略&quot;&gt;&lt;/a&gt;分支管理策略&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;合并分支时，一般Git会用”Fast forward”模式，删除分支后，会丢失分支信息  &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;使用”no-ff”方式merge可以强制禁用”Fast forward”模式   &lt;/p&gt;
-&lt;p&gt;   git merge –no-ff -m “merge with no-ff” dev&lt;/p&gt;
+&lt;h2 id=&quot;&amp;#x5206;&amp;#x652F;&amp;#x7BA1;&amp;#x7406;&amp;#x7B56;&amp;#x7565;&quot;&gt;&lt;a href=&quot;#&amp;#x5206;&amp;#x652F;&amp;#x7BA1;&amp;#x7406;&amp;#x7B56;&amp;#x7565;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x5206;&amp;#x652F;&amp;#x7BA1;&amp;#x7406;&amp;#x7B56;&amp;#x7565;&quot;&gt;&lt;/a&gt;&amp;#x5206;&amp;#x652F;&amp;#x7BA1;&amp;#x7406;&amp;#x7B56;&amp;#x7565;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&amp;#x5408;&amp;#x5E76;&amp;#x5206;&amp;#x652F;&amp;#x65F6;&amp;#xFF0C;&amp;#x4E00;&amp;#x822C;Git&amp;#x4F1A;&amp;#x7528;&amp;#x201D;Fast forward&amp;#x201D;&amp;#x6A21;&amp;#x5F0F;&amp;#xFF0C;&amp;#x5220;&amp;#x9664;&amp;#x5206;&amp;#x652F;&amp;#x540E;&amp;#xFF0C;&amp;#x4F1A;&amp;#x4E22;&amp;#x5931;&amp;#x5206;&amp;#x652F;&amp;#x4FE1;&amp;#x606F;  &lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x4F7F;&amp;#x7528;&amp;#x201D;no-ff&amp;#x201D;&amp;#x65B9;&amp;#x5F0F;merge&amp;#x53EF;&amp;#x4EE5;&amp;#x5F3A;&amp;#x5236;&amp;#x7981;&amp;#x7528;&amp;#x201D;Fast forward&amp;#x201D;&amp;#x6A21;&amp;#x5F0F;   &lt;/p&gt;
+&lt;p&gt;   git merge &amp;#x2013;no-ff -m &amp;#x201C;merge with no-ff&amp;#x201D; dev&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;分支策略&lt;br&gt; master分支应非常稳定，仅用于发布新版本，工作都在dev分支上进行&lt;br&gt; 每个成员都有自己的分支，经常往dev合并即可  &lt;/li&gt;
-&lt;li&gt;Bug分支  &lt;ul&gt;
-&lt;li&gt;隐藏工作现场：git stash&lt;/li&gt;
-&lt;li&gt;创建一个临时分支修复Bug，修复完成后切换到master分支，完成合并，最后删除临时分支&lt;/li&gt;
-&lt;li&gt;查看工作现场：git stash list&lt;/li&gt;
-&lt;li&gt;恢复现场同时删除stash内容：git stash pop&lt;/li&gt;
-&lt;li&gt;恢复现场：git stash apply&lt;/li&gt;
-&lt;li&gt;删除stash内容：git stash drop&lt;/li&gt;
-&lt;li&gt;恢复制定的stash：git stash apply stash@{0}&lt;/li&gt;
+&lt;li&gt;&amp;#x5206;&amp;#x652F;&amp;#x7B56;&amp;#x7565;&lt;br&gt; master&amp;#x5206;&amp;#x652F;&amp;#x5E94;&amp;#x975E;&amp;#x5E38;&amp;#x7A33;&amp;#x5B9A;&amp;#xFF0C;&amp;#x4EC5;&amp;#x7528;&amp;#x4E8E;&amp;#x53D1;&amp;#x5E03;&amp;#x65B0;&amp;#x7248;&amp;#x672C;&amp;#xFF0C;&amp;#x5DE5;&amp;#x4F5C;&amp;#x90FD;&amp;#x5728;dev&amp;#x5206;&amp;#x652F;&amp;#x4E0A;&amp;#x8FDB;&amp;#x884C;&lt;br&gt; &amp;#x6BCF;&amp;#x4E2A;&amp;#x6210;&amp;#x5458;&amp;#x90FD;&amp;#x6709;&amp;#x81EA;&amp;#x5DF1;&amp;#x7684;&amp;#x5206;&amp;#x652F;&amp;#xFF0C;&amp;#x7ECF;&amp;#x5E38;&amp;#x5F80;dev&amp;#x5408;&amp;#x5E76;&amp;#x5373;&amp;#x53EF;  &lt;/li&gt;
+&lt;li&gt;Bug&amp;#x5206;&amp;#x652F;  &lt;ul&gt;
+&lt;li&gt;&amp;#x9690;&amp;#x85CF;&amp;#x5DE5;&amp;#x4F5C;&amp;#x73B0;&amp;#x573A;&amp;#xFF1A;git stash&lt;/li&gt;
+&lt;li&gt;&amp;#x521B;&amp;#x5EFA;&amp;#x4E00;&amp;#x4E2A;&amp;#x4E34;&amp;#x65F6;&amp;#x5206;&amp;#x652F;&amp;#x4FEE;&amp;#x590D;Bug&amp;#xFF0C;&amp;#x4FEE;&amp;#x590D;&amp;#x5B8C;&amp;#x6210;&amp;#x540E;&amp;#x5207;&amp;#x6362;&amp;#x5230;master&amp;#x5206;&amp;#x652F;&amp;#xFF0C;&amp;#x5B8C;&amp;#x6210;&amp;#x5408;&amp;#x5E76;&amp;#xFF0C;&amp;#x6700;&amp;#x540E;&amp;#x5220;&amp;#x9664;&amp;#x4E34;&amp;#x65F6;&amp;#x5206;&amp;#x652F;&lt;/li&gt;
+&lt;li&gt;&amp;#x67E5;&amp;#x770B;&amp;#x5DE5;&amp;#x4F5C;&amp;#x73B0;&amp;#x573A;&amp;#xFF1A;git stash list&lt;/li&gt;
+&lt;li&gt;&amp;#x6062;&amp;#x590D;&amp;#x73B0;&amp;#x573A;&amp;#x540C;&amp;#x65F6;&amp;#x5220;&amp;#x9664;stash&amp;#x5185;&amp;#x5BB9;&amp;#xFF1A;git stash pop&lt;/li&gt;
+&lt;li&gt;&amp;#x6062;&amp;#x590D;&amp;#x73B0;&amp;#x573A;&amp;#xFF1A;git stash apply&lt;/li&gt;
+&lt;li&gt;&amp;#x5220;&amp;#x9664;stash&amp;#x5185;&amp;#x5BB9;&amp;#xFF1A;git stash drop&lt;/li&gt;
+&lt;li&gt;&amp;#x6062;&amp;#x590D;&amp;#x5236;&amp;#x5B9A;&amp;#x7684;stash&amp;#xFF1A;git stash apply stash@{0}&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;feature分支&lt;br&gt; 1) 添加一个新功能，可以新建一个feature分支进行，完成后合并，最后删除feature分支&lt;br&gt; 2) 强行删除feature分支开发的新功能：git branch -D feature&lt;/li&gt;
-&lt;li&gt;多人协作&lt;br&gt; 查看远程库：git remote / git remote -v&lt;/li&gt;
-&lt;li&gt;推送分支  &lt;ul&gt;
-&lt;li&gt;推送到主分支：git push origin master  &lt;/li&gt;
-&lt;li&gt;推送到其他分支：git push origin dev  &lt;/li&gt;
-&lt;li&gt;推送的选择：  &lt;ul&gt;
-&lt;li&gt;master分支是主分支，要时刻与远程同步  &lt;/li&gt;
-&lt;li&gt;dev分支是开发分支，也需要与远程同步  &lt;/li&gt;
-&lt;li&gt;bug分支只用于在本地修复bug，就没必要推送到远程  &lt;/li&gt;
-&lt;li&gt;feature分支是否推到远程，取决于是否合作在上面开发  &lt;/li&gt;
+&lt;li&gt;feature&amp;#x5206;&amp;#x652F;&lt;br&gt; 1) &amp;#x6DFB;&amp;#x52A0;&amp;#x4E00;&amp;#x4E2A;&amp;#x65B0;&amp;#x529F;&amp;#x80FD;&amp;#xFF0C;&amp;#x53EF;&amp;#x4EE5;&amp;#x65B0;&amp;#x5EFA;&amp;#x4E00;&amp;#x4E2A;feature&amp;#x5206;&amp;#x652F;&amp;#x8FDB;&amp;#x884C;&amp;#xFF0C;&amp;#x5B8C;&amp;#x6210;&amp;#x540E;&amp;#x5408;&amp;#x5E76;&amp;#xFF0C;&amp;#x6700;&amp;#x540E;&amp;#x5220;&amp;#x9664;feature&amp;#x5206;&amp;#x652F;&lt;br&gt; 2) &amp;#x5F3A;&amp;#x884C;&amp;#x5220;&amp;#x9664;feature&amp;#x5206;&amp;#x652F;&amp;#x5F00;&amp;#x53D1;&amp;#x7684;&amp;#x65B0;&amp;#x529F;&amp;#x80FD;&amp;#xFF1A;git branch -D feature&lt;/li&gt;
+&lt;li&gt;&amp;#x591A;&amp;#x4EBA;&amp;#x534F;&amp;#x4F5C;&lt;br&gt; &amp;#x67E5;&amp;#x770B;&amp;#x8FDC;&amp;#x7A0B;&amp;#x5E93;&amp;#xFF1A;git remote / git remote -v&lt;/li&gt;
+&lt;li&gt;&amp;#x63A8;&amp;#x9001;&amp;#x5206;&amp;#x652F;  &lt;ul&gt;
+&lt;li&gt;&amp;#x63A8;&amp;#x9001;&amp;#x5230;&amp;#x4E3B;&amp;#x5206;&amp;#x652F;&amp;#xFF1A;git push origin master  &lt;/li&gt;
+&lt;li&gt;&amp;#x63A8;&amp;#x9001;&amp;#x5230;&amp;#x5176;&amp;#x4ED6;&amp;#x5206;&amp;#x652F;&amp;#xFF1A;git push origin dev  &lt;/li&gt;
+&lt;li&gt;&amp;#x63A8;&amp;#x9001;&amp;#x7684;&amp;#x9009;&amp;#x62E9;&amp;#xFF1A;  &lt;ul&gt;
+&lt;li&gt;master&amp;#x5206;&amp;#x652F;&amp;#x662F;&amp;#x4E3B;&amp;#x5206;&amp;#x652F;&amp;#xFF0C;&amp;#x8981;&amp;#x65F6;&amp;#x523B;&amp;#x4E0E;&amp;#x8FDC;&amp;#x7A0B;&amp;#x540C;&amp;#x6B65;  &lt;/li&gt;
+&lt;li&gt;dev&amp;#x5206;&amp;#x652F;&amp;#x662F;&amp;#x5F00;&amp;#x53D1;&amp;#x5206;&amp;#x652F;&amp;#xFF0C;&amp;#x4E5F;&amp;#x9700;&amp;#x8981;&amp;#x4E0E;&amp;#x8FDC;&amp;#x7A0B;&amp;#x540C;&amp;#x6B65;  &lt;/li&gt;
+&lt;li&gt;bug&amp;#x5206;&amp;#x652F;&amp;#x53EA;&amp;#x7528;&amp;#x4E8E;&amp;#x5728;&amp;#x672C;&amp;#x5730;&amp;#x4FEE;&amp;#x590D;bug&amp;#xFF0C;&amp;#x5C31;&amp;#x6CA1;&amp;#x5FC5;&amp;#x8981;&amp;#x63A8;&amp;#x9001;&amp;#x5230;&amp;#x8FDC;&amp;#x7A0B;  &lt;/li&gt;
+&lt;li&gt;feature&amp;#x5206;&amp;#x652F;&amp;#x662F;&amp;#x5426;&amp;#x63A8;&amp;#x5230;&amp;#x8FDC;&amp;#x7A0B;&amp;#xFF0C;&amp;#x53D6;&amp;#x51B3;&amp;#x4E8E;&amp;#x662F;&amp;#x5426;&amp;#x5408;&amp;#x4F5C;&amp;#x5728;&amp;#x4E0A;&amp;#x9762;&amp;#x5F00;&amp;#x53D1;  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;抓取分支&lt;br&gt; 1) 从远程库clone，一般只能看到本地的master分支&lt;br&gt; 2) 创建远程origin的dev分支到本地：git checkout -b dev origin/dev&lt;br&gt; 3) 推送冲突的解决：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;* 使用git pull将最新的提交从origin/dev抓取下来，在本地合并，解决冲突，再推送
-* git pull失败的原因：需指定本地dev分支与远程origin/dev分支的链接
+&lt;li&gt;&lt;p&gt;&amp;#x6293;&amp;#x53D6;&amp;#x5206;&amp;#x652F;&lt;br&gt; 1) &amp;#x4ECE;&amp;#x8FDC;&amp;#x7A0B;&amp;#x5E93;clone&amp;#xFF0C;&amp;#x4E00;&amp;#x822C;&amp;#x53EA;&amp;#x80FD;&amp;#x770B;&amp;#x5230;&amp;#x672C;&amp;#x5730;&amp;#x7684;master&amp;#x5206;&amp;#x652F;&lt;br&gt; 2) &amp;#x521B;&amp;#x5EFA;&amp;#x8FDC;&amp;#x7A0B;origin&amp;#x7684;dev&amp;#x5206;&amp;#x652F;&amp;#x5230;&amp;#x672C;&amp;#x5730;&amp;#xFF1A;git checkout -b dev origin/dev&lt;br&gt; 3) &amp;#x63A8;&amp;#x9001;&amp;#x51B2;&amp;#x7A81;&amp;#x7684;&amp;#x89E3;&amp;#x51B3;&amp;#xFF1A;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;* &amp;#x4F7F;&amp;#x7528;git pull&amp;#x5C06;&amp;#x6700;&amp;#x65B0;&amp;#x7684;&amp;#x63D0;&amp;#x4EA4;&amp;#x4ECE;origin/dev&amp;#x6293;&amp;#x53D6;&amp;#x4E0B;&amp;#x6765;&amp;#xFF0C;&amp;#x5728;&amp;#x672C;&amp;#x5730;&amp;#x5408;&amp;#x5E76;&amp;#xFF0C;&amp;#x89E3;&amp;#x51B3;&amp;#x51B2;&amp;#x7A81;&amp;#xFF0C;&amp;#x518D;&amp;#x63A8;&amp;#x9001;
+* git pull&amp;#x5931;&amp;#x8D25;&amp;#x7684;&amp;#x539F;&amp;#x56E0;&amp;#xFF1A;&amp;#x9700;&amp;#x6307;&amp;#x5B9A;&amp;#x672C;&amp;#x5730;dev&amp;#x5206;&amp;#x652F;&amp;#x4E0E;&amp;#x8FDC;&amp;#x7A0B;origin/dev&amp;#x5206;&amp;#x652F;&amp;#x7684;&amp;#x94FE;&amp;#x63A5;
 * git branch --set-upstream dev origin/dev
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&quot;多人协作的工作模式&quot;&gt;&lt;a href=&quot;#多人协作的工作模式&quot; class=&quot;headerlink&quot; title=&quot;多人协作的工作模式&quot;&gt;&lt;/a&gt;多人协作的工作模式&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;试图用git push origin branch-name推送自己的修改&lt;/li&gt;
-&lt;li&gt;如果推送失败，则因为远程分支比本地新，需要先用git pull试图合并&lt;/li&gt;
-&lt;li&gt;如果合并冲突，则解决冲突，并在本地提交&lt;/li&gt;
-&lt;li&gt;没有冲突或解决了冲突后，再用git push origin branch-name推送就能成功&lt;/li&gt;
-&lt;li&gt;注意：git pull提示”no tracking information”，则说明本地和远程分支的链接关系没有创建，用git branch –set-upstream branch-name origin/branch-name&lt;/li&gt;
+&lt;h2 id=&quot;&amp;#x591A;&amp;#x4EBA;&amp;#x534F;&amp;#x4F5C;&amp;#x7684;&amp;#x5DE5;&amp;#x4F5C;&amp;#x6A21;&amp;#x5F0F;&quot;&gt;&lt;a href=&quot;#&amp;#x591A;&amp;#x4EBA;&amp;#x534F;&amp;#x4F5C;&amp;#x7684;&amp;#x5DE5;&amp;#x4F5C;&amp;#x6A21;&amp;#x5F0F;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x591A;&amp;#x4EBA;&amp;#x534F;&amp;#x4F5C;&amp;#x7684;&amp;#x5DE5;&amp;#x4F5C;&amp;#x6A21;&amp;#x5F0F;&quot;&gt;&lt;/a&gt;&amp;#x591A;&amp;#x4EBA;&amp;#x534F;&amp;#x4F5C;&amp;#x7684;&amp;#x5DE5;&amp;#x4F5C;&amp;#x6A21;&amp;#x5F0F;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&amp;#x8BD5;&amp;#x56FE;&amp;#x7528;git push origin branch-name&amp;#x63A8;&amp;#x9001;&amp;#x81EA;&amp;#x5DF1;&amp;#x7684;&amp;#x4FEE;&amp;#x6539;&lt;/li&gt;
+&lt;li&gt;&amp;#x5982;&amp;#x679C;&amp;#x63A8;&amp;#x9001;&amp;#x5931;&amp;#x8D25;&amp;#xFF0C;&amp;#x5219;&amp;#x56E0;&amp;#x4E3A;&amp;#x8FDC;&amp;#x7A0B;&amp;#x5206;&amp;#x652F;&amp;#x6BD4;&amp;#x672C;&amp;#x5730;&amp;#x65B0;&amp;#xFF0C;&amp;#x9700;&amp;#x8981;&amp;#x5148;&amp;#x7528;git pull&amp;#x8BD5;&amp;#x56FE;&amp;#x5408;&amp;#x5E76;&lt;/li&gt;
+&lt;li&gt;&amp;#x5982;&amp;#x679C;&amp;#x5408;&amp;#x5E76;&amp;#x51B2;&amp;#x7A81;&amp;#xFF0C;&amp;#x5219;&amp;#x89E3;&amp;#x51B3;&amp;#x51B2;&amp;#x7A81;&amp;#xFF0C;&amp;#x5E76;&amp;#x5728;&amp;#x672C;&amp;#x5730;&amp;#x63D0;&amp;#x4EA4;&lt;/li&gt;
+&lt;li&gt;&amp;#x6CA1;&amp;#x6709;&amp;#x51B2;&amp;#x7A81;&amp;#x6216;&amp;#x89E3;&amp;#x51B3;&amp;#x4E86;&amp;#x51B2;&amp;#x7A81;&amp;#x540E;&amp;#xFF0C;&amp;#x518D;&amp;#x7528;git push origin branch-name&amp;#x63A8;&amp;#x9001;&amp;#x5C31;&amp;#x80FD;&amp;#x6210;&amp;#x529F;&lt;/li&gt;
+&lt;li&gt;&amp;#x6CE8;&amp;#x610F;&amp;#xFF1A;git pull&amp;#x63D0;&amp;#x793A;&amp;#x201D;no tracking information&amp;#x201D;&amp;#xFF0C;&amp;#x5219;&amp;#x8BF4;&amp;#x660E;&amp;#x672C;&amp;#x5730;&amp;#x548C;&amp;#x8FDC;&amp;#x7A0B;&amp;#x5206;&amp;#x652F;&amp;#x7684;&amp;#x94FE;&amp;#x63A5;&amp;#x5173;&amp;#x7CFB;&amp;#x6CA1;&amp;#x6709;&amp;#x521B;&amp;#x5EFA;&amp;#xFF0C;&amp;#x7528;git branch &amp;#x2013;set-upstream branch-name origin/branch-name&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&quot;创建标签&quot;&gt;&lt;a href=&quot;#创建标签&quot; class=&quot;headerlink&quot; title=&quot;创建标签&quot;&gt;&lt;/a&gt;创建标签&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;切换到需要打标签的分支：git checkout master&lt;/li&gt;
-&lt;li&gt;创建新标签：git tag v1.0，只存储在本地&lt;/li&gt;
-&lt;li&gt;在特定commit id上创建标签：git tag v0.9 commit id&lt;/li&gt;
-&lt;li&gt;创建带有说明的标签：git tag -a v0.1 -m “message” commit id （-a指定标签名，-m指定说明文字）&lt;/li&gt;
-&lt;li&gt;用-s指定私钥签名一个标签：git tag -s v0.2 -m “message” commit id，签名采用PGP签名，必须首先安装gpg(GnuPG)&lt;/li&gt;
-&lt;li&gt;查看所有标签：git tag&lt;/li&gt;
-&lt;li&gt;查看标签信息：git show v0.9&lt;/li&gt;
-&lt;li&gt;说明：  &lt;ul&gt;
-&lt;li&gt;默认标签是打在最新提交的commit上，标签按字母排序  &lt;/li&gt;
-&lt;li&gt;查看commit id：git log –pretty=oneline –abbrev-commit  &lt;/li&gt;
+&lt;h2 id=&quot;&amp;#x521B;&amp;#x5EFA;&amp;#x6807;&amp;#x7B7E;&quot;&gt;&lt;a href=&quot;#&amp;#x521B;&amp;#x5EFA;&amp;#x6807;&amp;#x7B7E;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x521B;&amp;#x5EFA;&amp;#x6807;&amp;#x7B7E;&quot;&gt;&lt;/a&gt;&amp;#x521B;&amp;#x5EFA;&amp;#x6807;&amp;#x7B7E;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&amp;#x5207;&amp;#x6362;&amp;#x5230;&amp;#x9700;&amp;#x8981;&amp;#x6253;&amp;#x6807;&amp;#x7B7E;&amp;#x7684;&amp;#x5206;&amp;#x652F;&amp;#xFF1A;git checkout master&lt;/li&gt;
+&lt;li&gt;&amp;#x521B;&amp;#x5EFA;&amp;#x65B0;&amp;#x6807;&amp;#x7B7E;&amp;#xFF1A;git tag v1.0&amp;#xFF0C;&amp;#x53EA;&amp;#x5B58;&amp;#x50A8;&amp;#x5728;&amp;#x672C;&amp;#x5730;&lt;/li&gt;
+&lt;li&gt;&amp;#x5728;&amp;#x7279;&amp;#x5B9A;commit id&amp;#x4E0A;&amp;#x521B;&amp;#x5EFA;&amp;#x6807;&amp;#x7B7E;&amp;#xFF1A;git tag v0.9 commit id&lt;/li&gt;
+&lt;li&gt;&amp;#x521B;&amp;#x5EFA;&amp;#x5E26;&amp;#x6709;&amp;#x8BF4;&amp;#x660E;&amp;#x7684;&amp;#x6807;&amp;#x7B7E;&amp;#xFF1A;git tag -a v0.1 -m &amp;#x201C;message&amp;#x201D; commit id &amp;#xFF08;-a&amp;#x6307;&amp;#x5B9A;&amp;#x6807;&amp;#x7B7E;&amp;#x540D;&amp;#xFF0C;-m&amp;#x6307;&amp;#x5B9A;&amp;#x8BF4;&amp;#x660E;&amp;#x6587;&amp;#x5B57;&amp;#xFF09;&lt;/li&gt;
+&lt;li&gt;&amp;#x7528;-s&amp;#x6307;&amp;#x5B9A;&amp;#x79C1;&amp;#x94A5;&amp;#x7B7E;&amp;#x540D;&amp;#x4E00;&amp;#x4E2A;&amp;#x6807;&amp;#x7B7E;&amp;#xFF1A;git tag -s v0.2 -m &amp;#x201C;message&amp;#x201D; commit id&amp;#xFF0C;&amp;#x7B7E;&amp;#x540D;&amp;#x91C7;&amp;#x7528;PGP&amp;#x7B7E;&amp;#x540D;&amp;#xFF0C;&amp;#x5FC5;&amp;#x987B;&amp;#x9996;&amp;#x5148;&amp;#x5B89;&amp;#x88C5;gpg(GnuPG)&lt;/li&gt;
+&lt;li&gt;&amp;#x67E5;&amp;#x770B;&amp;#x6240;&amp;#x6709;&amp;#x6807;&amp;#x7B7E;&amp;#xFF1A;git tag&lt;/li&gt;
+&lt;li&gt;&amp;#x67E5;&amp;#x770B;&amp;#x6807;&amp;#x7B7E;&amp;#x4FE1;&amp;#x606F;&amp;#xFF1A;git show v0.9&lt;/li&gt;
+&lt;li&gt;&amp;#x8BF4;&amp;#x660E;&amp;#xFF1A;  &lt;ul&gt;
+&lt;li&gt;&amp;#x9ED8;&amp;#x8BA4;&amp;#x6807;&amp;#x7B7E;&amp;#x662F;&amp;#x6253;&amp;#x5728;&amp;#x6700;&amp;#x65B0;&amp;#x63D0;&amp;#x4EA4;&amp;#x7684;commit&amp;#x4E0A;&amp;#xFF0C;&amp;#x6807;&amp;#x7B7E;&amp;#x6309;&amp;#x5B57;&amp;#x6BCD;&amp;#x6392;&amp;#x5E8F;  &lt;/li&gt;
+&lt;li&gt;&amp;#x67E5;&amp;#x770B;commit id&amp;#xFF1A;git log &amp;#x2013;pretty=oneline &amp;#x2013;abbrev-commit  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&quot;操作标签&quot;&gt;&lt;a href=&quot;#操作标签&quot; class=&quot;headerlink&quot; title=&quot;操作标签&quot;&gt;&lt;/a&gt;操作标签&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;删除标签：git tag -d v1.0  &lt;/li&gt;
-&lt;li&gt;推送标签到远程：git push origin v1.0  &lt;/li&gt;
-&lt;li&gt;一次性推送所有的标签：git push origin –tags  &lt;/li&gt;
-&lt;li&gt;删除远程标签&lt;br&gt; 1）先从本地删除：git tag -d v0.9&lt;br&gt; 2）再从远程删除：git push origin :refs/tags/v0.9  &lt;/li&gt;
+&lt;h2 id=&quot;&amp;#x64CD;&amp;#x4F5C;&amp;#x6807;&amp;#x7B7E;&quot;&gt;&lt;a href=&quot;#&amp;#x64CD;&amp;#x4F5C;&amp;#x6807;&amp;#x7B7E;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x64CD;&amp;#x4F5C;&amp;#x6807;&amp;#x7B7E;&quot;&gt;&lt;/a&gt;&amp;#x64CD;&amp;#x4F5C;&amp;#x6807;&amp;#x7B7E;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&amp;#x5220;&amp;#x9664;&amp;#x6807;&amp;#x7B7E;&amp;#xFF1A;git tag -d v1.0  &lt;/li&gt;
+&lt;li&gt;&amp;#x63A8;&amp;#x9001;&amp;#x6807;&amp;#x7B7E;&amp;#x5230;&amp;#x8FDC;&amp;#x7A0B;&amp;#xFF1A;git push origin v1.0  &lt;/li&gt;
+&lt;li&gt;&amp;#x4E00;&amp;#x6B21;&amp;#x6027;&amp;#x63A8;&amp;#x9001;&amp;#x6240;&amp;#x6709;&amp;#x7684;&amp;#x6807;&amp;#x7B7E;&amp;#xFF1A;git push origin &amp;#x2013;tags  &lt;/li&gt;
+&lt;li&gt;&amp;#x5220;&amp;#x9664;&amp;#x8FDC;&amp;#x7A0B;&amp;#x6807;&amp;#x7B7E;&lt;br&gt; 1&amp;#xFF09;&amp;#x5148;&amp;#x4ECE;&amp;#x672C;&amp;#x5730;&amp;#x5220;&amp;#x9664;&amp;#xFF1A;git tag -d v0.9&lt;br&gt; 2&amp;#xFF09;&amp;#x518D;&amp;#x4ECE;&amp;#x8FDC;&amp;#x7A0B;&amp;#x5220;&amp;#x9664;&amp;#xFF1A;git push origin :refs/tags/v0.9  &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&quot;GitHub&quot;&gt;&lt;a href=&quot;#GitHub&quot; class=&quot;headerlink&quot; title=&quot;GitHub&quot;&gt;&lt;/a&gt;GitHub&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;在GitHub上，可以任意Fork开源仓库；  &lt;/li&gt;
-&lt;li&gt;自己拥有Fork后的仓库的读写权限；  &lt;/li&gt;
-&lt;li&gt;可以推送pull request给官方仓库贡献代码。  &lt;/li&gt;
+&lt;li&gt;&amp;#x5728;GitHub&amp;#x4E0A;&amp;#xFF0C;&amp;#x53EF;&amp;#x4EE5;&amp;#x4EFB;&amp;#x610F;Fork&amp;#x5F00;&amp;#x6E90;&amp;#x4ED3;&amp;#x5E93;&amp;#xFF1B;  &lt;/li&gt;
+&lt;li&gt;&amp;#x81EA;&amp;#x5DF1;&amp;#x62E5;&amp;#x6709;Fork&amp;#x540E;&amp;#x7684;&amp;#x4ED3;&amp;#x5E93;&amp;#x7684;&amp;#x8BFB;&amp;#x5199;&amp;#x6743;&amp;#x9650;&amp;#xFF1B;  &lt;/li&gt;
+&lt;li&gt;&amp;#x53EF;&amp;#x4EE5;&amp;#x63A8;&amp;#x9001;pull request&amp;#x7ED9;&amp;#x5B98;&amp;#x65B9;&amp;#x4ED3;&amp;#x5E93;&amp;#x8D21;&amp;#x732E;&amp;#x4EE3;&amp;#x7801;&amp;#x3002;  &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&quot;忽略特殊文件&quot;&gt;&lt;a href=&quot;#忽略特殊文件&quot; class=&quot;headerlink&quot; title=&quot;忽略特殊文件&quot;&gt;&lt;/a&gt;忽略特殊文件&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;在Git工作去的根目录创建.gitignore文件，添加要忽略的文件名  &lt;/li&gt;
-&lt;li&gt;参考：&lt;a href=&quot;https://github.com/github/gitignore&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git官方ignore模版&lt;/a&gt;  &lt;/li&gt;
-&lt;li&gt;.gitignore文件本身要放到版本库中，并对其进行版本管理  &lt;/li&gt;
-&lt;li&gt;忽略文件的原则：&lt;br&gt; 1）忽略操作系统自动生成的文件，如缩略图等&lt;br&gt; 2）忽略编译生成的中间文件、可执行文件等&lt;br&gt; 3）忽略带有敏感信息的配置文件，如：存放口令的配置文件  &lt;/li&gt;
+&lt;h2 id=&quot;&amp;#x5FFD;&amp;#x7565;&amp;#x7279;&amp;#x6B8A;&amp;#x6587;&amp;#x4EF6;&quot;&gt;&lt;a href=&quot;#&amp;#x5FFD;&amp;#x7565;&amp;#x7279;&amp;#x6B8A;&amp;#x6587;&amp;#x4EF6;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x5FFD;&amp;#x7565;&amp;#x7279;&amp;#x6B8A;&amp;#x6587;&amp;#x4EF6;&quot;&gt;&lt;/a&gt;&amp;#x5FFD;&amp;#x7565;&amp;#x7279;&amp;#x6B8A;&amp;#x6587;&amp;#x4EF6;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&amp;#x5728;Git&amp;#x5DE5;&amp;#x4F5C;&amp;#x53BB;&amp;#x7684;&amp;#x6839;&amp;#x76EE;&amp;#x5F55;&amp;#x521B;&amp;#x5EFA;.gitignore&amp;#x6587;&amp;#x4EF6;&amp;#xFF0C;&amp;#x6DFB;&amp;#x52A0;&amp;#x8981;&amp;#x5FFD;&amp;#x7565;&amp;#x7684;&amp;#x6587;&amp;#x4EF6;&amp;#x540D;  &lt;/li&gt;
+&lt;li&gt;&amp;#x53C2;&amp;#x8003;&amp;#xFF1A;&lt;a href=&quot;https://github.com/github/gitignore&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git&amp;#x5B98;&amp;#x65B9;ignore&amp;#x6A21;&amp;#x7248;&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;.gitignore&amp;#x6587;&amp;#x4EF6;&amp;#x672C;&amp;#x8EAB;&amp;#x8981;&amp;#x653E;&amp;#x5230;&amp;#x7248;&amp;#x672C;&amp;#x5E93;&amp;#x4E2D;&amp;#xFF0C;&amp;#x5E76;&amp;#x5BF9;&amp;#x5176;&amp;#x8FDB;&amp;#x884C;&amp;#x7248;&amp;#x672C;&amp;#x7BA1;&amp;#x7406;  &lt;/li&gt;
+&lt;li&gt;&amp;#x5FFD;&amp;#x7565;&amp;#x6587;&amp;#x4EF6;&amp;#x7684;&amp;#x539F;&amp;#x5219;&amp;#xFF1A;&lt;br&gt; 1&amp;#xFF09;&amp;#x5FFD;&amp;#x7565;&amp;#x64CD;&amp;#x4F5C;&amp;#x7CFB;&amp;#x7EDF;&amp;#x81EA;&amp;#x52A8;&amp;#x751F;&amp;#x6210;&amp;#x7684;&amp;#x6587;&amp;#x4EF6;&amp;#xFF0C;&amp;#x5982;&amp;#x7F29;&amp;#x7565;&amp;#x56FE;&amp;#x7B49;&lt;br&gt; 2&amp;#xFF09;&amp;#x5FFD;&amp;#x7565;&amp;#x7F16;&amp;#x8BD1;&amp;#x751F;&amp;#x6210;&amp;#x7684;&amp;#x4E2D;&amp;#x95F4;&amp;#x6587;&amp;#x4EF6;&amp;#x3001;&amp;#x53EF;&amp;#x6267;&amp;#x884C;&amp;#x6587;&amp;#x4EF6;&amp;#x7B49;&lt;br&gt; 3&amp;#xFF09;&amp;#x5FFD;&amp;#x7565;&amp;#x5E26;&amp;#x6709;&amp;#x654F;&amp;#x611F;&amp;#x4FE1;&amp;#x606F;&amp;#x7684;&amp;#x914D;&amp;#x7F6E;&amp;#x6587;&amp;#x4EF6;&amp;#xFF0C;&amp;#x5982;&amp;#xFF1A;&amp;#x5B58;&amp;#x653E;&amp;#x53E3;&amp;#x4EE4;&amp;#x7684;&amp;#x914D;&amp;#x7F6E;&amp;#x6587;&amp;#x4EF6;  &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://git-scm.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git官方网站&lt;/a&gt;  &lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://try.github.io/levels/1/challenges/1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git在线练习&lt;/a&gt;  &lt;/li&gt;
+&lt;h2 id=&quot;&amp;#x53C2;&amp;#x8003;&amp;#x8D44;&amp;#x6599;&quot;&gt;&lt;a href=&quot;#&amp;#x53C2;&amp;#x8003;&amp;#x8D44;&amp;#x6599;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x53C2;&amp;#x8003;&amp;#x8D44;&amp;#x6599;&quot;&gt;&lt;/a&gt;&amp;#x53C2;&amp;#x8003;&amp;#x8D44;&amp;#x6599;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://git-scm.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git&amp;#x5B98;&amp;#x65B9;&amp;#x7F51;&amp;#x7AD9;&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://try.github.io/levels/1/challenges/1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git&amp;#x5728;&amp;#x7EBF;&amp;#x7EC3;&amp;#x4E60;&lt;/a&gt;  &lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.git-tower.com/blog/assets/2013-05-22-git-cheat-sheet/cheat-sheet-large01.png&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git Cheat Sheet&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;参考：&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;廖雪峰的Git教程&lt;
+      &lt;p&gt;&amp;#x53C2;&amp;#x8003;&amp;#xFF1A;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000&quot; target=&quot;_blank&quot; rel=
     
     </summary>
     
@@ -232,25 +232,25 @@
     <updated>2016-05-24T05:33:34.592Z</updated>
     
     <content type="html">&lt;h3 id=&quot;1-ActionBar&quot;&gt;&lt;a href=&quot;#1-ActionBar&quot; class=&quot;headerlink&quot; title=&quot;1. ActionBar&quot;&gt;&lt;/a&gt;1. ActionBar&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;参考 &lt;a href=&quot;http://blog.csdn.net/guolin_blog/article/details/18234477&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;郭霖的博客&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;显示Up按钮&lt;/strong&gt;&lt;/p&gt;
+&lt;li&gt;&amp;#x53C2;&amp;#x8003; &lt;a href=&quot;http://blog.csdn.net/guolin_blog/article/details/18234477&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&amp;#x90ED;&amp;#x9716;&amp;#x7684;&amp;#x535A;&amp;#x5BA2;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&amp;#x663E;&amp;#x793A;Up&amp;#x6309;&amp;#x94AE;&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;第一步：在onCreate方法中增加 &lt;code&gt;getActionBar().setDisplayHomeAsUpEnabled(true)&lt;/code&gt;，针对appcompat v7需采用&lt;code&gt;getSupportActionBar()&lt;/code&gt;，否则会报空指针异常&lt;/li&gt;
-&lt;li&gt;第二步：在AndroidMainfest.xml中配置父Activity&lt;ul&gt;
-&lt;li&gt;参考：&lt;a href=&quot;http://developer.android.com/training/implementing-navigation/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Google的Training的实现有效导航&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;针对android 4.1版本以上，在activity的AndroidManifest.xml中增加android:parentActivityName&lt;/li&gt;
-&lt;li&gt;针对Android 4.0或以下版本，在配置中增加&lt;code&gt;&amp;lt;meta-data&amp;gt;&lt;/code&gt;元素&lt;pre&gt;&lt;code&gt;&amp;lt;activity
+&lt;li&gt;&amp;#x7B2C;&amp;#x4E00;&amp;#x6B65;&amp;#xFF1A;&amp;#x5728;onCreate&amp;#x65B9;&amp;#x6CD5;&amp;#x4E2D;&amp;#x589E;&amp;#x52A0; &lt;code&gt;getActionBar().setDisplayHomeAsUpEnabled(true)&lt;/code&gt;&amp;#xFF0C;&amp;#x9488;&amp;#x5BF9;appcompat v7&amp;#x9700;&amp;#x91C7;&amp;#x7528;&lt;code&gt;getSupportActionBar()&lt;/code&gt;&amp;#xFF0C;&amp;#x5426;&amp;#x5219;&amp;#x4F1A;&amp;#x62A5;&amp;#x7A7A;&amp;#x6307;&amp;#x9488;&amp;#x5F02;&amp;#x5E38;&lt;/li&gt;
+&lt;li&gt;&amp;#x7B2C;&amp;#x4E8C;&amp;#x6B65;&amp;#xFF1A;&amp;#x5728;AndroidMainfest.xml&amp;#x4E2D;&amp;#x914D;&amp;#x7F6E;&amp;#x7236;Activity&lt;ul&gt;
+&lt;li&gt;&amp;#x53C2;&amp;#x8003;&amp;#xFF1A;&lt;a href=&quot;http://developer.android.com/training/implementing-navigation/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Google&amp;#x7684;Training&amp;#x7684;&amp;#x5B9E;&amp;#x73B0;&amp;#x6709;&amp;#x6548;&amp;#x5BFC;&amp;#x822A;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;#x9488;&amp;#x5BF9;android 4.1&amp;#x7248;&amp;#x672C;&amp;#x4EE5;&amp;#x4E0A;&amp;#xFF0C;&amp;#x5728;activity&amp;#x7684;AndroidManifest.xml&amp;#x4E2D;&amp;#x589E;&amp;#x52A0;android:parentActivityName&lt;/li&gt;
+&lt;li&gt;&amp;#x9488;&amp;#x5BF9;Android 4.0&amp;#x6216;&amp;#x4EE5;&amp;#x4E0B;&amp;#x7248;&amp;#x672C;&amp;#xFF0C;&amp;#x5728;&amp;#x914D;&amp;#x7F6E;&amp;#x4E2D;&amp;#x589E;&amp;#x52A0;&lt;code&gt;&amp;lt;meta-data&amp;gt;&lt;/code&gt;&amp;#x5143;&amp;#x7D20;&lt;pre&gt;&lt;code&gt;&amp;lt;activity
     android:name=&amp;quot;.DetailActivity&amp;quot;
     android:label=&amp;quot;@string/title_activity_detail&amp;quot;
     android:parentActivityName=&amp;quot;.MainActivity&amp;quot;&amp;gt;
-    &amp;lt;!--android 4.0 及以下 --&amp;gt;
+    &amp;lt;!--android 4.0 &amp;#x53CA;&amp;#x4EE5;&amp;#x4E0B; --&amp;gt;
     &amp;lt;meta-data android:name=&amp;quot;android.support.PARENT_ACTIVITY&amp;quot;
         android:value=&amp;quot;.MainActivity&amp;quot; /&amp;gt;
 &amp;lt;/activity&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;第三步：对android.R.id.home事件的处理&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x7B2C;&amp;#x4E09;&amp;#x6B65;&amp;#xFF1A;&amp;#x5BF9;android.R.id.home&amp;#x4E8B;&amp;#x4EF6;&amp;#x7684;&amp;#x5904;&amp;#x7406;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;@Override
 public boolean onOptionsItemSelected(MenuItem item) {
     switch (item.getItemId()) {
@@ -268,7 +268,7 @@ public boolean onOptionsItemSelected(MenuItem item) {
     }
 }
 
-//或者使用NavUtils的导航返回，NavUtils是v4包中的工具包
+//&amp;#x6216;&amp;#x8005;&amp;#x4F7F;&amp;#x7528;NavUtils&amp;#x7684;&amp;#x5BFC;&amp;#x822A;&amp;#x8FD4;&amp;#x56DE;&amp;#xFF0C;NavUtils&amp;#x662F;v4&amp;#x5305;&amp;#x4E2D;&amp;#x7684;&amp;#x5DE5;&amp;#x5177;&amp;#x5305;
 case android.R.id.home:
     NavUtils.navigateUpFromSameTask(this);
 break;
@@ -276,56 +276,56 @@ break;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;2-存储卡路径&quot;&gt;&lt;a href=&quot;#2-存储卡路径&quot; class=&quot;headerlink&quot; title=&quot;2. 存储卡路径&quot;&gt;&lt;/a&gt;2. 存储卡路径&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;手机SD卡位置&lt;ul&gt;
-&lt;li&gt;手机必须root，手机的Android版本为4.2.2&lt;/li&gt;
-&lt;li&gt;数据的基本路径：&lt;code&gt;storage/sdcard0/Android/data/&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;创建应用的路径：建立app的包名-&amp;gt;files-&amp;gt;图片文件，如：&lt;code&gt;edu.niit.training.newsclientv12/files&lt;/code&gt;&lt;/li&gt;
+&lt;h3 id=&quot;2-&amp;#x5B58;&amp;#x50A8;&amp;#x5361;&amp;#x8DEF;&amp;#x5F84;&quot;&gt;&lt;a href=&quot;#2-&amp;#x5B58;&amp;#x50A8;&amp;#x5361;&amp;#x8DEF;&amp;#x5F84;&quot; class=&quot;headerlink&quot; title=&quot;2. &amp;#x5B58;&amp;#x50A8;&amp;#x5361;&amp;#x8DEF;&amp;#x5F84;&quot;&gt;&lt;/a&gt;2. &amp;#x5B58;&amp;#x50A8;&amp;#x5361;&amp;#x8DEF;&amp;#x5F84;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&amp;#x624B;&amp;#x673A;SD&amp;#x5361;&amp;#x4F4D;&amp;#x7F6E;&lt;ul&gt;
+&lt;li&gt;&amp;#x624B;&amp;#x673A;&amp;#x5FC5;&amp;#x987B;root&amp;#xFF0C;&amp;#x624B;&amp;#x673A;&amp;#x7684;Android&amp;#x7248;&amp;#x672C;&amp;#x4E3A;4.2.2&lt;/li&gt;
+&lt;li&gt;&amp;#x6570;&amp;#x636E;&amp;#x7684;&amp;#x57FA;&amp;#x672C;&amp;#x8DEF;&amp;#x5F84;&amp;#xFF1A;&lt;code&gt;storage/sdcard0/Android/data/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&amp;#x521B;&amp;#x5EFA;&amp;#x5E94;&amp;#x7528;&amp;#x7684;&amp;#x8DEF;&amp;#x5F84;&amp;#xFF1A;&amp;#x5EFA;&amp;#x7ACB;app&amp;#x7684;&amp;#x5305;&amp;#x540D;-&amp;gt;files-&amp;gt;&amp;#x56FE;&amp;#x7247;&amp;#x6587;&amp;#x4EF6;&amp;#xFF0C;&amp;#x5982;&amp;#xFF1A;&lt;code&gt;edu.niit.training.newsclientv12/files&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Genymotion模拟器的SD卡位置&lt;ul&gt;
-&lt;li&gt;数据的基本路径：&lt;code&gt;mnt/shell/emulated/0/Android/data&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;创建应用的路径：建立app的包名-&amp;gt;files-&amp;gt;图片文件，如：&lt;code&gt;edu.niit.training.newsclientv12/files&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Genymotion&amp;#x6A21;&amp;#x62DF;&amp;#x5668;&amp;#x7684;SD&amp;#x5361;&amp;#x4F4D;&amp;#x7F6E;&lt;ul&gt;
+&lt;li&gt;&amp;#x6570;&amp;#x636E;&amp;#x7684;&amp;#x57FA;&amp;#x672C;&amp;#x8DEF;&amp;#x5F84;&amp;#xFF1A;&lt;code&gt;mnt/shell/emulated/0/Android/data&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&amp;#x521B;&amp;#x5EFA;&amp;#x5E94;&amp;#x7528;&amp;#x7684;&amp;#x8DEF;&amp;#x5F84;&amp;#xFF1A;&amp;#x5EFA;&amp;#x7ACB;app&amp;#x7684;&amp;#x5305;&amp;#x540D;-&amp;gt;files-&amp;gt;&amp;#x56FE;&amp;#x7247;&amp;#x6587;&amp;#x4EF6;&amp;#xFF0C;&amp;#x5982;&amp;#xFF1A;&lt;code&gt;edu.niit.training.newsclientv12/files&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Android原生模拟器的SD卡位置&lt;ul&gt;
-&lt;li&gt;与手机SD卡的位置相同&lt;/li&gt;
+&lt;li&gt;Android&amp;#x539F;&amp;#x751F;&amp;#x6A21;&amp;#x62DF;&amp;#x5668;&amp;#x7684;SD&amp;#x5361;&amp;#x4F4D;&amp;#x7F6E;&lt;ul&gt;
+&lt;li&gt;&amp;#x4E0E;&amp;#x624B;&amp;#x673A;SD&amp;#x5361;&amp;#x7684;&amp;#x4F4D;&amp;#x7F6E;&amp;#x76F8;&amp;#x540C;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;3-Activity&quot;&gt;&lt;a href=&quot;#3-Activity&quot; class=&quot;headerlink&quot; title=&quot;3. Activity&quot;&gt;&lt;/a&gt;3. Activity&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;launchMode&lt;ul&gt;
-&lt;li&gt;用于Activity跳转：&lt;ul&gt;
-&lt;li&gt;决定是否生成新的Activity实例&lt;/li&gt;
-&lt;li&gt;决定是否重用已存在的Activity实例&lt;/li&gt;
-&lt;li&gt;决定是否和其它Activity实例公用一个task里&lt;/li&gt;
+&lt;li&gt;&amp;#x7528;&amp;#x4E8E;Activity&amp;#x8DF3;&amp;#x8F6C;&amp;#xFF1A;&lt;ul&gt;
+&lt;li&gt;&amp;#x51B3;&amp;#x5B9A;&amp;#x662F;&amp;#x5426;&amp;#x751F;&amp;#x6210;&amp;#x65B0;&amp;#x7684;Activity&amp;#x5B9E;&amp;#x4F8B;&lt;/li&gt;
+&lt;li&gt;&amp;#x51B3;&amp;#x5B9A;&amp;#x662F;&amp;#x5426;&amp;#x91CD;&amp;#x7528;&amp;#x5DF2;&amp;#x5B58;&amp;#x5728;&amp;#x7684;Activity&amp;#x5B9E;&amp;#x4F8B;&lt;/li&gt;
+&lt;li&gt;&amp;#x51B3;&amp;#x5B9A;&amp;#x662F;&amp;#x5426;&amp;#x548C;&amp;#x5176;&amp;#x5B83;Activity&amp;#x5B9E;&amp;#x4F8B;&amp;#x516C;&amp;#x7528;&amp;#x4E00;&amp;#x4E2A;task&amp;#x91CC;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;task的概念：一个栈结构的对象，可以管理多个Activity，启动一个应用，就创建一个与之对应的task&lt;/li&gt;
-&lt;li&gt;有四种launchMode&lt;ul&gt;
+&lt;li&gt;task&amp;#x7684;&amp;#x6982;&amp;#x5FF5;&amp;#xFF1A;&amp;#x4E00;&amp;#x4E2A;&amp;#x6808;&amp;#x7ED3;&amp;#x6784;&amp;#x7684;&amp;#x5BF9;&amp;#x8C61;&amp;#xFF0C;&amp;#x53EF;&amp;#x4EE5;&amp;#x7BA1;&amp;#x7406;&amp;#x591A;&amp;#x4E2A;Activity&amp;#xFF0C;&amp;#x542F;&amp;#x52A8;&amp;#x4E00;&amp;#x4E2A;&amp;#x5E94;&amp;#x7528;&amp;#xFF0C;&amp;#x5C31;&amp;#x521B;&amp;#x5EFA;&amp;#x4E00;&amp;#x4E2A;&amp;#x4E0E;&amp;#x4E4B;&amp;#x5BF9;&amp;#x5E94;&amp;#x7684;task&lt;/li&gt;
+&lt;li&gt;&amp;#x6709;&amp;#x56DB;&amp;#x79CD;launchMode&lt;ul&gt;
 &lt;li&gt;standard&lt;/li&gt;
 &lt;li&gt;singleTop&lt;/li&gt;
 &lt;li&gt;singleTask&lt;/li&gt;
 &lt;li&gt;singleInstance&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;配置：在AndroidManifest.xml中配置&lt;activity&gt;的&lt;code&gt;android:launchMode&lt;/code&gt;属性&lt;/activity&gt;&lt;/li&gt;
-&lt;li&gt;standard：默认的启动模式，不管有没有已存在的实例，都生成新的实例&lt;br&gt;  &lt;img src=&quot;http://i.imgur.com/k0xc6Bx.png&quot; alt=&quot;standard启动模式&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&amp;#x914D;&amp;#x7F6E;&amp;#xFF1A;&amp;#x5728;AndroidManifest.xml&amp;#x4E2D;&amp;#x914D;&amp;#x7F6E;&lt;activity&gt;&amp;#x7684;&lt;code&gt;android:launchMode&lt;/code&gt;&amp;#x5C5E;&amp;#x6027;&lt;/activity&gt;&lt;/li&gt;
+&lt;li&gt;standard&amp;#xFF1A;&amp;#x9ED8;&amp;#x8BA4;&amp;#x7684;&amp;#x542F;&amp;#x52A8;&amp;#x6A21;&amp;#x5F0F;&amp;#xFF0C;&amp;#x4E0D;&amp;#x7BA1;&amp;#x6709;&amp;#x6CA1;&amp;#x6709;&amp;#x5DF2;&amp;#x5B58;&amp;#x5728;&amp;#x7684;&amp;#x5B9E;&amp;#x4F8B;&amp;#xFF0C;&amp;#x90FD;&amp;#x751F;&amp;#x6210;&amp;#x65B0;&amp;#x7684;&amp;#x5B9E;&amp;#x4F8B;&lt;br&gt;  &lt;img src=&quot;http://i.imgur.com/k0xc6Bx.png&quot; alt=&quot;standard&amp;#x542F;&amp;#x52A8;&amp;#x6A21;&amp;#x5F0F;&quot;&gt;&lt;/li&gt;
 &lt;li&gt;singleTop&lt;ul&gt;
-&lt;li&gt;跳转时系统会先在栈结构中寻找是否有一个FirstActivity实例正位于栈顶，如果有则不再生成新的，而是直接使用。&lt;br&gt;&lt;img src=&quot;http://i.imgur.com/0XUZ827.png&quot; alt=&quot;singleTop&quot;&gt;&lt;/li&gt;
-&lt;li&gt;当从SecondActivity跳转到FirstActivity时，系统发现存在有FirstActivity实例,但不是位于栈顶，于是重新生成一个实例。&lt;br&gt;&lt;img src=&quot;http://i.imgur.com/yH5aL3H.png&quot; alt=&quot;singleTop-2&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&amp;#x8DF3;&amp;#x8F6C;&amp;#x65F6;&amp;#x7CFB;&amp;#x7EDF;&amp;#x4F1A;&amp;#x5148;&amp;#x5728;&amp;#x6808;&amp;#x7ED3;&amp;#x6784;&amp;#x4E2D;&amp;#x5BFB;&amp;#x627E;&amp;#x662F;&amp;#x5426;&amp;#x6709;&amp;#x4E00;&amp;#x4E2A;FirstActivity&amp;#x5B9E;&amp;#x4F8B;&amp;#x6B63;&amp;#x4F4D;&amp;#x4E8E;&amp;#x6808;&amp;#x9876;&amp;#xFF0C;&amp;#x5982;&amp;#x679C;&amp;#x6709;&amp;#x5219;&amp;#x4E0D;&amp;#x518D;&amp;#x751F;&amp;#x6210;&amp;#x65B0;&amp;#x7684;&amp;#xFF0C;&amp;#x800C;&amp;#x662F;&amp;#x76F4;&amp;#x63A5;&amp;#x4F7F;&amp;#x7528;&amp;#x3002;&lt;br&gt;&lt;img src=&quot;http://i.imgur.com/0XUZ827.png&quot; alt=&quot;singleTop&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&amp;#x5F53;&amp;#x4ECE;SecondActivity&amp;#x8DF3;&amp;#x8F6C;&amp;#x5230;FirstActivity&amp;#x65F6;&amp;#xFF0C;&amp;#x7CFB;&amp;#x7EDF;&amp;#x53D1;&amp;#x73B0;&amp;#x5B58;&amp;#x5728;&amp;#x6709;FirstActivity&amp;#x5B9E;&amp;#x4F8B;,&amp;#x4F46;&amp;#x4E0D;&amp;#x662F;&amp;#x4F4D;&amp;#x4E8E;&amp;#x6808;&amp;#x9876;&amp;#xFF0C;&amp;#x4E8E;&amp;#x662F;&amp;#x91CD;&amp;#x65B0;&amp;#x751F;&amp;#x6210;&amp;#x4E00;&amp;#x4E2A;&amp;#x5B9E;&amp;#x4F8B;&amp;#x3002;&lt;br&gt;&lt;img src=&quot;http://i.imgur.com/yH5aL3H.png&quot; alt=&quot;singleTop-2&quot;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;singleTask:&lt;ul&gt;
-&lt;li&gt;如果发现有对应的Activity实例，则使此Activity实例之上的其他Activity实例统统出栈，使此Activity实例成为栈顶对象，显示到幕前。&lt;/li&gt;
+&lt;li&gt;&amp;#x5982;&amp;#x679C;&amp;#x53D1;&amp;#x73B0;&amp;#x6709;&amp;#x5BF9;&amp;#x5E94;&amp;#x7684;Activity&amp;#x5B9E;&amp;#x4F8B;&amp;#xFF0C;&amp;#x5219;&amp;#x4F7F;&amp;#x6B64;Activity&amp;#x5B9E;&amp;#x4F8B;&amp;#x4E4B;&amp;#x4E0A;&amp;#x7684;&amp;#x5176;&amp;#x4ED6;Activity&amp;#x5B9E;&amp;#x4F8B;&amp;#x7EDF;&amp;#x7EDF;&amp;#x51FA;&amp;#x6808;&amp;#xFF0C;&amp;#x4F7F;&amp;#x6B64;Activity&amp;#x5B9E;&amp;#x4F8B;&amp;#x6210;&amp;#x4E3A;&amp;#x6808;&amp;#x9876;&amp;#x5BF9;&amp;#x8C61;&amp;#xFF0C;&amp;#x663E;&amp;#x793A;&amp;#x5230;&amp;#x5E55;&amp;#x524D;&amp;#x3002;&lt;/li&gt;
 &lt;li&gt;&lt;img src=&quot;http://i.imgur.com/Runvgsh.png&quot; alt=&quot;singleTask&quot;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;singleInstance&lt;ul&gt;
-&lt;li&gt;它启用一个新的栈结构，将Acitvity放置于这个新的栈结构中，并保证不再有其他Activity实例进入。&lt;br&gt;&lt;img src=&quot;http://i.imgur.com/HlX6fjw.png&quot; alt=&quot;singleInstance&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&amp;#x5B83;&amp;#x542F;&amp;#x7528;&amp;#x4E00;&amp;#x4E2A;&amp;#x65B0;&amp;#x7684;&amp;#x6808;&amp;#x7ED3;&amp;#x6784;&amp;#xFF0C;&amp;#x5C06;Acitvity&amp;#x653E;&amp;#x7F6E;&amp;#x4E8E;&amp;#x8FD9;&amp;#x4E2A;&amp;#x65B0;&amp;#x7684;&amp;#x6808;&amp;#x7ED3;&amp;#x6784;&amp;#x4E2D;&amp;#xFF0C;&amp;#x5E76;&amp;#x4FDD;&amp;#x8BC1;&amp;#x4E0D;&amp;#x518D;&amp;#x6709;&amp;#x5176;&amp;#x4ED6;Activity&amp;#x5B9E;&amp;#x4F8B;&amp;#x8FDB;&amp;#x5165;&amp;#x3002;&lt;br&gt;&lt;img src=&quot;http://i.imgur.com/HlX6fjw.png&quot; alt=&quot;singleInstance&quot;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/liuhe688/article/details/6754323&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;参考博客&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/liuhe688/article/details/6754323&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&amp;#x53C2;&amp;#x8003;&amp;#x535A;&amp;#x5BA2;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -334,7 +334,7 @@ break;
     <summary type="html">
     
       &lt;h3 id=&quot;1-ActionBar&quot;&gt;&lt;a href=&quot;#1-ActionBar&quot; class=&quot;headerlink&quot; title=&quot;1. ActionBar&quot;&gt;&lt;/a&gt;1. ActionBar&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;参考 &lt;a href=&quot;http://blog.cs
+&lt;li&gt;&amp;#x53C2;&amp;#x8003; &lt;a href=&quot;
     
     </summary>
     
@@ -346,29 +346,28 @@ break;
     <link href="http://yoursite.com/2016/05/24/Android-Studio%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/"/>
     <id>http://yoursite.com/2016/05/24/Android-Studio常用插件/</id>
     <published>2016-05-24T03:01:25.000Z</published>
-    <updated>2016-05-24T05:34:22.563Z</updated>
+    <updated>2016-05-24T05:36:25.315Z</updated>
     
-    <content type="html">&lt;h1 id=&quot;Android-Studio使用&quot;&gt;&lt;a href=&quot;#Android-Studio使用&quot; class=&quot;headerlink&quot; title=&quot;Android Studio使用&quot;&gt;&lt;/a&gt;Android Studio使用&lt;/h1&gt;&lt;h2 id=&quot;1-导入第三方jar包及开源库&quot;&gt;&lt;a href=&quot;#1-导入第三方jar包及开源库&quot; class=&quot;headerlink&quot; title=&quot;1. 导入第三方jar包及开源库&quot;&gt;&lt;/a&gt;1. 导入第三方jar包及开源库&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;###导入本地jar&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;将jar文件拷贝至libs，右键点击jar文件，选择&lt;code&gt;add as a library&lt;/code&gt; 即可导入，在模块的build.gradle的compile会增加&lt;/p&gt;
+    <content type="html">&lt;h2 id=&quot;1-&amp;#x5BFC;&amp;#x5165;&amp;#x7B2C;&amp;#x4E09;&amp;#x65B9;jar&amp;#x5305;&amp;#x53CA;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&quot;&gt;&lt;a href=&quot;#1-&amp;#x5BFC;&amp;#x5165;&amp;#x7B2C;&amp;#x4E09;&amp;#x65B9;jar&amp;#x5305;&amp;#x53CA;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&quot; class=&quot;headerlink&quot; title=&quot;1. &amp;#x5BFC;&amp;#x5165;&amp;#x7B2C;&amp;#x4E09;&amp;#x65B9;jar&amp;#x5305;&amp;#x53CA;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&quot;&gt;&lt;/a&gt;1. &amp;#x5BFC;&amp;#x5165;&amp;#x7B2C;&amp;#x4E09;&amp;#x65B9;jar&amp;#x5305;&amp;#x53CA;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h3 id=&quot;&amp;#x5BFC;&amp;#x5165;&amp;#x672C;&amp;#x5730;jar&quot;&gt;&lt;a href=&quot;#&amp;#x5BFC;&amp;#x5165;&amp;#x672C;&amp;#x5730;jar&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x5BFC;&amp;#x5165;&amp;#x672C;&amp;#x5730;jar&quot;&gt;&lt;/a&gt;&amp;#x5BFC;&amp;#x5165;&amp;#x672C;&amp;#x5730;jar&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;p&gt;&amp;#x5C06;jar&amp;#x6587;&amp;#x4EF6;&amp;#x62F7;&amp;#x8D1D;&amp;#x81F3;libs&amp;#xFF0C;&amp;#x53F3;&amp;#x952E;&amp;#x70B9;&amp;#x51FB;jar&amp;#x6587;&amp;#x4EF6;&amp;#xFF0C;&amp;#x9009;&amp;#x62E9;&lt;code&gt;add as a library&lt;/code&gt; &amp;#x5373;&amp;#x53EF;&amp;#x5BFC;&amp;#x5165;&amp;#xFF0C;&amp;#x5728;&amp;#x6A21;&amp;#x5757;&amp;#x7684;build.gradle&amp;#x7684;compile&amp;#x4F1A;&amp;#x589E;&amp;#x52A0;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;compile files(&amp;apos;libs/butterknife-6.1.0.jar&amp;apos;)
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果builder.gradle中已有&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x5982;&amp;#x679C;builder.gradle&amp;#x4E2D;&amp;#x5DF2;&amp;#x6709;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;compile fileTree(include: [&amp;apos;*.jar&amp;apos;], dir: &amp;apos;libs&amp;apos;)
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;就不需要再 add 了，Sync 一下 gradle 就可以了。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x5C31;&amp;#x4E0D;&amp;#x9700;&amp;#x8981;&amp;#x518D; add &amp;#x4E86;&amp;#xFF0C;Sync &amp;#x4E00;&amp;#x4E0B; gradle &amp;#x5C31;&amp;#x53EF;&amp;#x4EE5;&amp;#x4E86;&amp;#x3002;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;h3 id=&quot;添加远程开源库&quot;&gt;&lt;a href=&quot;#添加远程开源库&quot; class=&quot;headerlink&quot; title=&quot;添加远程开源库&quot;&gt;&lt;/a&gt;添加远程开源库&lt;/h3&gt;&lt;/blockquote&gt;
-&lt;p&gt;可以下载开源库，进入模块的build.gradle 文件，添加如下图的内容即可：&lt;/p&gt;
+&lt;h3 id=&quot;&amp;#x6DFB;&amp;#x52A0;&amp;#x8FDC;&amp;#x7A0B;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&quot;&gt;&lt;a href=&quot;#&amp;#x6DFB;&amp;#x52A0;&amp;#x8FDC;&amp;#x7A0B;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x6DFB;&amp;#x52A0;&amp;#x8FDC;&amp;#x7A0B;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&quot;&gt;&lt;/a&gt;&amp;#x6DFB;&amp;#x52A0;&amp;#x8FDC;&amp;#x7A0B;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;p&gt;&amp;#x53EF;&amp;#x4EE5;&amp;#x4E0B;&amp;#x8F7D;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&amp;#xFF0C;&amp;#x8FDB;&amp;#x5165;&amp;#x6A21;&amp;#x5757;&amp;#x7684;build.gradle &amp;#x6587;&amp;#x4EF6;&amp;#xFF0C;&amp;#x6DFB;&amp;#x52A0;&amp;#x5982;&amp;#x4E0B;&amp;#x56FE;&amp;#x7684;&amp;#x5185;&amp;#x5BB9;&amp;#x5373;&amp;#x53EF;&amp;#xFF1A;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://i.imgur.com/NGSlp7r.png&quot; alt=&quot;import libs&quot;&gt;&lt;/p&gt;
-&lt;p&gt;添加的内容一般会在开源库的readme.md中有说明。&lt;/p&gt;
+&lt;p&gt;&amp;#x6DFB;&amp;#x52A0;&amp;#x7684;&amp;#x5185;&amp;#x5BB9;&amp;#x4E00;&amp;#x822C;&amp;#x4F1A;&amp;#x5728;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&amp;#x7684;readme.md&amp;#x4E2D;&amp;#x6709;&amp;#x8BF4;&amp;#x660E;&amp;#x3002;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;h3 id=&quot;添加本地开源库&quot;&gt;&lt;a href=&quot;#添加本地开源库&quot; class=&quot;headerlink&quot; title=&quot;添加本地开源库&quot;&gt;&lt;/a&gt;添加本地开源库&lt;/h3&gt;&lt;/blockquote&gt;
-&lt;p&gt;将开源库下载下来，放置在与 app 目录同级的目录下，然后编辑 setting.gradle 文件，加入”:开源库文件夹名”。如：在 app 同级的目录下放置了 volley 的开源库文件夹，然后编辑  setting.gradle，内容改为：&lt;/p&gt;
+&lt;h3 id=&quot;&amp;#x6DFB;&amp;#x52A0;&amp;#x672C;&amp;#x5730;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&quot;&gt;&lt;a href=&quot;#&amp;#x6DFB;&amp;#x52A0;&amp;#x672C;&amp;#x5730;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x6DFB;&amp;#x52A0;&amp;#x672C;&amp;#x5730;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&quot;&gt;&lt;/a&gt;&amp;#x6DFB;&amp;#x52A0;&amp;#x672C;&amp;#x5730;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;p&gt;&amp;#x5C06;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&amp;#x4E0B;&amp;#x8F7D;&amp;#x4E0B;&amp;#x6765;&amp;#xFF0C;&amp;#x653E;&amp;#x7F6E;&amp;#x5728;&amp;#x4E0E; app &amp;#x76EE;&amp;#x5F55;&amp;#x540C;&amp;#x7EA7;&amp;#x7684;&amp;#x76EE;&amp;#x5F55;&amp;#x4E0B;&amp;#xFF0C;&amp;#x7136;&amp;#x540E;&amp;#x7F16;&amp;#x8F91; setting.gradle &amp;#x6587;&amp;#x4EF6;&amp;#xFF0C;&amp;#x52A0;&amp;#x5165;&amp;#x201D;:&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&amp;#x6587;&amp;#x4EF6;&amp;#x5939;&amp;#x540D;&amp;#x201D;&amp;#x3002;&amp;#x5982;&amp;#xFF1A;&amp;#x5728; app &amp;#x540C;&amp;#x7EA7;&amp;#x7684;&amp;#x76EE;&amp;#x5F55;&amp;#x4E0B;&amp;#x653E;&amp;#x7F6E;&amp;#x4E86; volley &amp;#x7684;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&amp;#x6587;&amp;#x4EF6;&amp;#x5939;&amp;#xFF0C;&amp;#x7136;&amp;#x540E;&amp;#x7F16;&amp;#x8F91;  setting.gradle&amp;#xFF0C;&amp;#x5185;&amp;#x5BB9;&amp;#x6539;&amp;#x4E3A;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;include &amp;apos;:app&amp;apos;, &amp;quot;:volley&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后再回到你的 app 目录下的 build.gradle 文件，在 dependencies { }节点下加入：&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x7136;&amp;#x540E;&amp;#x518D;&amp;#x56DE;&amp;#x5230;&amp;#x4F60;&amp;#x7684; app &amp;#x76EE;&amp;#x5F55;&amp;#x4E0B;&amp;#x7684; build.gradle &amp;#x6587;&amp;#x4EF6;&amp;#xFF0C;&amp;#x5728; dependencies { }&amp;#x8282;&amp;#x70B9;&amp;#x4E0B;&amp;#x52A0;&amp;#x5165;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;compile project(&amp;apos;:volley&amp;apos;)
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;之后就可以在代码中引用那个保存在你本地的开源库（其实叫Module）&lt;/p&gt;
-&lt;h2 id=&quot;2-常用插件&quot;&gt;&lt;a href=&quot;#2-常用插件&quot; class=&quot;headerlink&quot; title=&quot;2. 常用插件&quot;&gt;&lt;/a&gt;2. 常用插件&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://plugins.jetbrains.com/?androidstudio&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;常用插件大全&lt;/a&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x4E4B;&amp;#x540E;&amp;#x5C31;&amp;#x53EF;&amp;#x4EE5;&amp;#x5728;&amp;#x4EE3;&amp;#x7801;&amp;#x4E2D;&amp;#x5F15;&amp;#x7528;&amp;#x90A3;&amp;#x4E2A;&amp;#x4FDD;&amp;#x5B58;&amp;#x5728;&amp;#x4F60;&amp;#x672C;&amp;#x5730;&amp;#x7684;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&amp;#xFF08;&amp;#x5176;&amp;#x5B9E;&amp;#x53EB;Module&amp;#xFF09;&lt;/p&gt;
+&lt;h2 id=&quot;2-&amp;#x5E38;&amp;#x7528;&amp;#x63D2;&amp;#x4EF6;&quot;&gt;&lt;a href=&quot;#2-&amp;#x5E38;&amp;#x7528;&amp;#x63D2;&amp;#x4EF6;&quot; class=&quot;headerlink&quot; title=&quot;2. &amp;#x5E38;&amp;#x7528;&amp;#x63D2;&amp;#x4EF6;&quot;&gt;&lt;/a&gt;2. &amp;#x5E38;&amp;#x7528;&amp;#x63D2;&amp;#x4EF6;&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://plugins.jetbrains.com/?androidstudio&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&amp;#x5E38;&amp;#x7528;&amp;#x63D2;&amp;#x4EF6;&amp;#x5927;&amp;#x5168;&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;Butterknife Zelezny&lt;/li&gt;
@@ -382,19 +381,19 @@ break;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&quot;Butterknife-Zelezny&quot;&gt;&lt;a href=&quot;#Butterknife-Zelezny&quot; class=&quot;headerlink&quot; title=&quot;Butterknife Zelezny&quot;&gt;&lt;/a&gt;Butterknife Zelezny&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;功能：专注于Android系统的View注入框架&lt;/li&gt;
-&lt;li&gt;下载：&lt;a href=&quot;https://plugins.jetbrains.com/plugin/7369?pr=androidstudio&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Android ButterKnife Zelezny&lt;/a&gt;   &lt;/li&gt;
-&lt;li&gt;安装：Setting -&amp;gt; Preferences -&amp;gt; Plugins -&amp;gt; Browse repositories，查找Butterknife Zelezny，或下载后从磁盘安装    &lt;/li&gt;
-&lt;li&gt;使用：  &lt;ol&gt;
-&lt;li&gt;确保最新的Bufferknife jar文件导入classpath  &lt;/li&gt;
-&lt;li&gt;右键选择代码中的layout引用，然后选择&lt;code&gt;Generate&lt;/code&gt;或直接按下&lt;code&gt;alt+Insert&lt;/code&gt;，再选择&lt;code&gt;Generate ButterKnife Injections&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;在打开的对话框中选择需要注解的组件，也可以给Adapter设置一个ViewHolder&lt;/li&gt;
-&lt;li&gt;点击&lt;code&gt;Confirm&lt;/code&gt;就会生成组件的注解代码&lt;/li&gt;
+&lt;li&gt;&amp;#x529F;&amp;#x80FD;&amp;#xFF1A;&amp;#x4E13;&amp;#x6CE8;&amp;#x4E8E;Android&amp;#x7CFB;&amp;#x7EDF;&amp;#x7684;View&amp;#x6CE8;&amp;#x5165;&amp;#x6846;&amp;#x67B6;&lt;/li&gt;
+&lt;li&gt;&amp;#x4E0B;&amp;#x8F7D;&amp;#xFF1A;&lt;a href=&quot;https://plugins.jetbrains.com/plugin/7369?pr=androidstudio&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Android ButterKnife Zelezny&lt;/a&gt;   &lt;/li&gt;
+&lt;li&gt;&amp;#x5B89;&amp;#x88C5;&amp;#xFF1A;Setting -&amp;gt; Preferences -&amp;gt; Plugins -&amp;gt; Browse repositories&amp;#xFF0C;&amp;#x67E5;&amp;#x627E;Butterknife Zelezny&amp;#xFF0C;&amp;#x6216;&amp;#x4E0B;&amp;#x8F7D;&amp;#x540E;&amp;#x4ECE;&amp;#x78C1;&amp;#x76D8;&amp;#x5B89;&amp;#x88C5;    &lt;/li&gt;
+&lt;li&gt;&amp;#x4F7F;&amp;#x7528;&amp;#xFF1A;  &lt;ol&gt;
+&lt;li&gt;&amp;#x786E;&amp;#x4FDD;&amp;#x6700;&amp;#x65B0;&amp;#x7684;Bufferknife jar&amp;#x6587;&amp;#x4EF6;&amp;#x5BFC;&amp;#x5165;classpath  &lt;/li&gt;
+&lt;li&gt;&amp;#x53F3;&amp;#x952E;&amp;#x9009;&amp;#x62E9;&amp;#x4EE3;&amp;#x7801;&amp;#x4E2D;&amp;#x7684;layout&amp;#x5F15;&amp;#x7528;&amp;#xFF0C;&amp;#x7136;&amp;#x540E;&amp;#x9009;&amp;#x62E9;&lt;code&gt;Generate&lt;/code&gt;&amp;#x6216;&amp;#x76F4;&amp;#x63A5;&amp;#x6309;&amp;#x4E0B;&lt;code&gt;alt+Insert&lt;/code&gt;&amp;#xFF0C;&amp;#x518D;&amp;#x9009;&amp;#x62E9;&lt;code&gt;Generate ButterKnife Injections&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&amp;#x5728;&amp;#x6253;&amp;#x5F00;&amp;#x7684;&amp;#x5BF9;&amp;#x8BDD;&amp;#x6846;&amp;#x4E2D;&amp;#x9009;&amp;#x62E9;&amp;#x9700;&amp;#x8981;&amp;#x6CE8;&amp;#x89E3;&amp;#x7684;&amp;#x7EC4;&amp;#x4EF6;&amp;#xFF0C;&amp;#x4E5F;&amp;#x53EF;&amp;#x4EE5;&amp;#x7ED9;Adapter&amp;#x8BBE;&amp;#x7F6E;&amp;#x4E00;&amp;#x4E2A;ViewHolder&lt;/li&gt;
+&lt;li&gt;&amp;#x70B9;&amp;#x51FB;&lt;code&gt;Confirm&lt;/code&gt;&amp;#x5C31;&amp;#x4F1A;&amp;#x751F;&amp;#x6210;&amp;#x7EC4;&amp;#x4EF6;&amp;#x7684;&amp;#x6CE8;&amp;#x89E3;&amp;#x4EE3;&amp;#x7801;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;特性&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x7279;&amp;#x6027;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;支持Activity中的View注入&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x652F;&amp;#x6301;Activity&amp;#x4E2D;&amp;#x7684;View&amp;#x6CE8;&amp;#x5165;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;class ExampleActivity extends Activity {
     @InjectView(R.id.title) TextView title;
     @InjectView(R.id.subtitle) TextView subtitle;
@@ -408,7 +407,7 @@ break;
     }
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;支持View中的View注入&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x652F;&amp;#x6301;View&amp;#x4E2D;&amp;#x7684;View&amp;#x6CE8;&amp;#x5165;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;public class FancyFragment extends Fragment {
     @InjectView(R.id.button1) Button button1;
     @InjectView(R.id.button2) Button button2;
@@ -423,7 +422,7 @@ break;
     }
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;支持ViewHolder中的注入&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x652F;&amp;#x6301;ViewHolder&amp;#x4E2D;&amp;#x7684;&amp;#x6CE8;&amp;#x5165;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;public class MyAdapter extends BaseAdapter {
   @Override public View getView(int position, View view, ViewGroup parent) {
     ViewHolder holder;
@@ -451,25 +450,25 @@ break;
   }
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;支持View事件回调函数注入&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x652F;&amp;#x6301;View&amp;#x4E8B;&amp;#x4EF6;&amp;#x56DE;&amp;#x8C03;&amp;#x51FD;&amp;#x6570;&amp;#x6CE8;&amp;#x5165;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;View: @OnLongClick and @OnFocusChanged  
 TextView: @OnEditorAction  
 AdapterView: @OnItemClick and @OnItemLongClick  
 CompoundButton: @OnCheckedChanged  
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;  示例代码：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;// 带有 Button 参数
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;  &amp;#x793A;&amp;#x4F8B;&amp;#x4EE3;&amp;#x7801;&amp;#xFF1A;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;// &amp;#x5E26;&amp;#x6709; Button &amp;#x53C2;&amp;#x6570;
 @OnClick(R.id.submit)
 public void sayHi(Button button) {
   button.setText(&amp;quot;Hello!&amp;quot;);
 }
 
-// 不带参数
+// &amp;#x4E0D;&amp;#x5E26;&amp;#x53C2;&amp;#x6570;
 @OnClick(R.id.submit)
 public void submit() {
   // TODO submit data to server...
 }
 
-// 同时注入多个 View 事件
+// &amp;#x540C;&amp;#x65F6;&amp;#x6CE8;&amp;#x5165;&amp;#x591A;&amp;#x4E2A; View &amp;#x4E8B;&amp;#x4EF6;
 @OnClick({ R.id.door1, R.id.door2, R.id.door3 })
 public void pickDoor(DoorView door) {
   if (door.hasPrizeBehind()) {
@@ -479,78 +478,78 @@ public void pickDoor(DoorView door) {
   }
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
-&lt;li&gt;使用截图：&lt;br&gt;&lt;img alt=&quot;Screenshot #14384&quot; onclick=&quot;showImage(&#39;http:\/\/plugins.jetbrains.com\/files\/7369\/screenshot_14384.png&#39;)&quot; src=&quot;http://plugins.jetbrains.com/files/7369/screenshot_14384.png&quot; border=&quot;0&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&amp;#x4F7F;&amp;#x7528;&amp;#x622A;&amp;#x56FE;&amp;#xFF1A;&lt;br&gt;&lt;img alt=&quot;Screenshot #14384&quot; onclick=&quot;showImage(&amp;apos;http:\/\/plugins.jetbrains.com\/files\/7369\/screenshot_14384.png&amp;apos;)&quot; src=&quot;http://plugins.jetbrains.com/files/7369/screenshot_14384.png&quot; border=&quot;0&quot;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;Parcelable-Code-Generator&quot;&gt;&lt;a href=&quot;#Parcelable-Code-Generator&quot; class=&quot;headerlink&quot; title=&quot;Parcelable Code Generator&quot;&gt;&lt;/a&gt;Parcelable Code Generator&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;功能：Parcelable接口是Android特有的序列化方法，效率比Serializable接口高，还可以用在IPC中，但是实现稍微复杂一些。该插件可以帮助实现Parcelable接口所需的字段和方法的代码&lt;/li&gt;
-&lt;li&gt;下载：&lt;a href=&quot;https://plugins.jetbrains.com/plugin/7332?pr=androidstudio&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Parcelable Code Generator&lt;/a&gt;   &lt;/li&gt;
-&lt;li&gt;安装：Setting -&amp;gt; Preferences -&amp;gt; Plugins -&amp;gt; Browse repositories，查找Parcelable Code Generator，或下载后从磁盘安装  &lt;/li&gt;
-&lt;li&gt;使用：  &lt;ol&gt;
-&lt;li&gt;新建一个实体类，定义好属性&lt;/li&gt;
-&lt;li&gt;右键选择&lt;code&gt;Generator&lt;/code&gt;或直接按下&lt;code&gt;Alt+Insert&lt;/code&gt;，选择&lt;code&gt;Parcelable&lt;/code&gt;，选择需要的属性，点击&lt;code&gt;OK&lt;/code&gt;，即可生成相应的代码。&lt;/li&gt;
-&lt;li&gt;截图&lt;br&gt;&lt;img src=&quot;http://i.imgur.com/wubt1wW.png&quot; alt=&quot;Parcelable Code Generator&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&amp;#x529F;&amp;#x80FD;&amp;#xFF1A;Parcelable&amp;#x63A5;&amp;#x53E3;&amp;#x662F;Android&amp;#x7279;&amp;#x6709;&amp;#x7684;&amp;#x5E8F;&amp;#x5217;&amp;#x5316;&amp;#x65B9;&amp;#x6CD5;&amp;#xFF0C;&amp;#x6548;&amp;#x7387;&amp;#x6BD4;Serializable&amp;#x63A5;&amp;#x53E3;&amp;#x9AD8;&amp;#xFF0C;&amp;#x8FD8;&amp;#x53EF;&amp;#x4EE5;&amp;#x7528;&amp;#x5728;IPC&amp;#x4E2D;&amp;#xFF0C;&amp;#x4F46;&amp;#x662F;&amp;#x5B9E;&amp;#x73B0;&amp;#x7A0D;&amp;#x5FAE;&amp;#x590D;&amp;#x6742;&amp;#x4E00;&amp;#x4E9B;&amp;#x3002;&amp;#x8BE5;&amp;#x63D2;&amp;#x4EF6;&amp;#x53EF;&amp;#x4EE5;&amp;#x5E2E;&amp;#x52A9;&amp;#x5B9E;&amp;#x73B0;Parcelable&amp;#x63A5;&amp;#x53E3;&amp;#x6240;&amp;#x9700;&amp;#x7684;&amp;#x5B57;&amp;#x6BB5;&amp;#x548C;&amp;#x65B9;&amp;#x6CD5;&amp;#x7684;&amp;#x4EE3;&amp;#x7801;&lt;/li&gt;
+&lt;li&gt;&amp;#x4E0B;&amp;#x8F7D;&amp;#xFF1A;&lt;a href=&quot;https://plugins.jetbrains.com/plugin/7332?pr=androidstudio&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Parcelable Code Generator&lt;/a&gt;   &lt;/li&gt;
+&lt;li&gt;&amp;#x5B89;&amp;#x88C5;&amp;#xFF1A;Setting -&amp;gt; Preferences -&amp;gt; Plugins -&amp;gt; Browse repositories&amp;#xFF0C;&amp;#x67E5;&amp;#x627E;Parcelable Code Generator&amp;#xFF0C;&amp;#x6216;&amp;#x4E0B;&amp;#x8F7D;&amp;#x540E;&amp;#x4ECE;&amp;#x78C1;&amp;#x76D8;&amp;#x5B89;&amp;#x88C5;  &lt;/li&gt;
+&lt;li&gt;&amp;#x4F7F;&amp;#x7528;&amp;#xFF1A;  &lt;ol&gt;
+&lt;li&gt;&amp;#x65B0;&amp;#x5EFA;&amp;#x4E00;&amp;#x4E2A;&amp;#x5B9E;&amp;#x4F53;&amp;#x7C7B;&amp;#xFF0C;&amp;#x5B9A;&amp;#x4E49;&amp;#x597D;&amp;#x5C5E;&amp;#x6027;&lt;/li&gt;
+&lt;li&gt;&amp;#x53F3;&amp;#x952E;&amp;#x9009;&amp;#x62E9;&lt;code&gt;Generator&lt;/code&gt;&amp;#x6216;&amp;#x76F4;&amp;#x63A5;&amp;#x6309;&amp;#x4E0B;&lt;code&gt;Alt+Insert&lt;/code&gt;&amp;#xFF0C;&amp;#x9009;&amp;#x62E9;&lt;code&gt;Parcelable&lt;/code&gt;&amp;#xFF0C;&amp;#x9009;&amp;#x62E9;&amp;#x9700;&amp;#x8981;&amp;#x7684;&amp;#x5C5E;&amp;#x6027;&amp;#xFF0C;&amp;#x70B9;&amp;#x51FB;&lt;code&gt;OK&lt;/code&gt;&amp;#xFF0C;&amp;#x5373;&amp;#x53EF;&amp;#x751F;&amp;#x6210;&amp;#x76F8;&amp;#x5E94;&amp;#x7684;&amp;#x4EE3;&amp;#x7801;&amp;#x3002;&lt;/li&gt;
+&lt;li&gt;&amp;#x622A;&amp;#x56FE;&lt;br&gt;&lt;img src=&quot;http://i.imgur.com/wubt1wW.png&quot; alt=&quot;Parcelable Code Generator&quot;&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;Prettify&quot;&gt;&lt;a href=&quot;#Prettify&quot; class=&quot;headerlink&quot; title=&quot;Prettify&quot;&gt;&lt;/a&gt;Prettify&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;功能：从布局文件中生成对View的声明（不使用注解）&lt;/li&gt;
-&lt;li&gt;下载：&lt;a href=&quot;https://plugins.jetbrains.com/plugin/7405?pr=androidstudio&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Android Studio Prettify&lt;/a&gt;   &lt;/li&gt;
-&lt;li&gt;安装：Setting -&amp;gt; Preferences -&amp;gt; Plugins -&amp;gt; Browse repositories，查找Prettify，或下载后从磁盘安装  &lt;/li&gt;
-&lt;li&gt;特性：&lt;ol&gt;
-&lt;li&gt;inflate activity的setContentView的view变量的生成&lt;/li&gt;
-&lt;li&gt;在上下文菜单中加入&lt;code&gt;Extract String resource&lt;/code&gt;快捷键&lt;/li&gt;
-&lt;li&gt;view的cast检查的注解&lt;/li&gt;
-&lt;li&gt;views的field和method的变量生成&lt;/li&gt;
-&lt;li&gt;内部类的相关layout的文件&lt;/li&gt;
-&lt;li&gt;xml文件中的layout的id的查找&lt;/li&gt;
+&lt;li&gt;&amp;#x529F;&amp;#x80FD;&amp;#xFF1A;&amp;#x4ECE;&amp;#x5E03;&amp;#x5C40;&amp;#x6587;&amp;#x4EF6;&amp;#x4E2D;&amp;#x751F;&amp;#x6210;&amp;#x5BF9;View&amp;#x7684;&amp;#x58F0;&amp;#x660E;&amp;#xFF08;&amp;#x4E0D;&amp;#x4F7F;&amp;#x7528;&amp;#x6CE8;&amp;#x89E3;&amp;#xFF09;&lt;/li&gt;
+&lt;li&gt;&amp;#x4E0B;&amp;#x8F7D;&amp;#xFF1A;&lt;a href=&quot;https://plugins.jetbrains.com/plugin/7405?pr=androidstudio&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Android Studio Prettify&lt;/a&gt;   &lt;/li&gt;
+&lt;li&gt;&amp;#x5B89;&amp;#x88C5;&amp;#xFF1A;Setting -&amp;gt; Preferences -&amp;gt; Plugins -&amp;gt; Browse repositories&amp;#xFF0C;&amp;#x67E5;&amp;#x627E;Prettify&amp;#xFF0C;&amp;#x6216;&amp;#x4E0B;&amp;#x8F7D;&amp;#x540E;&amp;#x4ECE;&amp;#x78C1;&amp;#x76D8;&amp;#x5B89;&amp;#x88C5;  &lt;/li&gt;
+&lt;li&gt;&amp;#x7279;&amp;#x6027;&amp;#xFF1A;&lt;ol&gt;
+&lt;li&gt;inflate activity&amp;#x7684;setContentView&amp;#x7684;view&amp;#x53D8;&amp;#x91CF;&amp;#x7684;&amp;#x751F;&amp;#x6210;&lt;/li&gt;
+&lt;li&gt;&amp;#x5728;&amp;#x4E0A;&amp;#x4E0B;&amp;#x6587;&amp;#x83DC;&amp;#x5355;&amp;#x4E2D;&amp;#x52A0;&amp;#x5165;&lt;code&gt;Extract String resource&lt;/code&gt;&amp;#x5FEB;&amp;#x6377;&amp;#x952E;&lt;/li&gt;
+&lt;li&gt;view&amp;#x7684;cast&amp;#x68C0;&amp;#x67E5;&amp;#x7684;&amp;#x6CE8;&amp;#x89E3;&lt;/li&gt;
+&lt;li&gt;views&amp;#x7684;field&amp;#x548C;method&amp;#x7684;&amp;#x53D8;&amp;#x91CF;&amp;#x751F;&amp;#x6210;&lt;/li&gt;
+&lt;li&gt;&amp;#x5185;&amp;#x90E8;&amp;#x7C7B;&amp;#x7684;&amp;#x76F8;&amp;#x5173;layout&amp;#x7684;&amp;#x6587;&amp;#x4EF6;&lt;/li&gt;
+&lt;li&gt;xml&amp;#x6587;&amp;#x4EF6;&amp;#x4E2D;&amp;#x7684;layout&amp;#x7684;id&amp;#x7684;&amp;#x67E5;&amp;#x627E;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;使用截图  &lt;/p&gt;
-&lt;p&gt;  &lt;img alt=&quot;Screenshot #14418&quot; onclick=&quot;showImage(&#39;http:\/\/plugins.jetbrains.com\/files\/7405\/screenshot_14418.png&#39;)&quot; src=&quot;http://plugins.jetbrains.com/files/7405/screenshot_14418.png&quot; border=&quot;0&quot;&gt;&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x4F7F;&amp;#x7528;&amp;#x622A;&amp;#x56FE;  &lt;/p&gt;
+&lt;p&gt;  &lt;img alt=&quot;Screenshot #14418&quot; onclick=&quot;showImage(&amp;apos;http:\/\/plugins.jetbrains.com\/files\/7405\/screenshot_14418.png&amp;apos;)&quot; src=&quot;http://plugins.jetbrains.com/files/7405/screenshot_14418.png&quot; border=&quot;0&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;ADB-Idea&quot;&gt;&lt;a href=&quot;#ADB-Idea&quot; class=&quot;headerlink&quot; title=&quot;ADB Idea&quot;&gt;&lt;/a&gt;ADB Idea&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;功能：此插件可以轻松完成以下操作，而不用手动输入ADB命令&lt;ul&gt;
-&lt;li&gt;卸载应用&lt;/li&gt;
-&lt;li&gt;杀死应用进程&lt;/li&gt;
-&lt;li&gt;启动应用&lt;/li&gt;
-&lt;li&gt;重启应用&lt;/li&gt;
-&lt;li&gt;清除应用数据&lt;/li&gt;
-&lt;li&gt;清除应用数据并重启应用  &lt;/li&gt;
+&lt;li&gt;&amp;#x529F;&amp;#x80FD;&amp;#xFF1A;&amp;#x6B64;&amp;#x63D2;&amp;#x4EF6;&amp;#x53EF;&amp;#x4EE5;&amp;#x8F7B;&amp;#x677E;&amp;#x5B8C;&amp;#x6210;&amp;#x4EE5;&amp;#x4E0B;&amp;#x64CD;&amp;#x4F5C;&amp;#xFF0C;&amp;#x800C;&amp;#x4E0D;&amp;#x7528;&amp;#x624B;&amp;#x52A8;&amp;#x8F93;&amp;#x5165;ADB&amp;#x547D;&amp;#x4EE4;&lt;ul&gt;
+&lt;li&gt;&amp;#x5378;&amp;#x8F7D;&amp;#x5E94;&amp;#x7528;&lt;/li&gt;
+&lt;li&gt;&amp;#x6740;&amp;#x6B7B;&amp;#x5E94;&amp;#x7528;&amp;#x8FDB;&amp;#x7A0B;&lt;/li&gt;
+&lt;li&gt;&amp;#x542F;&amp;#x52A8;&amp;#x5E94;&amp;#x7528;&lt;/li&gt;
+&lt;li&gt;&amp;#x91CD;&amp;#x542F;&amp;#x5E94;&amp;#x7528;&lt;/li&gt;
+&lt;li&gt;&amp;#x6E05;&amp;#x9664;&amp;#x5E94;&amp;#x7528;&amp;#x6570;&amp;#x636E;&lt;/li&gt;
+&lt;li&gt;&amp;#x6E05;&amp;#x9664;&amp;#x5E94;&amp;#x7528;&amp;#x6570;&amp;#x636E;&amp;#x5E76;&amp;#x91CD;&amp;#x542F;&amp;#x5E94;&amp;#x7528;  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;下载：&lt;a href=&quot;http://plugins.jetbrains.com/plugin/7380?pr=idea&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ADB Idea&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;安装：Setting -&amp;gt; Preferences -&amp;gt; Plugins -&amp;gt; Browse repositories，查找ADB Idea，或下载后从磁盘安装  &lt;/li&gt;
-&lt;li&gt;使用：在Tools -&amp;gt; Android -&amp;gt; ADB Idea中选择相应的菜单项进行操作。&lt;br&gt;&lt;img src=&quot;http://i.imgur.com/iMd4DTU.png&quot; alt=&quot;ADB Idea&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&amp;#x4E0B;&amp;#x8F7D;&amp;#xFF1A;&lt;a href=&quot;http://plugins.jetbrains.com/plugin/7380?pr=idea&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ADB Idea&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;#x5B89;&amp;#x88C5;&amp;#xFF1A;Setting -&amp;gt; Preferences -&amp;gt; Plugins -&amp;gt; Browse repositories&amp;#xFF0C;&amp;#x67E5;&amp;#x627E;ADB Idea&amp;#xFF0C;&amp;#x6216;&amp;#x4E0B;&amp;#x8F7D;&amp;#x540E;&amp;#x4ECE;&amp;#x78C1;&amp;#x76D8;&amp;#x5B89;&amp;#x88C5;  &lt;/li&gt;
+&lt;li&gt;&amp;#x4F7F;&amp;#x7528;&amp;#xFF1A;&amp;#x5728;Tools -&amp;gt; Android -&amp;gt; ADB Idea&amp;#x4E2D;&amp;#x9009;&amp;#x62E9;&amp;#x76F8;&amp;#x5E94;&amp;#x7684;&amp;#x83DC;&amp;#x5355;&amp;#x9879;&amp;#x8FDB;&amp;#x884C;&amp;#x64CD;&amp;#x4F5C;&amp;#x3002;&lt;br&gt;&lt;img src=&quot;http://i.imgur.com/iMd4DTU.png&quot; alt=&quot;ADB Idea&quot;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;GsonFormat&quot;&gt;&lt;a href=&quot;#GsonFormat&quot; class=&quot;headerlink&quot; title=&quot;GsonFormat&quot;&gt;&lt;/a&gt;GsonFormat&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;功能：根据JSONObject格式的字符串,自动生成实体类参数&lt;/li&gt;
-&lt;li&gt;安装：Setting -&amp;gt; Preferences -&amp;gt; Plugins -&amp;gt; Browse repositories，查找Gson，或下载后从磁盘安装  &lt;/li&gt;
-&lt;li&gt;使用：在实体类中使用Generate的快捷键，参考&lt;a href=&quot;https://github.com/zzz40500/GsonFormat&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;JSon实体类快速生成插件 GsonFormat使用&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;使用截图&lt;/p&gt;
+&lt;li&gt;&amp;#x529F;&amp;#x80FD;&amp;#xFF1A;&amp;#x6839;&amp;#x636E;JSONObject&amp;#x683C;&amp;#x5F0F;&amp;#x7684;&amp;#x5B57;&amp;#x7B26;&amp;#x4E32;,&amp;#x81EA;&amp;#x52A8;&amp;#x751F;&amp;#x6210;&amp;#x5B9E;&amp;#x4F53;&amp;#x7C7B;&amp;#x53C2;&amp;#x6570;&lt;/li&gt;
+&lt;li&gt;&amp;#x5B89;&amp;#x88C5;&amp;#xFF1A;Setting -&amp;gt; Preferences -&amp;gt; Plugins -&amp;gt; Browse repositories&amp;#xFF0C;&amp;#x67E5;&amp;#x627E;Gson&amp;#xFF0C;&amp;#x6216;&amp;#x4E0B;&amp;#x8F7D;&amp;#x540E;&amp;#x4ECE;&amp;#x78C1;&amp;#x76D8;&amp;#x5B89;&amp;#x88C5;  &lt;/li&gt;
+&lt;li&gt;&amp;#x4F7F;&amp;#x7528;&amp;#xFF1A;&amp;#x5728;&amp;#x5B9E;&amp;#x4F53;&amp;#x7C7B;&amp;#x4E2D;&amp;#x4F7F;&amp;#x7528;Generate&amp;#x7684;&amp;#x5FEB;&amp;#x6377;&amp;#x952E;&amp;#xFF0C;&amp;#x53C2;&amp;#x8003;&lt;a href=&quot;https://github.com/zzz40500/GsonFormat&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;JSon&amp;#x5B9E;&amp;#x4F53;&amp;#x7C7B;&amp;#x5FEB;&amp;#x901F;&amp;#x751F;&amp;#x6210;&amp;#x63D2;&amp;#x4EF6; GsonFormat&amp;#x4F7F;&amp;#x7528;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x4F7F;&amp;#x7528;&amp;#x622A;&amp;#x56FE;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;简单的实体类&lt;/p&gt;
-&lt;p&gt;  &lt;img src=&quot;https://camo.githubusercontent.com/fbf4b89e2ec64e80d351f725d11762ebd2b7a515/687474703a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f3136363836362d303766333038346262363735386566612e676966&quot; alt=&quot;简单的.gif&quot; data-canonical-src=&quot;http://upload-images.jianshu.io/upload_images/166866-07f3084bb6758efa.gif&quot; style=&quot;max-width:100%;&quot;&gt;&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x7B80;&amp;#x5355;&amp;#x7684;&amp;#x5B9E;&amp;#x4F53;&amp;#x7C7B;&lt;/p&gt;
+&lt;p&gt;  &lt;img src=&quot;https://camo.githubusercontent.com/fbf4b89e2ec64e80d351f725d11762ebd2b7a515/687474703a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f3136363836362d303766333038346262363735386566612e676966&quot; alt=&quot;&amp;#x7B80;&amp;#x5355;&amp;#x7684;.gif&quot; data-canonical-src=&quot;http://upload-images.jianshu.io/upload_images/166866-07f3084bb6758efa.gif&quot; style=&quot;max-width:100%;&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;复杂的实体类&lt;/p&gt;
-&lt;p&gt;  &lt;img src=&quot;https://camo.githubusercontent.com/906f202f3172526a554e91825b85b53a9e02bdd4/687474703a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f3136363836362d333863316639396336643039373336372e676966&quot; alt=&quot;复杂.gif&quot; data-canonical-src=&quot;http://upload-images.jianshu.io/upload_images/166866-38c1f99c6d097367.gif&quot; style=&quot;max-width:100%;&quot;&gt;&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x590D;&amp;#x6742;&amp;#x7684;&amp;#x5B9E;&amp;#x4F53;&amp;#x7C7B;&lt;/p&gt;
+&lt;p&gt;  &lt;img src=&quot;https://camo.githubusercontent.com/906f202f3172526a554e91825b85b53a9e02bdd4/687474703a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f3136363836362d333863316639396336643039373336372e676966&quot; alt=&quot;&amp;#x590D;&amp;#x6742;.gif&quot; data-canonical-src=&quot;http://upload-images.jianshu.io/upload_images/166866-38c1f99c6d097367.gif&quot; style=&quot;max-width:100%;&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;Android-Drawable-Importer&quot;&gt;&lt;a href=&quot;#Android-Drawable-Importer&quot; class=&quot;headerlink&quot; title=&quot;Android Drawable Importer&quot;&gt;&lt;/a&gt;Android Drawable Importer&lt;/h3&gt;&lt;h3 id=&quot;Android-Material-Design-Icon-Generator&quot;&gt;&lt;a href=&quot;#Android-Material-Design-Icon-Generator&quot; class=&quot;headerlink&quot; title=&quot;Android Material Design Icon Generator&quot;&gt;&lt;/a&gt;Android Material Design Icon Generator&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;下载：&lt;a href=&quot;https://github.com/konifar/android-material-design-icon-generator-plugin&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ADB Idea&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;#x4E0B;&amp;#x8F7D;&amp;#xFF1A;&lt;a href=&quot;https://github.com/konifar/android-material-design-icon-generator-plugin&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ADB Idea&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;3-Gradle使用&quot;&gt;&lt;a href=&quot;#3-Gradle使用&quot; class=&quot;headerlink&quot; title=&quot;3. Gradle使用&quot;&gt;&lt;/a&gt;3. Gradle使用&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://shanksleo.gitbooks.io/cookbook/content/gradle/gradle.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://shanksleo.gitbooks.io/cookbook/content/gradle/gradle.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;3-Gradle&amp;#x4F7F;&amp;#x7528;&quot;&gt;&lt;a href=&quot;#3-Gradle&amp;#x4F7F;&amp;#x7528;&quot; class=&quot;headerlink&quot; title=&quot;3. Gradle&amp;#x4F7F;&amp;#x7528;&quot;&gt;&lt;/a&gt;3. Gradle&amp;#x4F7F;&amp;#x7528;&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://shanksleo.gitbooks.io/cookbook/content/gradle/gradle.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://shanksleo.gitbooks.io/cookbook/content/gradle/gradle.html&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Android-Studio使用&quot;&gt;&lt;a href=&quot;#Android-Studio使用&quot; class=&quot;headerlink&quot; title=&quot;Android Studio使用&quot;&gt;&lt;/a&gt;Android Studio使用&lt;/h1&gt;&lt;h2 id=&quot;1-导入第三方ja
+      &lt;h2 id=&quot;1-&amp;#x5BFC;&amp;#x5165;&amp;#x7B2C;&amp;#x4E09;&amp;#x65B9;jar&amp;#x5305;&amp;#x53CA;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&quot;&gt;&lt;a href=&quot;#1-&amp;#x5BFC;&amp;#x5165;&amp;#x7B2C;&amp;#x4E09;&amp;
     
     </summary>
     
@@ -565,7 +564,7 @@ public void pickDoor(DoorView door) {
     <updated>2016-05-24T02:15:55.345Z</updated>
     
     <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&amp;quot;My New Post&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
