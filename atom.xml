@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-05-24T12:49:30.161Z</updated>
+  <updated>2016-05-24T12:56:58.613Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,18 +20,17 @@
     <link href="http://yoursite.com/2016/05/24/Git%E5%88%9D%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
     <id>http://yoursite.com/2016/05/24/Git初学笔记/</id>
     <published>2016-05-24T03:18:55.000Z</published>
-    <updated>2016-05-24T12:49:30.161Z</updated>
+    <updated>2016-05-24T12:56:58.613Z</updated>
     
     <content type="html">&lt;p&gt;&amp;#x53C2;&amp;#x8003;&amp;#xFF1A;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&amp;#x5ED6;&amp;#x96EA;&amp;#x5CF0;&amp;#x7684;Git&amp;#x6559;&amp;#x7A0B;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;&amp;#x5B89;&amp;#x88C5;Git&quot;&gt;&lt;a href=&quot;#&amp;#x5B89;&amp;#x88C5;Git&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x5B89;&amp;#x88C5;Git&quot;&gt;&lt;/a&gt;&amp;#x5B89;&amp;#x88C5;Git&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&amp;#x5728;Linux&amp;#x4E0A;&amp;#x5B89;&amp;#x88C5;&lt;br&gt; Ubuntu&amp;#xFF1A;sudo apt-get install git  &lt;/li&gt;
 &lt;li&gt;&amp;#x5728;Windows&amp;#x4E0A;&amp;#x5B89;&amp;#x88C5;  &lt;ul&gt;
 &lt;li&gt;&amp;#x5B89;&amp;#x88C5;&lt;a href=&quot;http://msysgit.github.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;msysgit&lt;/a&gt;&amp;#xFF0C;&amp;#x6309;&amp;#x7167;&amp;#x9ED8;&amp;#x8BA4;&amp;#x9009;&amp;#x9879;&amp;#x5B89;&amp;#x88C5;&amp;#x5373;&amp;#x53EF;  &lt;/li&gt;
-&lt;li&gt;&amp;#x5B89;&amp;#x88C5;&amp;#x5B8C;&amp;#x6210;&amp;#x4E4B;&amp;#x540E;&amp;#x8FD0;&amp;#x884C;Git Bash&amp;#xFF0C;&amp;#x6253;&amp;#x5F00;&amp;#x547D;&amp;#x4EE4;&amp;#x884C;&amp;#x7A97;&amp;#x53E3;  &lt;/li&gt;
+&lt;li&gt;&amp;#x5B89;&amp;#x88C5;&amp;#x5B8C;&amp;#x6210;&amp;#x4E4B;&amp;#x540E;&amp;#x8FD0;&amp;#x884C;Git Bash&amp;#xFF0C;&amp;#x6253;&amp;#x5F00;&amp;#x547D;&amp;#x4EE4;&amp;#x884C;&amp;#x7A97;&amp;#x53E3;  &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;&amp;#x57FA;&amp;#x672C;&amp;#x6982;&amp;#x5FF5;&quot;&gt;&lt;a href=&quot;#&amp;#x57FA;&amp;#x672C;&amp;#x6982;&amp;#x5FF5;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x57FA;&amp;#x672C;&amp;#x6982;&amp;#x5FF5;&quot;&gt;&lt;/a&gt;&amp;#x57FA;&amp;#x672C;&amp;#x6982;&amp;#x5FF5;&lt;/h2&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;&amp;#x57FA;&amp;#x672C;&amp;#x6982;&amp;#x5FF5;&quot;&gt;&lt;a href=&quot;#&amp;#x57FA;&amp;#x672C;&amp;#x6982;&amp;#x5FF5;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x57FA;&amp;#x672C;&amp;#x6982;&amp;#x5FF5;&quot;&gt;&lt;/a&gt;&amp;#x57FA;&amp;#x672C;&amp;#x6982;&amp;#x5FF5;&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&amp;#x5DE5;&amp;#x4F5C;&amp;#x533A;&amp;#xFF1A;&amp;#x7535;&amp;#x8111;&amp;#x4E2D;&amp;#x7684;&amp;#x76EE;&amp;#x5F55;  &lt;/li&gt;
 &lt;li&gt;&amp;#x7248;&amp;#x672C;&amp;#x5E93;&amp;#xFF1A;  &lt;ul&gt;
 &lt;li&gt;&amp;#x5DE5;&amp;#x4F5C;&amp;#x533A;&amp;#x7684;&amp;#x9690;&amp;#x85CF;&amp;#x76EE;&amp;#x5F55;.git  &lt;/li&gt;
@@ -217,7 +216,12 @@
     
     <summary type="html">
     
-      &lt;p&gt;&amp;#x53C2;&amp;#x8003;&amp;#xFF1A;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000&quot; target=&quot;_blank&quot; rel=
+      &lt;p&gt;&amp;#x53C2;&amp;#x8003;&amp;#xFF1A;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000&quot;&gt;&amp;#x5ED6;&amp;#x96EA;&amp;#x5CF0;&amp;#x7684;Git&amp;#x6559;&amp;#x7A0B;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;&amp;#x5B89;&amp;#x88C5;Git&quot;&gt;&lt;a href=&quot;#&amp;#x5B89;&amp;#x88C5;Git&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x5B89;&amp;#x88C5;Git&quot;&gt;&lt;/a&gt;&amp;#x5B89;&amp;#x88C5;Git&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&amp;#x5728;Linux&amp;#x4E0A;&amp;#x5B89;&amp;#x88C5;&lt;br&gt; Ubuntu&amp;#xFF1A;sudo apt-get install git  &lt;/li&gt;
+&lt;li&gt;&amp;#x5728;Windows&amp;#x4E0A;&amp;#x5B89;&amp;#x88C5;  &lt;ul&gt;
+&lt;li&gt;&amp;#x5B89;&amp;#x88C5;&lt;a href=&quot;http://msysgit.github.io&quot;&gt;msysgit&lt;/a&gt;&amp;#xFF0C;&amp;#x6309;&amp;#x7167;&amp;#x9ED8;&amp;#x8BA4;&amp;#x9009;&amp;#x9879;&amp;#x5B89;&amp;#x88C5;&amp;#x5373;&amp;#x53EF;  &lt;/li&gt;
+&lt;li&gt;&amp;#x5B89;&amp;#x88C5;&amp;#x5B8C;&amp;#x6210;&amp;#x4E4B;&amp;#x540E;&amp;#x8FD0;&amp;#x884C;Git Bash&amp;#xFF0C;&amp;#x6253;&amp;#x5F00;&amp;#x547D;&amp;#x4EE4;&amp;#x884C;&amp;#x7A97;&amp;#x53E3;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ol&gt;
     
     </summary>
     
@@ -235,13 +239,13 @@
     <link href="http://yoursite.com/2016/05/24/Android%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
     <id>http://yoursite.com/2016/05/24/Android的常见问题汇总/</id>
     <published>2016-05-24T03:08:55.000Z</published>
-    <updated>2016-05-24T12:48:44.153Z</updated>
+    <updated>2016-05-24T12:57:36.026Z</updated>
     
     <content type="html">&lt;h3 id=&quot;1-ActionBar&quot;&gt;&lt;a href=&quot;#1-ActionBar&quot; class=&quot;headerlink&quot; title=&quot;1. ActionBar&quot;&gt;&lt;/a&gt;1. ActionBar&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&amp;#x53C2;&amp;#x8003; &lt;a href=&quot;http://blog.csdn.net/guolin_blog/article/details/18234477&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&amp;#x90ED;&amp;#x9716;&amp;#x7684;&amp;#x535A;&amp;#x5BA2;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;&amp;#x663E;&amp;#x793A;Up&amp;#x6309;&amp;#x94AE;&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&amp;#x7B2C;&amp;#x4E00;&amp;#x6B65;&amp;#xFF1A;&amp;#x5728;onCreate&amp;#x65B9;&amp;#x6CD5;&amp;#x4E2D;&amp;#x589E;&amp;#x52A0; &lt;code&gt;getActionBar().setDisplayHomeAsUpEnabled(true)&lt;/code&gt;&amp;#xFF0C;&amp;#x9488;&amp;#x5BF9;appcompat v7&amp;#x9700;&amp;#x91C7;&amp;#x7528;&lt;code&gt;getSupportActionBar()&lt;/code&gt;&amp;#xFF0C;&amp;#x5426;&amp;#x5219;&amp;#x4F1A;&amp;#x62A5;&amp;#x7A7A;&amp;#x6307;&amp;#x9488;&amp;#x5F02;&amp;#x5E38;&lt;/li&gt;
+&lt;li&gt;&amp;#x7B2C;&amp;#x4E00;&amp;#x6B65;&amp;#xFF1A;&amp;#x5728;onCreate&amp;#x65B9;&amp;#x6CD5;&amp;#x4E2D;&amp;#x589E;&amp;#x52A0; &lt;code&gt;getActionBar().setDisplayHomeAsUpEnabled(true)&lt;/code&gt;&amp;#xFF0C;&amp;#x9488;&amp;#x5BF9;appcompat v7&amp;#x9700;&amp;#x91C7;&amp;#x7528;&lt;code&gt;getSupportActionBar()&lt;/code&gt;&amp;#xFF0C;&amp;#x5426;&amp;#x5219;&amp;#x4F1A;&amp;#x62A5;&amp;#x7A7A;&amp;#x6307;&amp;#x9488;&amp;#x5F02;&amp;#x5E38;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&amp;#x7B2C;&amp;#x4E8C;&amp;#x6B65;&amp;#xFF1A;&amp;#x5728;AndroidMainfest.xml&amp;#x4E2D;&amp;#x914D;&amp;#x7F6E;&amp;#x7236;Activity&lt;ul&gt;
 &lt;li&gt;&amp;#x53C2;&amp;#x8003;&amp;#xFF1A;&lt;a href=&quot;http://developer.android.com/training/implementing-navigation/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Google&amp;#x7684;Training&amp;#x7684;&amp;#x5B9E;&amp;#x73B0;&amp;#x6709;&amp;#x6548;&amp;#x5BFC;&amp;#x822A;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&amp;#x9488;&amp;#x5BF9;android 4.1&amp;#x7248;&amp;#x672C;&amp;#x4EE5;&amp;#x4E0A;&amp;#xFF0C;&amp;#x5728;activity&amp;#x7684;AndroidManifest.xml&amp;#x4E2D;&amp;#x589E;&amp;#x52A0;android:parentActivityName&lt;/li&gt;
@@ -340,7 +344,10 @@ break;
     <summary type="html">
     
       &lt;h3 id=&quot;1-ActionBar&quot;&gt;&lt;a href=&quot;#1-ActionBar&quot; class=&quot;headerlink&quot; title=&quot;1. ActionBar&quot;&gt;&lt;/a&gt;1. ActionBar&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&amp;#x53C2;&amp;#x8003; &lt;a href=&quot;
+&lt;li&gt;&amp;#x53C2;&amp;#x8003; &lt;a href=&quot;http://blog.csdn.net/guolin_blog/article/details/18234477&quot;&gt;&amp;#x90ED;&amp;#x9716;&amp;#x7684;&amp;#x535A;&amp;#x5BA2;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&amp;#x663E;&amp;#x793A;Up&amp;#x6309;&amp;#x94AE;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;#x7B2C;&amp;#x4E00;&amp;#x6B65;&amp;#xFF1A;&amp;#x5728;onCreate&amp;#x65B9;&amp;#x6CD5;&amp;#x4E2D;&amp;#x589E;&amp;#x52A0; &lt;code&gt;getActionBar().setDisplayHomeAsUpEnabled(true)&lt;/code&gt;&amp;#xFF0C;&amp;#x9488;&amp;#x5BF9;appcompat v7&amp;#x9700;&amp;#x91C7;&amp;#x7528;&lt;code&gt;getSupportActionBar()&lt;/code&gt;&amp;#xFF0C;&amp;#x5426;&amp;#x5219;&amp;#x4F1A;&amp;#x62A5;&amp;#x7A7A;&amp;#x6307;&amp;#x9488;&amp;#x5F02;&amp;#x5E38;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     
@@ -356,7 +363,7 @@ break;
     <link href="http://yoursite.com/2016/05/24/Android-Studio%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/"/>
     <id>http://yoursite.com/2016/05/24/Android-Studio常用插件/</id>
     <published>2016-05-24T03:01:25.000Z</published>
-    <updated>2016-05-24T12:48:57.965Z</updated>
+    <updated>2016-05-24T12:57:11.908Z</updated>
     
     <content type="html">&lt;h2 id=&quot;1-&amp;#x5BFC;&amp;#x5165;&amp;#x7B2C;&amp;#x4E09;&amp;#x65B9;jar&amp;#x5305;&amp;#x53CA;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&quot;&gt;&lt;a href=&quot;#1-&amp;#x5BFC;&amp;#x5165;&amp;#x7B2C;&amp;#x4E09;&amp;#x65B9;jar&amp;#x5305;&amp;#x53CA;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&quot; class=&quot;headerlink&quot; title=&quot;1. &amp;#x5BFC;&amp;#x5165;&amp;#x7B2C;&amp;#x4E09;&amp;#x65B9;jar&amp;#x5305;&amp;#x53CA;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&quot;&gt;&lt;/a&gt;1. &amp;#x5BFC;&amp;#x5165;&amp;#x7B2C;&amp;#x4E09;&amp;#x65B9;jar&amp;#x5305;&amp;#x53CA;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&lt;/h2&gt;&lt;blockquote&gt;
 &lt;h3 id=&quot;&amp;#x5BFC;&amp;#x5165;&amp;#x672C;&amp;#x5730;jar&quot;&gt;&lt;a href=&quot;#&amp;#x5BFC;&amp;#x5165;&amp;#x672C;&amp;#x5730;jar&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x5BFC;&amp;#x5165;&amp;#x672C;&amp;#x5730;jar&quot;&gt;&lt;/a&gt;&amp;#x5BFC;&amp;#x5165;&amp;#x672C;&amp;#x5730;jar&lt;/h3&gt;&lt;/blockquote&gt;
@@ -364,7 +371,7 @@ break;
 &lt;pre&gt;&lt;code&gt;compile files(&amp;apos;libs/butterknife-6.1.0.jar&amp;apos;)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x5982;&amp;#x679C;builder.gradle&amp;#x4E2D;&amp;#x5DF2;&amp;#x6709;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;compile fileTree(include: [&amp;apos;*.jar&amp;apos;], dir: &amp;apos;libs&amp;apos;)
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x5C31;&amp;#x4E0D;&amp;#x9700;&amp;#x8981;&amp;#x518D; add &amp;#x4E86;&amp;#xFF0C;Sync &amp;#x4E00;&amp;#x4E0B; gradle &amp;#x5C31;&amp;#x53EF;&amp;#x4EE5;&amp;#x4E86;&amp;#x3002;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x5C31;&amp;#x4E0D;&amp;#x9700;&amp;#x8981;&amp;#x518D; add &amp;#x4E86;&amp;#xFF0C;Sync &amp;#x4E00;&amp;#x4E0B; gradle &amp;#x5C31;&amp;#x53EF;&amp;#x4EE5;&amp;#x4E86;&amp;#x3002;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;h3 id=&quot;&amp;#x6DFB;&amp;#x52A0;&amp;#x8FDC;&amp;#x7A0B;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&quot;&gt;&lt;a href=&quot;#&amp;#x6DFB;&amp;#x52A0;&amp;#x8FDC;&amp;#x7A0B;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x6DFB;&amp;#x52A0;&amp;#x8FDC;&amp;#x7A0B;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&quot;&gt;&lt;/a&gt;&amp;#x6DFB;&amp;#x52A0;&amp;#x8FDC;&amp;#x7A0B;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&lt;/h3&gt;&lt;/blockquote&gt;
 &lt;p&gt;&amp;#x53EF;&amp;#x4EE5;&amp;#x4E0B;&amp;#x8F7D;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&amp;#xFF0C;&amp;#x8FDB;&amp;#x5165;&amp;#x6A21;&amp;#x5757;&amp;#x7684;build.gradle &amp;#x6587;&amp;#x4EF6;&amp;#xFF0C;&amp;#x6DFB;&amp;#x52A0;&amp;#x5982;&amp;#x4E0B;&amp;#x56FE;&amp;#x7684;&amp;#x5185;&amp;#x5BB9;&amp;#x5373;&amp;#x53EF;&amp;#xFF1A;&lt;/p&gt;
@@ -559,7 +566,13 @@ public void pickDoor(DoorView door) {
     
     <summary type="html">
     
-      &lt;h2 id=&quot;1-&amp;#x5BFC;&amp;#x5165;&amp;#x7B2C;&amp;#x4E09;&amp;#x65B9;jar&amp;#x5305;&amp;#x53CA;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&quot;&gt;&lt;a href=&quot;#1-&amp;#x5BFC;&amp;#x5165;&amp;#x7B2C;&amp;#x4E09;&amp;
+      &lt;h2 id=&quot;1-&amp;#x5BFC;&amp;#x5165;&amp;#x7B2C;&amp;#x4E09;&amp;#x65B9;jar&amp;#x5305;&amp;#x53CA;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&quot;&gt;&lt;a href=&quot;#1-&amp;#x5BFC;&amp;#x5165;&amp;#x7B2C;&amp;#x4E09;&amp;#x65B9;jar&amp;#x5305;&amp;#x53CA;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&quot; class=&quot;headerlink&quot; title=&quot;1. &amp;#x5BFC;&amp;#x5165;&amp;#x7B2C;&amp;#x4E09;&amp;#x65B9;jar&amp;#x5305;&amp;#x53CA;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&quot;&gt;&lt;/a&gt;1. &amp;#x5BFC;&amp;#x5165;&amp;#x7B2C;&amp;#x4E09;&amp;#x65B9;jar&amp;#x5305;&amp;#x53CA;&amp;#x5F00;&amp;#x6E90;&amp;#x5E93;&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h3 id=&quot;&amp;#x5BFC;&amp;#x5165;&amp;#x672C;&amp;#x5730;jar&quot;&gt;&lt;a href=&quot;#&amp;#x5BFC;&amp;#x5165;&amp;#x672C;&amp;#x5730;jar&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x5BFC;&amp;#x5165;&amp;#x672C;&amp;#x5730;jar&quot;&gt;&lt;/a&gt;&amp;#x5BFC;&amp;#x5165;&amp;#x672C;&amp;#x5730;jar&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;p&gt;&amp;#x5C06;jar&amp;#x6587;&amp;#x4EF6;&amp;#x62F7;&amp;#x8D1D;&amp;#x81F3;libs&amp;#xFF0C;&amp;#x53F3;&amp;#x952E;&amp;#x70B9;&amp;#x51FB;jar&amp;#x6587;&amp;#x4EF6;&amp;#xFF0C;&amp;#x9009;&amp;#x62E9;&lt;code&gt;add as a library&lt;/code&gt; &amp;#x5373;&amp;#x53EF;&amp;#x5BFC;&amp;#x5165;&amp;#xFF0C;&amp;#x5728;&amp;#x6A21;&amp;#x5757;&amp;#x7684;build.gradle&amp;#x7684;compile&amp;#x4F1A;&amp;#x589E;&amp;#x52A0;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;compile files(&amp;apos;libs/butterknife-6.1.0.jar&amp;apos;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x5982;&amp;#x679C;builder.gradle&amp;#x4E2D;&amp;#x5DF2;&amp;#x6709;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;compile fileTree(include: [&amp;apos;*.jar&amp;apos;], dir: &amp;apos;libs&amp;apos;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x5C31;&amp;#x4E0D;&amp;#x9700;&amp;#x8981;&amp;#x518D; add &amp;#x4E86;&amp;#xFF0C;Sync &amp;#x4E00;&amp;#x4E0B; gradle &amp;#x5C31;&amp;#x53EF;&amp;#x4EE5;&amp;#x4E86;&amp;#x3002;&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
