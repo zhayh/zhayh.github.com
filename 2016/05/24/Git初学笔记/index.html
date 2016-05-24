@@ -6,8 +6,7 @@
   <title>Git学习笔记 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="参考：廖雪峰的Git教程
-##安装Git  
-
+安装Git
 在Linux上安装 Ubuntu：sudo apt-get install git  
 在Windows上安装  
 安装msysgit，按照默认选项安装即可  
@@ -15,19 +14,17 @@
 
 
 
-##基本概念
-
+基本概念
 工作区：电脑中的目录  
 版本库：  
 工作区的隐藏目录.git  
-其中最重要的是暂存区stage，第一个分支m">
+其中最重要的是暂存区stage，第一个分支master和指向">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git学习笔记">
 <meta property="og:url" content="http://yoursite.com/2016/05/24/Git初学笔记/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="参考：廖雪峰的Git教程
-##安装Git  
-
+安装Git
 在Linux上安装 Ubuntu：sudo apt-get install git  
 在Windows上安装  
 安装msysgit，按照默认选项安装即可  
@@ -35,19 +32,17 @@
 
 
 
-##基本概念
-
+基本概念
 工作区：电脑中的目录  
 版本库：  
 工作区的隐藏目录.git  
-其中最重要的是暂存区stage，第一个分支m">
+其中最重要的是暂存区stage，第一个分支master和指向">
 <meta property="og:image" content="https://zhayh.github.io/images/git/stage.png">
-<meta property="og:updated_time" content="2016-05-24T03:05:18.437Z">
+<meta property="og:updated_time" content="2016-05-24T03:07:18.012Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git学习笔记">
 <meta name="twitter:description" content="参考：廖雪峰的Git教程
-##安装Git  
-
+安装Git
 在Linux上安装 Ubuntu：sudo apt-get install git  
 在Windows上安装  
 安装msysgit，按照默认选项安装即可  
@@ -55,12 +50,11 @@
 
 
 
-##基本概念
-
+基本概念
 工作区：电脑中的目录  
 版本库：  
 工作区的隐藏目录.git  
-其中最重要的是暂存区stage，第一个分支m">
+其中最重要的是暂存区stage，第一个分支master和指向">
 <meta name="twitter:image" content="https://zhayh.github.io/images/git/stage.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -133,8 +127,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>参考：<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰的Git教程</a></p>
-<p>##安装Git  </p>
-<ol>
+<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><ol>
 <li>在Linux上安装<br> Ubuntu：sudo apt-get install git  </li>
 <li>在Windows上安装  <ul>
 <li>安装<a href="http://msysgit.github.io" target="_blank" rel="external">msysgit</a>，按照默认选项安装即可  </li>
@@ -142,8 +135,7 @@
 </ul>
 </li>
 </ol>
-<p>##基本概念</p>
-<ol>
+<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><ol>
 <li>工作区：电脑中的目录  </li>
 <li>版本库：  <ul>
 <li>工作区的隐藏目录.git  </li>
@@ -155,15 +147,13 @@
 <p>  <img src="https://zhayh.github.io/images/git/stage.png" alt=""></p>
 </li>
 </ol>
-<p>##配置Git</p>
-<ol>
+<h2 id="配置Git"><a href="#配置Git" class="headerlink" title="配置Git"></a>配置Git</h2><ol>
 <li>git config –global color.ui true  </li>
 <li><p>配置别名： </p>
 <p>   git config –global alias.unstage ‘reset HEAD’<br>   git config –global alias.lg “log –color –graph –pretty=format:’%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset’ –abbrev-commit”  </p>
 </li>
 </ol>
-<p>##创建版本库</p>
-<ol>
+<h2 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h2><ol>
 <li><p>初始化Git仓库</p>
 <p>   mkdir LearnGit<br>   cd /F/LearnGit<br>   git init  </p>
 </li>
@@ -180,23 +170,20 @@
 </ul>
 </li>
 </ol>
-<p>##查看、修改和提交 </p>
-<ol>
+<h2 id="查看、修改和提交"><a href="#查看、修改和提交" class="headerlink" title="查看、修改和提交"></a>查看、修改和提交</h2><ol>
 <li>查看Git工作区的状态：git status  </li>
 <li>查看文件的修改内容：git diff readme.txt  </li>
 <li><p>提交修改和提交文件的步骤一样，分两步：  </p>
 <p>   git add readme.txt<br>   git commit -m “add git command”  </p>
 </li>
 </ol>
-<p>##版本回退</p>
-<ol>
+<h2 id="版本回退"><a href="#版本回退" class="headerlink" title="版本回退"></a>版本回退</h2><ol>
 <li>查看提交历史：git log / git log –pretty=oneline</li>
 <li>回退上一个版本：git reset –hard HEAD^ </li>
 <li>查看历史命令：git reflog</li>
 <li>说明：HEAD指向当前版本</li>
 </ol>
-<p>##撤销修改</p>
-<ol>
+<h2 id="撤销修改"><a href="#撤销修改" class="headerlink" title="撤销修改"></a>撤销修改</h2><ol>
 <li>git checkout – readme.txt，撤销该文件在工作区的修改，说明：<ul>
 <li>文件没放到暂存区，撤销修改就回到版本库的状态</li>
 <li>文件已添加到暂存区后又作了修改，撤销修改就回到添加到暂存区后的状态</li>
@@ -211,8 +198,7 @@
 </ul>
 </li>
 </ol>
-<p>##删除文件</p>
-<ol>
+<h2 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h2><ol>
 <li><p>从版本库删除</p>
 <p>   rm readme.txt<br>   git rm readme.txt<br>   git commit -m “remove readme.txt”</p>
 </li>
@@ -220,14 +206,12 @@
 <p>   git checkout – readme.txt</p>
 </li>
 </ol>
-<p>##远程仓库</p>
-<ol>
+<h2 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h2><ol>
 <li>创建SSH Key：ssh-keygen -t rsa -C “GitHub邮箱地址”</li>
 <li>登陆GitHub，打开Account Settings -&gt; SSH Keys页面，点击Add SSH Key，将生成的id_rsa.pub的内容拷贝到key内容框</li>
 <li>需要在每台推送到GitHub的电脑上生成key，并添加到GitHub</li>
 </ol>
-<p>##添加远程库</p>
-<ol>
+<h2 id="添加远程库"><a href="#添加远程库" class="headerlink" title="添加远程库"></a>添加远程库</h2><ol>
 <li>登陆GitHub，点击Create a new repo，创建一个新的仓库</li>
 <li>Repository name填入仓库名称，其他保持默认设置，创建Git仓库</li>
 <li>将本地仓库推送到GitHub仓库：<ul>
@@ -237,14 +221,12 @@
 </ul>
 </li>
 </ol>
-<p>##从远程库克隆</p>
-<ol>
+<h2 id="从远程库克隆"><a href="#从远程库克隆" class="headerlink" title="从远程库克隆"></a>从远程库克隆</h2><ol>
 <li>git clone <code>git@github.com:zhayh/python.git</code>  </li>
 <li>也可以用 <code>https://github.com/zhayh/python.git</code> 克隆  </li>
 <li>Git支持多种协议，默认的git：//使用ssh，速度最快  </li>
 </ol>
-<p>##创建与合并分支</p>
-<ol>
+<h2 id="创建与合并分支"><a href="#创建与合并分支" class="headerlink" title="创建与合并分支"></a>创建与合并分支</h2><ol>
 <li>创建并切换分支：git checkout -b dev </li>
 <li>查看分支：git branch, 当前分支用*标识</li>
 <li>创建分支：git branch name</li>
@@ -252,13 +234,11 @@
 <li>合并分支到当前分支：git merge dev</li>
 <li>删除分支：git branch -d name</li>
 </ol>
-<p>##解决冲突</p>
-<ol>
+<h2 id="解决冲突"><a href="#解决冲突" class="headerlink" title="解决冲突"></a>解决冲突</h2><ol>
 <li>执行git merge dev时提示内容冲突，手动修改冲突的内容，然后执行git add readme.txt和git commit -m “message”，master和dev就合并了</li>
 <li>查看分支的合并情况：git log –graph –pretty=oneline –abbrev-commit</li>
 </ol>
-<p>##分支管理策略</p>
-<ol>
+<h2 id="分支管理策略"><a href="#分支管理策略" class="headerlink" title="分支管理策略"></a>分支管理策略</h2><ol>
 <li>合并分支时，一般Git会用”Fast forward”模式，删除分支后，会丢失分支信息  </li>
 <li><p>使用”no-ff”方式merge可以强制禁用”Fast forward”模式   </p>
 <p>   git merge –no-ff -m “merge with no-ff” dev</p>
@@ -294,16 +274,14 @@
 * git branch --set-upstream dev origin/dev
 </code></pre></li>
 </ol>
-<p>##多人协作的工作模式</p>
-<ol>
+<h2 id="多人协作的工作模式"><a href="#多人协作的工作模式" class="headerlink" title="多人协作的工作模式"></a>多人协作的工作模式</h2><ol>
 <li>试图用git push origin branch-name推送自己的修改</li>
 <li>如果推送失败，则因为远程分支比本地新，需要先用git pull试图合并</li>
 <li>如果合并冲突，则解决冲突，并在本地提交</li>
 <li>没有冲突或解决了冲突后，再用git push origin branch-name推送就能成功</li>
 <li>注意：git pull提示”no tracking information”，则说明本地和远程分支的链接关系没有创建，用git branch –set-upstream branch-name origin/branch-name</li>
 </ol>
-<p>##创建标签</p>
-<ol>
+<h2 id="创建标签"><a href="#创建标签" class="headerlink" title="创建标签"></a>创建标签</h2><ol>
 <li>切换到需要打标签的分支：git checkout master</li>
 <li>创建新标签：git tag v1.0，只存储在本地</li>
 <li>在特定commit id上创建标签：git tag v0.9 commit id</li>
@@ -317,28 +295,24 @@
 </ul>
 </li>
 </ol>
-<p>##操作标签</p>
-<ol>
+<h2 id="操作标签"><a href="#操作标签" class="headerlink" title="操作标签"></a>操作标签</h2><ol>
 <li>删除标签：git tag -d v1.0  </li>
 <li>推送标签到远程：git push origin v1.0  </li>
 <li>一次性推送所有的标签：git push origin –tags  </li>
 <li>删除远程标签<br> 1）先从本地删除：git tag -d v0.9<br> 2）再从远程删除：git push origin :refs/tags/v0.9  </li>
 </ol>
-<p>##GitHub</p>
-<ol>
+<h2 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h2><ol>
 <li>在GitHub上，可以任意Fork开源仓库；  </li>
 <li>自己拥有Fork后的仓库的读写权限；  </li>
 <li>可以推送pull request给官方仓库贡献代码。  </li>
 </ol>
-<p>##忽略特殊文件</p>
-<ol>
+<h2 id="忽略特殊文件"><a href="#忽略特殊文件" class="headerlink" title="忽略特殊文件"></a>忽略特殊文件</h2><ol>
 <li>在Git工作去的根目录创建.gitignore文件，添加要忽略的文件名  </li>
 <li>参考：<a href="https://github.com/github/gitignore" target="_blank" rel="external">Git官方ignore模版</a>  </li>
 <li>.gitignore文件本身要放到版本库中，并对其进行版本管理  </li>
 <li>忽略文件的原则：<br> 1）忽略操作系统自动生成的文件，如缩略图等<br> 2）忽略编译生成的中间文件、可执行文件等<br> 3）忽略带有敏感信息的配置文件，如：存放口令的配置文件  </li>
 </ol>
-<p>##参考资料</p>
-<ul>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
 <li><a href="http://git-scm.com" target="_blank" rel="external">Git官方网站</a>  </li>
 <li><a href="http://try.github.io/levels/1/challenges/1" target="_blank" rel="external">Git在线练习</a>  </li>
 <li><a href="http://www.git-tower.com/blog/assets/2013-05-22-git-cheat-sheet/cheat-sheet-large01.png" target="_blank" rel="external">Git Cheat Sheet</a></li>
@@ -347,7 +321,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/05/24/Git初学笔记/" data-id="ciokv02nj0002f8jcx48y329y" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/05/24/Git初学笔记/" data-id="ciokv2p940002hgjcojnp2yfo" class="article-share-link">Share</a>
       
       
     </footer>
