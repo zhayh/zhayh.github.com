@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>渐行渐远</title>
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://zhayh.github.io/"/>
   <updated>2016-05-24T13:41:57.457Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://zhayh.github.io/</id>
   
   <author>
     <name>Yinghua Zha</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Git学习笔记</title>
-    <link href="http://yoursite.com/2016/05/24/Git%E5%88%9D%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2016/05/24/Git初学笔记/</id>
+    <link href="http://zhayh.github.io/2016/05/24/Git%E5%88%9D%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://zhayh.github.io/2016/05/24/Git初学笔记/</id>
     <published>2016-05-24T03:18:55.000Z</published>
     <updated>2016-05-24T13:41:57.457Z</updated>
     
@@ -225,19 +225,19 @@
     
     </summary>
     
-      <category term="实用工具" scheme="http://yoursite.com/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
+      <category term="实用工具" scheme="http://zhayh.github.io/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
     
-      <category term="版本控制" scheme="http://yoursite.com/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
+      <category term="版本控制" scheme="http://zhayh.github.io/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
     
     
-      <category term="版本控制" scheme="http://yoursite.com/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
+      <category term="版本控制" scheme="http://zhayh.github.io/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
     
   </entry>
   
   <entry>
     <title>Android的常见问题汇总</title>
-    <link href="http://yoursite.com/2016/05/24/Android%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
-    <id>http://yoursite.com/2016/05/24/Android的常见问题汇总/</id>
+    <link href="http://zhayh.github.io/2016/05/24/Android%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
+    <id>http://zhayh.github.io/2016/05/24/Android的常见问题汇总/</id>
     <published>2016-05-24T03:08:55.000Z</published>
     <updated>2016-05-24T12:57:36.026Z</updated>
     
@@ -351,17 +351,17 @@ break;
     
     </summary>
     
-      <category term="Android" scheme="http://yoursite.com/categories/Android/"/>
+      <category term="Android" scheme="http://zhayh.github.io/categories/Android/"/>
     
     
-      <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+      <category term="Android" scheme="http://zhayh.github.io/tags/Android/"/>
     
   </entry>
   
   <entry>
     <title>Android Studio常用插件</title>
-    <link href="http://yoursite.com/2016/05/24/Android-Studio%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/"/>
-    <id>http://yoursite.com/2016/05/24/Android-Studio常用插件/</id>
+    <link href="http://zhayh.github.io/2016/05/24/Android-Studio%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/"/>
+    <id>http://zhayh.github.io/2016/05/24/Android-Studio常用插件/</id>
     <published>2016-05-24T03:01:25.000Z</published>
     <updated>2016-05-24T13:00:00.277Z</updated>
     
@@ -575,17 +575,17 @@ public void pickDoor(DoorView door) {
     
     </summary>
     
-      <category term="Android" scheme="http://yoursite.com/categories/Android/"/>
+      <category term="Android" scheme="http://zhayh.github.io/categories/Android/"/>
     
     
-      <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+      <category term="Android" scheme="http://zhayh.github.io/tags/Android/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2016/05/24/hello-world/"/>
-    <id>http://yoursite.com/2016/05/24/hello-world/</id>
+    <link href="http://zhayh.github.io/2016/05/24/hello-world/"/>
+    <id>http://zhayh.github.io/2016/05/24/hello-world/</id>
     <published>2016-05-24T01:29:52.649Z</published>
     <updated>2016-05-24T02:15:55.345Z</updated>
     
